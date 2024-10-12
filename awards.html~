@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet.css">
+        <title>Princeton Visual AI Lab</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Princeton Visual AI Lab header-->
+        <header class="heading">
+            <div class="box1">
+                <img src="./pics/logo-princeton.png" id="logo">
+            </div>
+	    <!--mobile navigation icon feature adapted from https://www.youtube.com/watch?v=sjrp1FEHnyA-->
+            <input class="menu-button" type="checkbox" id="menu-button">
+            <label class="menu-bar-icon" for ="menu-button"><span class="navigator-icon"></span></label>
+	    <!--end adaptation--> 
+            <div class="title">
+                <span id="first">Princeton</span> Visual AI Lab
+            </div>
+            <div></div>
+            <ul class="navigator">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="awards.html"><span id="highlight">Awards</span></a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+            </ul>
+        </header>
+        <!--table of awards-->
+        <div id="padding">
+            <table class="center">
+                <!-- ADD NEW AWARD HERE!!!-->
+                <tr>
+                    <td id="date">Sunnie S. Y. Kim</td>
+                    <td><a href="https://www.nsfgrfp.org/">NSF Graduate Fellowship Award</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Nicole Meister</td>
+                    <td><a href="https://www.nsfgrfp.org/">NSF Graduate Fellowship Award</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://www.princeton.edu/news/2021/05/11/phi-beta-kappa-chapter-honors-reimitz-russakovsky-teaching-awards">Phi Beta Kappa Excellence in Undergraduate Teaching Award</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://www.cs.princeton.edu/news/olga-russakovsky-and-jonathan-mayer-recipients-seass-junior-faculty-award?">Howard B. Wentz, Jr. Junior Faculty Award from the School of Engineering and Applied Science</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Dora Zhao</td>
+                    <td>The Joseph Clifton Elgin Prize, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td>Outstanding Computer Science Senior Thesis Prize, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Dora Zhao</td>
+                    <td>Outstanding Computer Science Senior Thesis Prize, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Sharon Zhang</td>
+                    <td>Middleton Miller'29 prize for independent work, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td>Sigma Xi Book Award for Outstanding Undergraduate Research, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Sharon Zhang</td>
+                    <td>Sigma Xi Book Award for Outstanding Undergraduate Research, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Dora Zhao</td>
+                    <td>Sigma Xi Book Award for Outstanding Undergraduate Research, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td>Tau Beta Pi, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td><a href="https://www.nsfgrfp.org/">NSF Graduate Fellowship Award</a>, 2021</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td id="date">Angelina Wang</td>
+                    <td><a href="https://ndseg.sysplus.com/">NDSEG Fellowship</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Angelina Wang</td>
+                    <td><a href="https://www.nsfgrfp.org/">NSF Graduate Fellowship Award</a>, 2021</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td id="date">Sharon Zhang</td>
+		    <td><a href="https://www.nsfgrfp.org/">NSF Graduate Fellowship Award</a> Honorable Mention, 2021</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td id="date">Nicole Meister</td>
+                    <td><a href="https://blog.adobe.com/en/publish/2021/03/08/adobe-research-women-in-tech-scholarship-winners.html
+">Adobe Research Women-in-Technology Scholarship</a>, 2021</td>
+                </tr>
+                <tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td><a href="https://www.hertzfoundation.org/news/48-finalists-named-for-the-2021-hertz-fellowships/">Finalist for the Hertz Fellowship</a>, 2021</td>
+                </tr>
+                <tr>
+                    <td id="date">Arjun Mani</td>
+                    <td><a href="https://cra.org/2021-outstanding-undergraduate-researcher-award-recipients/">Honorable Mention in the CRA Undergraduate Research Awards</a>, 2020</td>
+                </tr>
+		<tr>
+                    <td id="date">Dora Zhao</td> 
+                    <td><a href="https://cra.org/2021-outstanding-undergraduate-researcher-award-recipients/">Honorable Mention in the CRA Undergraduate Research Awards</a>, 2020</td>
+                </tr>
+                <tr>
+                    <td id="date">Zeyu Wang</td>
+                    <td><a href="https://engineering.princeton.edu/news/2020/12/03/award-excellence-honors-graduate-student-achievement">Princeton School of Engineering and Applied Science Award for Excellence</a>, 2020</td>
+                </tr>
+                <tr>
+                    <td id="date">Dora Zhao</td>
+                    <td>Accenture Prize in Computer Science, 2020</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://ghc.anitab.org/speaker/dr-olga-russakovsky/">AnitaB.org Emerging Leader Abie Award</a>, 2020</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://cra.org/cra-wp/scholarships-and-awards/awards/beca-award-program/">CRA-WP Anita Borg Early Career Award (BECA)</a>, 2020</td>
+                </tr>
+                <tr>
+                    <td id="date">Yannis Karakozis</td>
+                    <td>Sigma Xi Book Award for Outstanding Undergraduate Research, 2019</td>
+                </tr>
+                <tr>
+                    <td id="date">Berthy Feng</td>
+                    <td>Sigma Xi Book Award for Outstanding Undergraduate Research, 2019</td>
+                </tr>
+                <tr>
+                    <td id="date">Yannis Karakozis</td>
+                    <td>Accenture Prize in Computer Science, 2018</td>
+                </tr>
+                <tr>
+                    <td id="date">Prem Nair</td>
+                    <td>Phillip Goldman'86 Senior Prize in Computer Science, 2018</td>
+                </tr>
+                <tr>
+                    <td id="date">William Hinthorn</td>
+                    <td>Outstanding Computer Science Senior Thesis Prize, 2018</td>
+                </tr>
+                <tr>
+                    <td id="date">Rohan Doshi</td>
+                    <td>Computing Research Association Honorable Mention, 2018</td>
+                </tr>
+                <tr>
+                    <td id="date">Rohan Doshi</td>
+                    <td>Sigma Xi Award for Outstanding Undergraduate Research, 2018</td>
+                </tr>
+                <tr>
+                    <td id="date">Prem Nair</td>
+                    <td>Accenture Prize in Computer Science, 2017</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://www.technologyreview.com/lists/innovators-under-35/2017/inventor/olga-russakovsky/">MIT Technology Review 35-innovators-under-35</a>, 2017</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://www.computer.org/web/tcpami/mark-everingham-prize">PAMI Everingham Prize</a>, 2016</td>
+                </tr>
+                <tr>
+                    <td id="date">Olga Russakovsky</td>
+                    <td><a href="https://2015globalthinkers.foreignpolicy.com/#!challengers/detail/li-russakovsky-summers-ghadiyali-robyn">Foreign Policy's 100 Leading Global Thinkers</a>, 2015</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="footer">website created/maintained by I. Shirai</div>
+    </body>
+</html>
