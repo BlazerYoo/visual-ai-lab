@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./stylesheet.css">
+        <title>Princeton Visual AI Lab</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Princeton Visual AI Lab header-->
+        <header class="heading">
+            <div class="box1">
+                <img src="./pics/logo-princeton.png" id="logo">
+            </div>
+	          <!--mobile navigation icon feature adapted from https://www.youtube.com/watch?v=sjrp1FEHnyA-->
+            <input class="menu-button" type="checkbox" id="menu-button">
+            <label class="menu-bar-icon" for ="menu-button"><span class="navigator-icon"></span></label>
+            <!--end adaptation-->
+            <div class="title">
+                <span id="first">Princeton</span> Visual AI Lab
+            </div>
+            <div></div>
+            <ul class="navigator">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="research.html"><span id="highlight">Research</span></a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+            </ul>
+        </header>
+
+        <!--filtering feature adapted from "https://webdesign.tutsplus.com/tutorials/how-to-build-a-filtering-component-in-pure-css--cms-33111"---->
+        <input type="radio" id="all" name="filter" value="all" checked>
+        <input type="radio" id="representative" name="filter" value="representative">
+        <input type="radio" id="data" name="filter" value="data">
+        <input type="radio" id="fairness" name="filter" value="fairness">
+        <input type="radio" id="humanInTheLoop" name="filter" value="humanInTheLoop">
+        <input type="radio" id="language" name="filter" value="language">
+        <input type="radio" id="transparency" name="filter" value="transparency">
+        <input type="radio" id="video" name="filter" value="video">
+
+        <!--<input type="radio" id="interaction" name="filter" value="interaction">
+	       <input type="radio" id="interpretability" name="filter" value="interpretability">
+        <input type="radio" id="objects" name="filter" value="objects">-->
+
+        <div class="filter-topic-container" id="padding">
+            <ol class="research-filter">
+                <li><label for="all">All</label></li>
+                <li><label for="representative">Representative</label></li>
+                <li><label for="data">Data</label></li>
+                <li><label for="fairness">Fairness</label></li>
+                <li><label for="language">Language</label></li>
+                <li><label for="transparency">Transparency</label></li>
+                <li><label for="video">Video</label></li>
+            </ol>
+        </div>
+        <!--end adaptation-->
+
+        <br/>
+        <br/>
+        <br/>
+
+        <ol class= "research-row posts">
+            <!--ADD NEW RESEARCH PAPERS HERE!!-->
+
+            <!--Cogsci-->
+            <li class="post" data-filter="data transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2406.04284"><img src="pics/yang2024icml.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2406.04284">What is Dataset Distillation Learning?</a>
+                  <br/>
+                  <br/>
+                  William Yang,
+                  <a href="https://l-yezhu.github.io/">Ye Zhu</a>,
+                  <a href="https://lucas2012.github.io/">Zhiwei Deng</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> <br/><br/>
+                  International Conference on Machine Learning (ICML), 2024.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2406.04284">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/What-is-Dataset-Distillation-Learning/">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Cogsci-->
+            <li class="post" data-filter="data">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2403.19669"><img src="pics/chen2024cogsci.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2403.19669">Analyzing the Roles of Language and Vision in Learning from Limited Data</a>
+                  <br/>
+                  <br/>
+                  <a href="https://allisonchen.us/">Allison Chen</a>,
+                  <a href="https://ilia10000.github.io/">Ilia Sucholutsky</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                  <a href="https://cocosci.princeton.edu/tom/index.php">Tom Griffiths</a> <br/><br/>
+                  Proceedings of the Annual Meeting of the Cognitive Science Society (CogSci), 2024.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2403.19669">paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--ImageNet OOD-->
+            <li class="post" data-filter="data">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2310.01755"><img src="pics/imagenet-ood.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2310.01755">ImageNet-OOD: Deciphering Modern Out-of-Distribution Detection Algorithms</a>
+                  <br/>
+                  <br/>
+                  William Yang,
+                  Byron Zhang and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  International Conference on Learning Representations (ICLR), 2024.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2310.01755">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/imagenetood">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--VL Dataset Distillation-->
+            <li class="post" data-filter="fairness">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2308.07545"><img src="photos/vldistillation.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2308.07545">Vision-Language Dataset Distillation</a>
+                  <br/>
+                  <br/>
+                  <a href="https://xindiwu.github.io/">Xindi Wu</a>,
+                  Byron Zhang,
+                  <a href="https://lucas2012.github.io/">Zhiwei Deng</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  Transactions on Machine Learning Research (TMLR), 2024.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2308.07545">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/multimodal_dataset_distillation">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Human pose estimation-->
+            <li class="post" data-filter="data">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023W/ROAD++/papers/Yoo_Efficient_Self-Supervised_Human_Pose_Estimation_with_Inductive_Prior_Tuning_ICCVW_2023_paper.pdf"><img src="pics/hpe_ipt.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://openaccess.thecvf.com/content/ICCV2023W/ROAD++/papers/Yoo_Efficient_Self-Supervised_Human_Pose_Estimation_with_Inductive_Prior_Tuning_ICCVW_2023_paper.pdf">Efficient, Self-Supervised Human Pose Estimation with Inductive Prior Tuning</a>
+                  <br/>
+                  <br/>
+                  Nobline Yoo and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  ICCV ROAD++ Workshop (ICCVW), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://openaccess.thecvf.com/content/ICCV2023W/ROAD++/papers/Yoo_Efficient_Self-Supervised_Human_Pose_Estimation_with_Inductive_Prior_Tuning_ICCVW_2023_paper.pdf">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/hpe-inductive-prior-tuning">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Diffusion-->
+            <li class="post" data-filter="fairness data">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2302.08357"><img src="pics/boundary.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2302.08357">Boundary Guided Learning-Free Semantic Control with Diffusion Models</a>
+                  <br/>
+                  <br/>
+                  <a href="https://l-yezhu.github.io/">Ye Zhu</a>,
+                  <a href="https://yu-wu.net/">Yu Wu</a>,
+                  <a href="https://lucas2012.github.io/">Zhiwei Deng</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                  Yan Yan. <br/><br/>
+                  Neural Information Processing Systems (NeurIPS), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2302.08357">paper</a>]
+                  [<a href="https://github.com/L-YeZhu/BoundaryDiffusion">code</a>]
+                  [<a href="https://l-yezhu.github.io/BoundaryDiffusion/">website</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--GEODE-->
+            <li class="post" data-filter="fairness data">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2301.02560"><img src="pics/geode.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2301.02560">GeoDE: a Geographically Diverse Evaluation Dataset for Object Recognition</a>
+                  <br/>
+                  <br/>
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                  Sing Yu Lin,
+                  <a href="https://dorazhao99.github.io/">Dora Zhao</a>,
+                  Aaron B. Adcock,
+                  <a href="https://lvdmaaten.github.io/">Laurens van der Maaten</a>,
+                  <a href="https://deeptigp.github.io/">Deepti Ghadiyaram</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track, 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2301.02560">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/geode_dataset">code</a>]
+                  [<a href="https://geodiverse-data-collection.cs.princeton.edu/">website</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Overcoming pretraining bias-->
+            <li class="post" data-filter="fairness representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2303.06167"><img src="pics/Wang2023PretrainBias.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2303.06167">Overcoming Bias in Pretrained Models by Manipulating the Finetuning Dataset</a>
+                  <br/>
+                  <br/>
+                  <a href="https://angelina-wang.github.io/">Angelina Wang</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  International Conference on Computer Vision (ICCV), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2303.06167">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/overcoming-pretraining-bias">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Gender Artifcats-->
+            <li class="post" data-filter="fairness data representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2206.09191"><img src="pics/meister2022artifacts.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2206.09191">Gender Artifacts in Visual Datasets</a>
+                  <br/>
+                  <br/>
+                  <a href="https://nicolemeister.github.io/">Nicole Meister*</a>,
+                  <a href="https://dorazhao99.github.io/">Dora Zhao*</a>,
+                  <a href="https://angelina-wang.github.io/">Angelina Wang</a>,
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  International Conference on Computer Vision (ICCV), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2206.09191">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/gender-artifacts">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Art and Science of GenAI-->
+            <li class="post" data-filter="human-in-the-loop representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://www.science.org/doi/10.1126/science.adh4451"><img src="pics/art.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://www.science.org/doi/10.1126/science.adh4451">Art and the Science of Generative AI</a>
+                  <br/>
+                  <br/>
+                  <a href="https://www.media.mit.edu/people/zive/overview/">Ziv Epstein</a>,
+                  <a href="https://www.dgp.toronto.edu/~hertzman/">Aaron Hertzmann</a> and
+                  the Investigators of Human Creativity (Memo Akten, Hany Farid,
+                  Jessica Fjeld, Morgan R. Frank, Matthew Groh, Laura Herman,
+                  Neil Leach, Robert Mahari, Alex Pentland,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>,
+                  Hope Schroeder, Amy Smith). <br/><br/>
+                  Science Perspectives, 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://www.science.org/doi/10.1126/science.adh4451">paper</a>]
+                  [<a href="https://arxiv.org/abs/2306.04141">extended white paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Diffusion RL-->
+            <li class="post" data-filter="">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://openreview.net/pdf?id=s4cSgzGudq"><img src="pics/icml_ws.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://openreview.net/pdf?id=s4cSgzGudq">Discrete Diffusion Reward Guidance Methods for Offline Reinforcement Learning</a>
+                  <br/>
+                  <br/>
+                  Matthew Coleman,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>,
+                  <a href="https://cablanc.github.io/">Christine Allen-Blanchette</a> and
+                  <a href="https://l-yezhu.github.io/">Ye Zhu</a>. <br/><br/>
+                  <br/>
+                  <br/>
+                  [<a href="https://openreview.net/pdf?id=s4cSgzGudq">paper</a>]
+                  <!-- [<a href="https://github.com/princetonvisualai/overcoming-pretraining-bias">code</a>] -->
+                  <!-- [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>] -->
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Fair Object Detection-->
+            <li class="post" data-filter="fairness">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2306.04482"><img src="pics/fairdetection.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2306.04482">ICON<sup>2</sup>: Reliably Benchmarking Predictive Inequity in Object Detection</a>
+                  <br/>
+                  <br/>
+                  <a href="https://sruthisudhakar.github.io/">Sruthi Sudhakar</a>,
+                  <a href="https://virajprabhu.github.io/">Viraj Prabhu</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                  <a href="https://faculty.cc.gatech.edu/~judy/">Judy Hoffman</a>. <br/><br/>
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2306.04482">paper</a>]
+                  <!--[<a href="https://github.com/princetonvisualai">code</a>]-->
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Trust in AI-->
+            <li class="post" data-filter="transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2305.08598"><img src="pics/Trust2023.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2305.08598">Humans, AI, and Context: Understanding End-Users' Trust in a Real-World Computer Vision Application</a>
+                  <br/>
+                  <br/>
+                  <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                  <a href="http://www.ElizabethAnneWatkins.com">Elizabeth Anne Watkins</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="https://www.andresmh.com/">Andrés Monroy-Hernández</a>. <br/><br/>
+                  ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2305.08598">paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+
+            <!--UFO-->
+            <li class="post" data-filter="interpretability transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2303.15632"><img src="pics/UFO.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2303.15632">UFO: A Unified Method for Controlling Understandability and Faithfulness Objectives in Concept-based Explanations for CNNs</a>
+                  <br/>
+                  <br/>
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                  <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2303.15632">paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--Overlooked factors in concept-based explanations-->
+            <li class="post" data-filter="interpretability transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2207.09615"><img src="pics/overlookedfactors.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2207.09615">Overlooked Factors in Concept-based Explanations: Dataset Choice, Concept Learnability, and Human Capability</a>
+                  <br/>
+                  <br/>
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                  <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+       	       	  Computer Vision and Pattern Recognition (CVPR), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2207.09615">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/OverlookedFactors">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Help Me Help the AI-->
+            <li class="post" data-filter="representative transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2210.03735"><img src="pics/helpmehelptheai.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2210.03735">"Help Me Help the AI": Understanding How Explainability Can Support Human-AI Interaction</a>
+                  <br/>
+                  <br/>
+                  <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                  <a href="http://www.ElizabethAnneWatkins.com">Elizabeth Anne Watkins</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="https://www.andresmh.com/">Andrés Monroy-Hernández</a>. <br/><br/>
+                  ACM Conference on Human Factors in Computing Systems (CHI), 2023.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2210.03735">paper</a>]
+                  [<a href="https://github.com/sunniesuhyoung/publicfiles/blob/main/Kim2023HelpMeHelpTheAI_supp.pdf">supplement</a>]
+                  [<a href="https://youtu.be/PD8a7aEQPf4">30-sec video</a>]
+                  [<a href="https://youtu.be/IcVsi5-ON4">10-min video</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+
+            <!--ELUDE-->
+            <li class="post" data-filter="interpretability transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2206.07690"><img src="pics/elude.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2206.07690">ELUDE: Generating Interpretable Explanations via a Decomposition into Labelled and Unlabelled Features</a>
+                  <br/>
+                  <br/>
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                  <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                  <a href="https://nicolemeister.github.io/">Nicole Meister</a>,
+                  <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2206.07690">paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Actionness-->
+            <li class="post" data-filter="video">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://link.springer.com/article/10.1007/s11760-022-02369-y"><img src="pics/actionness.jpg" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://link.springer.com/article/10.1007/s11760-022-02369-y">Learning Actionness from Action/Background Discrimination</a>
+                  <br/>
+                  <br/>
+                  <a href="https://ozgeyalcinkaya.com/">Ozge Yalcinkaya Simsek</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                  <a href="https://web.cs.hacettepe.edu.tr/~pinar/">Pinar Duygulu</a>. <br/><br/>
+                  Signal, Image and Video Processing (SIViP), 2022.
+                  <br/>
+                  <br/>
+                  [<a href="https://link.springer.com/article/10.1007/s11760-022-02369-y">paper</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--HAT-->
+            <li class="post" data-filter="data transparency video representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://openreview.net/forum?id=eOnQ2etkxto"><img src="pics/HAT_profile.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://openreview.net/forum?id=eOnQ2etkxto">Enabling Detailed Action Recognition Evaluation Through Video Dataset Augmentation</a>
+                  <br/>
+                  <br/>
+                  Jihoon Chung,
+                  <a href="https://yu-wu.net/">Yu Wu</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  Neural Information Processing Systems (NeurIPS) Datasets and Benchmarks Track, 2022.
+                  <br/>
+                  <br/>
+                  [<a href="https://openreview.net/forum?id=eOnQ2etkxto">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/HAT">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Dataset distillation-->
+	          <li class="post" data-filter="data representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2206.02916"><img src="pics/rememberthepast.gif" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2206.02916">Remember the Past: Distilling Datasets into Addressable Memories for Neural Networks</a>
+                  <br/>
+                  <br/>
+                  <a href="https://lucas2012.github.io/">Zhiwei Deng</a> and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  Neural Information Processing Systems (NeurIPS), 2022.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2206.02916">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/RememberThePast-DatasetDistillation">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+	           <!--HIVE-->
+	            <li class="post" data-filter="representative transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2112.03184"><img src="pics/HIVE2021.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2112.03184">HIVE: Evaluating the Human Interpretability of Visual Explanations</a>
+                        <br/>
+                        <br/>
+                        <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                        <a href="https://nicolemeister.github.io/">Nicole Meister</a>,
+                        <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                        <a href="https://ruthcfong.github.io/">Ruth Fong</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2022.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2112.03184">paper</a>]
+                        [<a href="https://princetonvisualai.github.io/HIVE/">website</a>]
+                        [<a href="https://github.com/princetonvisualai/HIVE">code</a>]
+                        [<a href="https://drive.google.com/file/d/1nOYfy_0e61cGGDzwreCI4IUly1VbTgur/view?usp=sharing">extended abstract</a>]
+                        [<a href="https://youtu.be/BDlFb1CFQRQ">2-min video</a>]
+                        [<a href="https://youtu.be/7uysq-qAtr4">8-min video</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+            <!--MQVR-->
+            <li class="post" data-filter="video language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2201.03639"><img src="pics/zeyuMQVR.jpg" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2201.03639">Multi-Query Video Retrieval</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~zeyuwang/">Zeyu Wang</a>,
+                        <a href="https://yu-wu.net/">Yu Wu</a>,
+                        <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2022.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2201.03639">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/MQVR">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+
+            <!--Intersectionality-->
+            <li class="post" data-filter="fairness representative">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2205.04610"><img src="pics/wang2022intersectionality.png" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2205.04610">Towards Intersectionality in Machine Learning: Including More Identities, Handling Underrepresentation, and Performing Evaluation</a>
+                  <br/>
+                  <br/>
+                  <a href="https://angelina-wang.github.io/">Angelina Wang</a>,
+                  <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>, and
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                  ACM Conference on Fairness, Accountability, and Transparency (FAccT), 2022.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2205.04610">paper</a>]
+                  [<a href="https://github.com/princetonvisualai/intersectionality">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--CARETS-->
+            <li class="post" data-filter="data language transparency">
+              <div class="research-row-2">
+                <div>
+                  <a href="https://arxiv.org/abs/2203.07613"><img src="pics/CARETS2022.jpg" id="research-photo"></a>
+                </div>
+                <div class="research-text">
+                  <a id="research-title" href="https://arxiv.org/abs/2203.07613">CARETS: A Consistency And Robustness Evaluative Test Suite for VQA</a>
+                  <br/>
+                  <br/>
+                  <a href="http://carlosejimenez.com/">Carlos E. Jimenez</a>,
+                  <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                  <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a>.<br/><br/>
+                  Association for Computational Linguistics (ACL), 2022.
+                  <br/>
+                  <br/>
+                  [<a href="https://arxiv.org/abs/2203.07613">paper</a>]
+                  [<a href="https://github.com/princeton-nlp/CARETS">code</a>]
+                  [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                  <br/>
+                </div>
+              </div>
+            </li>
+
+            <!--Kaiyu Face Obfuscation Paper-->
+            <li class="post" data-filter="data fairness">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2103.06191"><img src="pics/faceobfuscation2021.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2103.06191">A Study of Face Obfuscation in ImageNet</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~kaiyuy/">Kaiyu Yang</a>,
+                        <a href="https://www.linkedin.com/in/jacqueline-yau-836b0a132/">Jacqueline Yau</a>,
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>,
+                        <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        International Conference on Machine Learning (ICML), 2022.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2103.06191">paper</a>]
+                        [<a href="http://image-net.org/face-obfuscation/">project</a>]
+                        [<a href="https://github.com/princetonvisualai/imagenet-face-obfuscation">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+            <!--Racial Bias in Captioning-->
+            <li class="post" data-filter="data transparency fairness">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2106.08503"><img src="pics/zhao2021.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2106.08503">Understanding and Evaluating Racial Biases in Image Captioning</a>
+                        <br/>
+                        <br/>
+                        <a href="https://dorazhao99.github.io/">Dora Zhao</a>,
+                        <a href="https://angelina-wang.github.io/">Angelina Wang</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        International Conference on Computer Vision (ICCV), 2021.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2106.08503">paper</a>]
+                        [<a href="https://princetonvisualai.github.io/imagecaptioning-bias/">website</a>]
+                        [<a href="https://github.com/princetonvisualai/imagecaptioning-bias">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Point and Ask 2020 -->
+            <li class="post" data-filter="interaction language data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2011.13681"><img src="pics/mani2020.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2011.13681">Point and Ask: Incorporating Pointing into Visual Question Answering</a>
+                        <br/>
+                        <br/>
+                        <a href="https://arjun-mani.github.io/">Arjun Mani</a>,
+                        Nobline Yoo,
+                        <a href="https://github.com/hinthornw">Will Hinthorn</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2011.13681">paper</a>]
+                        [<a href="https://hinthornw.github.io/pointingqa/">website</a>]
+                        [<a href="https://github.com/princetonvisualai/pointingqa">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Bias Amplification -->
+            <li class="post" data-filter="fairness transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2102.12594"><img src="pics/biasamp2021.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2102.12594">Directional Bias Amplification</a>
+                        <br/>
+                        <br/>
+                        <a href="https://angelina-wang.github.io/">Angelina Wang</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        International Conference on Machine Learning (ICML), 2021.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2102.12594">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/directional-bias-amp">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+            <!-- Sunnie Contextual Bias -->
+            <li class="post" data-filter="objects transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2104.13582"><img src="pics/contextualbias2021.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2104.13582">[Re] Don't Judge an Object by Its Context: Learning to Overcome Contextual Bias</a>
+                        <br/>
+                        <br/>
+                        <a href="https://cs.princeton.edu/~suhk">Sunnie S. Y. Kim</a>,
+                        <a href="https://sxzhang25.github.io/">Sharon Zhang</a>,
+                        <a href="https://nicolemeister.github.io/">Nicole Meister</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        ReScience C, 2021. ML Reproducibility Challenge, 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2104.13582">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/ContextualBias">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+	    <!-- Fair Attribute Classification 2020 -->
+            <li class="post" data-filter="fairness">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2012.01469"><img src="pics/FairAttributeClassification2020.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2012.01469">Fair Attribute Classification through Latent Space De-biasing</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~vr23/">Vikram V. Ramaswamy</a>,
+                        <a href="https://sunniesuhyoung.github.io/">Sunnie S. Y. Kim</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2021.
+                        <br/>
+			<br/>
+                        [<a href="https://arxiv.org/abs/2012.01469">paper</a>]
+                        [<a href="https://princetonvisualai.github.io/gan-debiasing/">website</a>]
+                        [<a href="https://github.com/princetonvisualai/gan-debiasing">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+            <!-- Evolving Graphical Planner 2020-->
+            <li class="post" data-filter="interaction language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2007.05655"><img src="pics/EvolvingGraphicalPlanner2020.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2007.05655">Evolving Graphical Planner: Contextual Global Planning for Vision-and-Language Navigation</a>
+                        <br/>
+                        <br/>
+                        <a href="https://lucas2012.github.io/">Zhiwei Deng</a>,
+                        <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        Neural Information Processing Systems (NeurIPS), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2007.05655">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+            <!-- Hei BMVC 2020 -->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1904.08900"><img src="pics/hei2019.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1904.08900">CornerNet-Lite: Efficient Keypoint Based Object Detection</a>
+                        <br/>
+                        <br/>
+                        <a href="https://heilaw.github.io/">Hei Law</a>,
+                        Yun Teng,
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                        <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. <br/><br/>
+                        British Machine Vision Conference (BMVC), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1904.08900">paper</a>]
+                        [<a href="https://github.com/princeton-vl/CornerNet-Lite">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- Angelina's ECCV 2020-->
+            <li class="post" data-filter="representative fairness data transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2004.07999"><img src="pics/angelinaECCV2020.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2004.07999">REVISE: A Tool for Measuring and Mitigating Bias in Visual Datasets</a>
+                        <br/>
+                        <br/>
+                        <a href="https://angelina-wang.github.io/">Angelina Wang</a>,
+                        <a href="https://www.cs.princeton.edu/~arvindn/">Arvind Narayanan</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2004.07999">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/vibe-tool">code</a>]
+                        [<a href="https://www.youtube.com/watch?v=khUlfk7moDI&list=PLlXRttA01GyEi0lyTdcRf3R3ILmYv2qo-&index=10&t=0s">video</a>]
+                        [<a href="https://youtu.be/4ouwCgCOyrs">90 sec video</a>]
+			[<a href="https://youtu.be/PkbXhM5BlSM">10-min video</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+            <!-- Zeyu's ECCV 2020-->
+            <li class="post" data-filter="language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/html/350_ECCV_2020_paper.php"><img src="pics/zeyuECCV2020.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title">Towards Unique and Informative Captioning of Images</a>
+                        <br/>
+                        <br/>
+                        <a href="https://ee.princeton.edu/people/zeyu-wang">Zeyu Wang</a>,
+                        Berthy Feng,
+                        <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2020.
+                        <br/>
+                        <br/>
+			[<a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/html/350_ECCV_2020_paper.php">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/SPICE-U">code</a>]
+                        [<a href="http://visualai.princeton.edu/posters/wangECCV2020-1minVideo.mp4">1-min video</a>]
+                        [<a href="http://visualai.princeton.edu/posters/wangECCV2020-10minVideo.mp4">10-min video</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Felix's CVPRW 2020 -->
+            <li class="post" data-filter="language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/2003.14269"><img src="pics/YuCVPRW20.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/2003.14269">Take The Scenic Route: Improving Generalization In Vision-and-language Navigation</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~felixy/">Felix Yu</a>,
+                        <a href="https://lucas2012.github.io/">Zhiwei Deng</a>,
+                        <a href="https://www.cs.princeton.edu/~karthikn/">Karthik Narasimhan</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        CVPR Visual Learning with Limited Labels Workshop (CVPRW), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/2003.14269">paper</a>]
+                        [<a href="https://www.youtube.com/watch?v=ItA4NpPaO70&feature=youtu.be">video</a>]
+                        [<a href="https://github.com/princetonvisualai/VLNActionPriors">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        <br/>
+                    </div>
+                </div>
+            </li>
+            <!-- Zeyu's CVPR 2020 -->
+            <li class="post" data-filter="fairness">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1911.11834"><img src="pics/WangCVPR20-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1911.11834">Towards Fairness In Visual Recognition: Effective Strategies For Bias Mitigation</a>
+                        <br/>
+                        <br/>
+                        <a href="https://ee.princeton.edu/people/zeyu-wang">Zeyu Wang</a>,
+                        <a href="https://www.cs.princeton.edu/~kqinami/">Klint Qinami</a>,
+                        <a href="https://www.linkedin.com/in/yannis-karakozis-746488116/">Ioannis C. Karakozis</a>,
+                        <a href="https://www.kylegenova.com/">Kyle Genova</a>,
+                        <a href="https://premqunair.com/">Prem Nair</a>,
+                        <a href="https://scholar.google.com/citations?user=Fu9I2SwAAAAJ&hl=en">Kenji Hata</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1911.11834">paper</a>]
+                        [<a href="https://github.com/princetonvisualai/DomainBiasMitigation">code</a>]
+                        [<a href="http://visualai.princeton.edu/posters/wang2020fair-1min.mp4">1-min video</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Kaiyu's FAT* 2020 -->
+            <li class="post" data-filter="fairness data transparency representative">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1912.07726"><img src="pics/YangFAT20.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1912.07726">Towards Fairer Datasets: Filtering And Balancing The Distribution Of The People Subtree In The Imagenet Hierarchy</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~kaiyuy/">Kaiyu Yang</a>,
+                        <a href="https://www.cs.princeton.edu/~kqinami/">Klint Qinami</a>,
+                        <a href="http://vision.stanford.edu/feifeili/">Li Fei-Fei</a>,
+                        <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        Conference on Fairness, Accountability and Transparency (FAT*), 2020.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1912.07726">paper</a>]
+                        [<a href="http://image-net.org/filtering-and-balancing/">project</a>]
+                        [<a href="https://www.wired.com/story/ai-biased-how-scientists-trying-fix/">Wired article</a>]
+			[<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- Jonathan 2019 -->
+            <li class="post" data-filter="video language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1912.02256"><img src="pics/jonathan2019.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1912.02256">Compositional Temporal Visual Grounding of Natural Language Event Descriptions</a>
+                        <br/>
+                        <br/>
+                        <a href="http://www-personal.umich.edu/~stroud/">Jonathan Stroud</a>,
+                        Ryan McCaffrey,
+                        Rada Mihalcea,
+                        <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. <br/><br/>
+                        Preprint on arxiv, 2019.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1912.02256">paper</a>]
+                        [<a href="https://www.jonathancstroud.com/ctg.html">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- Joshua's ICCV 2019 -->
+            <li class="post" data-filter="representative">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1908.07086"><img src="pics/PetersonICCV19.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1908.07086">Human Uncertainty Makes Classification More Robust</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cocosci.princeton.edu/jpeterson/">Joshua C. Peterson*</a>,
+                        <a href="http://ruairidh.mycpanel.princeton.edu">Ruairidh M. Battleday*</a>,
+                        <a href="http://cocosci.princeton.edu/tom">Thomas L. Griffiths</a> and
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a>. (* = equal contribution) <br/><br/>
+                        International Conference on Computer Vision (ICCV), 2019.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1908.07086">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Kaiyu's ICCV 2019 -->
+            <li class="post" data-filter="data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1908.02660"><img src="pics/YangICCV19-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1908.02660">An Adversarially Crowdsourced Benchmark For Spatial Relation Recognition</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.princeton.edu/~kaiyuy/">Kaiyu Yang</a>,
+                        <a href="http://cs.princeton.edu/~olgarus/">Olga Russakovsky</a> and
+                        <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. <br/><br/>
+                        International Conference on Computer Vision (ICCV), 2019.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1908.02660">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Jingyan's WACV 2018 -->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://www.cs.cmu.edu/~jingyanw/papers/refinement.pdf"><img  src="pics/WangWACV18-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://www.cs.cmu.edu/~jingyanw/papers/refinement.pdf">The more you look, the more you see: towards general object understanding through recursive refinement</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.cs.cmu.edu/~jingyanw/">Jingyan Wang</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>. <br/><br/>
+                        Winter Conference on Applications of Computer Vision (WACV), 2018.
+                        <br/>
+                        <br/>
+                        [<a href="https://www.cs.cmu.edu/~jingyanw/papers/refinement.pdf">paper</a>]
+                        [<a href="https://www.cs.cmu.edu/~jingyanw/papers/refinement_supp.pdf">supplement</a>]
+                        [<a href="https://github.com/jingyanw/recursive-refinement">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Gunnar's ICCV 2017 -->
+            <li class="post" data-filter="video transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1708.02696"><img src="pics/SigurdssonICCV17-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1708.02696">What Actions Are Needed For Understanding Human Actions In Videos?</a>
+                        <br/>
+                        <br/>
+                        <a href="http://www.cs.cmu.edu/~gsigurds/">Gunnar Sigurdsson</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>. <br/><br/>
+                        International Conference on Computer Vision (ICCV), 2017.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1708.02696">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- Yeung's IJCV 2017 -->
+            <li class="post" data-filter="video data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~syyeung/everymoment.html"><img src="pics/Yeung15.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~syyeung/everymoment.html">Every Moment Counts: Dense Detailed Labeling of Actions in Complex Videos</a>
+                        <br/>
+                        <br/>
+                        <a href="http://ai.stanford.edu/~syyeung/">Serena Yeung</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        Ning Jin,
+                        <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/people/mykhaylo-andriluka/">Mykhaylo Andriluka</a>,
+                        <a href="https://www.cs.sfu.ca/~mori/">Greg Mori</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        International Journal of Computer Vision (IJCV), 2017.
+                        <br/>
+                        <br/>
+                        [<a href="http://arxiv.org/abs/1507.05738">paper</a>]
+                        [<a href="http://ai.stanford.edu/~syyeung/everymoment.html">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Ganju's cvpr 2017 -->
+            <li class="post" data-filter="language interaction data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1704.03895"><img src="pics/GanjuCVPR17-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1704.03895">What's in a Question: Using Visual Questions as a Form of Supervision</a>
+                        <br/>
+                        <br/>
+                        <a href="http://sidgan.me/siddhaganju">Siddha Ganju</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2017.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1704.03895">paper</a>]
+                        [<a href="http://sidgan.me/whats_in_a_question/">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- achal's cvpr 2017 -->
+            <li class="post" data-filter="video">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://www.achaldave.com/projects/predictive-corrective/"><img src="pics/DaveCVPR17.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://www.achaldave.com/projects/predictive-corrective/">Predictive-Corrective Networks for Action Detection</a>
+                        <br/>
+                        <br/>
+                        <a href="http://www.achaldave.com/">Achal Dave</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2017.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1704.03615">paper</a>]
+                        [<a href="http://www.achaldave.com/projects/predictive-corrective/">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- serena's cvpr 2017 -->
+            <li class="post" data-filter="video language">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Yeung_Learning_to_Learn_CVPR_2017_paper.pdf"><img src="pics/YeungCVPR17-2.1.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Yeung_Learning_to_Learn_CVPR_2017_paper.pdf">Learning to Learn from Noisy Web Videos</a>
+                        <br/>
+                        <br/>
+                        <a href="http://ai.stanford.edu/~syyeung/">Serena Yeung</a>,
+                        <a href="http://ai.stanford.edu/~vigneshr/">Vignesh Ramanathan</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        Liyue Shen,
+                        <a href="https://www.cs.sfu.ca/~mori/">Greg Mori</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2017.
+                        <br/>
+                        <br/>
+                        [<a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Yeung_Learning_to_Learn_CVPR_2017_paper.pdf">paper</a>]
+                        [<a href="http://openaccess.thecvf.com/content_cvpr_2017/poster/2140_POSTER.pdf">poster</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- foundation trends -->
+            <li class="post" data-filter="data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="https://arxiv.org/abs/1611.02145"><img src="pics/KovRusFeiGra16-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="https://arxiv.org/abs/1611.02145">Crowdsourcing in Computer Vision</a>
+                        <br/>
+                        <a href="http://people.cs.pitt.edu/~kovashka/">Adriana Kovashka</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a> and
+                        <a href="https://www.cs.utexas.edu/~grauman/">Kristen Grauman</a>. <br/><br/>
+                        Foundation and Trends in Computer Vision and Graphics, 2016.
+                        <br/>
+                        <br/>
+                        [<a href="https://arxiv.org/abs/1611.02145">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- gunnar's hcomp 2016 -->
+            <li class="post" data-filter="data video">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://allenai.org/plato/charades"><img src="pics/SigRusFarLapGup16.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://allenai.org/plato/charades">Much Ado About Time: Exhaustive Annotation of Temporal Data</a>
+                        <br/>
+                        <br/>
+                        <a href="http://www.cs.cmu.edu/~gsigurds/">Gunnar A. Sigurdsson</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>,
+                        <a href="https://www.di.ens.fr/~laptev/">Ivan Laptev</a> and
+                        <a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a>. <br/><br/>
+                        Conference on Human Computation and Crowdsourcing (HCOMP), 2016.
+                        <br/>
+                        <br>
+                        [<a href="http://arxiv.org/abs/1607.07429">paper</a>]
+                        [<a href="http://allenai.org/plato/charades/">project</a>]
+                        [<a href="posters/SigRusFarLapGup16.pdf">poster</a>]
+                        [<a href="slides/much_ado_about_time_1nov2016.key">slides key</a>, <a href="slides/much_ado_about_time_1nov2016.pdf">slides pdf</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- whats the point ECCV 2016-->
+            <li class="post" data-filter="interaction objects data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://vision.stanford.edu/whats_the_point"><img src="http://ai.stanford.edu/~olga/pics/clicks2015.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://vision.stanford.edu/whats_the_point">What's the Point: Semantic Segmentation with Point Supervision</a>
+                        <br/>
+                        <br/>
+                        <a href="https://www.linkedin.com/in/amy-bearman-98656a63">Amy Bearman</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://homepages.inf.ed.ac.uk/vferrari/">Vittorio Ferrari</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2016.
+                        <br/>
+                        <br/>
+                        [<a href="http://arxiv.org/abs/1506.02106">paper</a>]
+                        [<a href="http://vision.stanford.edu/whats_the_point">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Serena's cvpr 2016-->
+            <li class="post" data-filter="video">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~syyeung/frameglimpses.html"><img src="pics/YeuRusMorFei15-2.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~syyeung/frameglimpses.html">End-to-end Learning of Action Detection from Frame Glimpses in Videos</a>
+                        <br/>
+                        <br/>
+                        <a href="http://ai.stanford.edu/~syyeung/">Serena Yeung</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="https://www.cs.sfu.ca/~mori/">Greg Mori</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2016.
+                        <br/>
+                        <br/>
+                        [<a href="http://arxiv.org/abs/1511.06984">paper</a>]
+                        [<a href="http://ai.stanford.edu/~syyeung/frameglimpses.html">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- SIGCSE 2016-->
+            <li class="post" data-filter="fairness">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://stanford.edu/~sorathan/papers/SAILORS-SIGCSE2016.pdf"><img src="pics/sailors.jpg" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://stanford.edu/~sorathan/papers/SAILORS-SIGCSE2016.pdf">Towards More Gender Diversity in CS through an Artificial Intelligence Summer Program for High School Girls</a>
+                        <br/>
+                        <br/>
+                        Marie E. Vachovsky, Grace Wu, Sorathan Chaturapruek, <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>, Rick Sommer,
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        Special Interest Group on Computer Science Education (SIGCSE), 2016.
+                        <br/>
+                        <br/>
+                        [<a href="http://stanford.edu/~sorathan/papers/SAILORS-SIGCSE2016.pdf">paper</a>]
+                        [<a href="http://sailors.stanford.edu">SAILORS camp homepage</a>]
+                        [<a href="http://www.wired.com/2015/08/stanford-artificial-intelligence-laboratorys-outreach-summer-program/">Wired article</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- phD thesis -->
+            <li class="post" data-filter="data objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/PhD_thesis.pdf"><img src="http://ai.stanford.edu/~olga/pics/PhDThesis.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/PhD_thesis.pdf">Scaling up Object Detection</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>. <br/><br/>
+                        PhD Thesis, Stanford University, 2015.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/PhD_thesis.pdf">paper</a>]
+                        [<a href="http://ai.stanford.edu/~olga/posters/doctoral_consortium_poster.pdf">poster</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- best of both worlds cvpr2015-->
+            <li class="post" data-filter="image">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/best_of_both_worlds.html"><img src="http://ai.stanford.edu/~olga/pics/CVPR15.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/best_of_both_worlds.html">Best of both worlds: human-machine collaboration for object annotation</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://vision.stanford.edu/lijiali/">Li-Jia Li</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2015.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/RussakovskyCVPR15.pdf">paper</a>]
+                        [<a href="http://ai.stanford.edu/~olga/best_of_both_worlds.html">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- Davide cvpr 2015-->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://arxiv.org/abs/1503.00783"><img src="http://ai.stanford.edu/~olga/pics/ModoloCVPR15.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://arxiv.org/abs/1503.00783">Joint calibration of Ensemble of Exemplar SVMs</a>
+                        <br/>
+                        <br/>
+                        <a href="http://homepages.inf.ed.ac.uk/s1268247/Welcome.html">Davide Modolo</a>,
+                        <a href="http://groups.inf.ed.ac.uk/calvin/hp_avezhnev/">Alexander Vezhnevets</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="http://homepages.inf.ed.ac.uk/vferrari/">Vittorio Ferrari</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2015.
+                        <br/>
+                        <br/>
+                        [<a href="http://arxiv.org/abs/1503.00783">paper</a>]
+                        [<a href="http://calvin.inf.ed.ac.uk/software/jointcalibration/">code</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- imagenet IJCV2015-->
+            <li class="post" data-filter="objects data representative">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://image-net.org/challenges/LSVRC"><img src="http://ai.stanford.edu/~olga/pics/ilsvrc_det.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://image-net.org/challenges/LSVRC">ImageNet Large Scale Visual Recognition Challenge</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>*,
+                        <a href="http://web.eecs.umich.edu/~jiadeng/">Jia Deng</a>*,
+                        <a href="http://ai.stanford.edu/~haosu/">Hao Su</a>,
+                        <a href="http://ai.stanford.edu/~jkrause/">Jonathan Krause</a>,
+                        Sanjeev Satheesh, Sean Ma, Zhiheng Huang,
+                        <a href="http://cs.stanford.edu/people/karpathy/">Andrej Karpathy</a>,
+                        <a href="https://people.csail.mit.edu/khosla/">Aditya Khosla</a>,
+                        <a href="http://hci.stanford.edu/msb/">Michael Bernstein</a>,
+                        <a href="http://acberg.com/">Alexander Berg</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        (* = equal contribution)<br />
+                        International Journal of Computer Vision (IJCV), 2015.
+                        <br/>
+                        <br/>
+                        [<a href="http://link.springer.com/article/10.1007/s11263-015-0816-y?sa_campaign=email/event/articleAuthor/onlineFirst#">paper</a>]
+                        [<a href="http://arxiv.org/abs/1409.0575">paper content on arxiv</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://image-net.org/challenges/LSVRC/2014/ui/det.html">browse detection data</a>]
+                        [<a href="http://ai.stanford.edu/~olga/data/ILSVRC_annotations_ICCV13.zip">attribute annotations</a>]
+                        [<a href="http://image-net.org/challenges/LSVRC">ILSVRC homepage</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- multi-label CHI2014-->
+            <li class="post" data-filter="data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/chi2014-MultiLabel.pdf"><img src="http://ai.stanford.edu/~olga/pics/CHI14.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/chi2014-MultiLabel.pdf">Scalable Multi-Label Annotation</a>
+                        <br/>
+                        <br/>
+                        <a href="http://web.eecs.umich.edu/~jiadeng/">Jia Deng</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://ai.stanford.edu/~jkrause/">Jonathan Krause</a>,
+                        <a href="http://hci.stanford.edu/msb/">Michael Bernstein</a>,
+                        <a href="http://acberg.com/">Alexander Berg</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        ACM Conference on Human Factors in Computing Systems (CHI), 2014.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/chi2014-MultiLabel.pdf">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~jkrause/papers/chi14_pres.pdf">slides</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- avocados  ICCV 2013-->
+            <li class="post" data-filter="data objects transparency">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/iccv13-ILSVRCanalysis.pdf"><img src="http://ai.stanford.edu/~olga/pics/RussakovskyICCV13.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/iccv13-ILSVRCanalysis.pdf">Detecting avocados to zucchinis: what have we done, and where are we going?</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://web.eecs.umich.edu/~jiadeng/">Jia Deng</a>,
+                        Zhiheng Huang, <a href="http://acberg.com/">Alexander Berg</a>,
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        International Conference on Computer Vision (ICCV), 2013.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/iccv13-ILSVRCanalysis.pdf">pdf</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~olga/papers/iccv13-ILSVRCanalysis-supp.pdf">supplement</a>]
+                        [<a href="http://image-net.org/challenges/LSVRC/2012/analysis/">additional analysis</a>]
+                        [<a href="http://ai.stanford.edu/~olga/data/ILSVRC_annotations_ICCV13.zip">attribute annotations</a>]
+                        [<a href="http://ai.stanford.edu/~olga/posters/iccv13_poster.pdf">poster</a>]
+                        [<a href="http://www.youtube.com/watch?v=DK6KfUsVN8w&amp;list=PLb0IAmt7-GS24xHBtQc-u3A0u32kn2kIi&amp;index=4">video of talk at BAVM</a>]
+                        [<a href="http://ai.stanford.edu/~olga/slides/ImageNetAnalysis_bavm_10_5_13.pptx">slides pptx</a>, <a href="http://ai.stanford.edu/~olga/slides/ImageNetAnalysis_bavm_10_5_13.pdf">slides pdf</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- ECCV 2012 -->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/eccv12-OCP.pdf"><img src="http://ai.stanford.edu/~olga/pics/RussakovskyECCV12.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/eccv12-OCP.pdf">Object-centric spatial pooling for image classification</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://www.linyq.com/">Yuanqing Lin</a>,
+                        <a href="http://www.dbs.ifi.lmu.de/~yu_k/">Kai Yu</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        European Conference on Computer Vision (ECCV), 2012.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/eccv12-OCP.pdf">pdf</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~olga/posters/eccv12-poster.pdf">poster</a>]
+                        [<a href="http://ai.stanford.edu/~olga/slides/OlgaRussakovsky_OCPtalk_032513.pptx">slides pptx</a>,&nbsp;<a href="http://ai.stanford.edu/~olga/slides/OlgaRussakovsky_OCPtalk_032513.pdf">slides pdf</a>]
+                        [<a href="http://ai.stanford.edu/~olga/videos/eccv12-video.mov">30-sec spotlight</a>]
+                        [<a href="http://ai.stanford.edu/~olga/OCP_FAQ.html">FAQ</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- eccvw 2010 attributes -->
+            <li class="post" data-filter="data">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://www.image-net.org/download-attributes"><img src="http://ai.stanford.edu/~olga/pics/ECCV10.jpg" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://www.image-net.org/download-attributes">Attribute learning in large-scale data</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="http://vision.stanford.edu/feifeili">Li Fei-Fei</a>. <br/><br/>
+                        Parts and Attributes Workshop at European Conference on Computer Vision (ECCVW), 2010.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/eccv10workshop-Attributes.pdf">pdf</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~olga/slides/eccv10attributes-largescale.odp">slides odp</a>,&nbsp;<a href="http://ai.stanford.edu/~olga/slides/eccv10attributes-largescale.pdf">slides pdf</a>]
+                        [<a href="http://www.image-net.org/download-attributes">data</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- steiner trees CVPR2010-->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/cvpr10-SteinerTrees.pdf"><img src="http://ai.stanford.edu/~olga/pics/CVPR10.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/cvpr10-SteinerTrees.pdf">A Steiner tree approach to efficient object detection.</a>
+                        <br/>
+                        <br/>
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a> and
+                        <a href="http://www.andrewng.org/">Andrew Y. Ng</a>. <br/><br/>
+                        Computer Vision and Pattern Recognition (CVPR), 2010.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/cvpr10-SteinerTrees.pdf">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~olga/posters/cvpr10-poster.pdf">poster</a>]
+                        [<a href="http://ai.stanford.edu/~olga/data/office_scenes.zip">data</a>]
+                    </div>
+                </div>
+            </li>
+
+            <!-- icra10 -->
+            <li class="post" data-filter="objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/icra10-OperationOfNovelElevators.pdf"><img src="http://ai.stanford.edu/~olga/pics/ICRA10.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/icra10-OperationOfNovelElevators.pdf">Autonomous operation of novel elevators for robot navigation</a>
+                        <br/>
+                        <br/>
+                        <a href="https://web.stanford.edu/~ellenrk7/">Ellen Klingbeil</a>,
+                        Blake Carpenter,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="http://www.andrewng.org/">Andrew Y. Ng</a>. <br/><br/>
+                        International Conference on Robotics and Automation (ICRA), 2010.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/icra10-OperationOfNovelElevators.pdf">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- STAIR library-->
+            <li class="post" data-filter="interaction objects">
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~sgould/svl"><img src="http://ai.stanford.edu/~olga/pics/stair.jpg" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~sgould/svl">STanford AI Robot (STAIR) Vision Library</a>
+                        <br/>
+                        <br/>
+                        <a href="http://users.cecs.anu.edu.au/~sgould/">Stephen Gould</a>,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        <a href="">Ian Goodfellow</a>,
+                        Paul Baumstarck,
+                        <a href="http://www.andrewng.org/">Andrew Y. Ng</a> and
+                        <a href="http://ai.stanford.edu/users/koller/">Daphne Koller</a>. <br/><br/>
+                        <a href="http://ai.stanford.edu/~sgould/svl">http://ai.stanford.edu/~sgould/svl</a>, 2010.
+                        <br/>
+                        <br/>
+                        [<a href="http://stair.stanford.edu/">project</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                        [<a href="http://ai.stanford.edu/~sgould/svl/">code</a>]
+                    </div>
+                </div>
+            </li>
+            <!-- NeurIPS 2017 -->
+            <li class="post" data-filter="">
+
+                <div class="research-row-2">
+                    <div>
+                        <a href="http://ai.stanford.edu/~olga/papers/nips2006-CRFtraining.pdf"><img src="http://ai.stanford.edu/~olga/pics/NIPS07.png" id="research-photo"></a>
+                    </div>
+                    <div class="research-text">
+                        <a id="research-title" href="http://ai.stanford.edu/~olga/papers/nips2006-CRFtraining.pdf">Training Conditional Random Fields for maximum labelwise accuracy</a>
+                        <br/>
+                        <br/>
+                        Samuel S. Gross,
+                        <a href="http://cs.princeton.edu/~olgarus">Olga Russakovsky</a>,
+                        Chuong B. Do and
+                        <a href="http://www.serafimb.org/">Serafim Batzoglou</a>. <br/><br/>
+                        Advances in Neural Information Processing Systems (NeurIPS), 2007.
+                        <br/>
+                        <br/>
+                        [<a href="http://ai.stanford.edu/~olga/papers/nips2006-CRFtraining.pdf">paper</a>]
+                        [<a href="https://visualai.princeton.edu/bibtex/visualai.bib">bibtex</a>]
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <br/>
+        <div class="footer">Website created by Iroha Shirai and maintained by Sunnie S. Y. Kim</div>
+    </body>
+</html>

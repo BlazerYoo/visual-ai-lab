@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet.css">
+        <title>Princeton Visual AI Lab</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Princeton Visual AI Lab header-->
+        <header class="heading">
+            <div class="box1">
+                <img src="./pics/logo-princeton.png" id="logo">
+            </div>
+            <!--mobile navigation icon feature adapted from https://www.youtube.com/watch?v=sjrp1FEHnyA-->
+            <input class="menu-button" type="checkbox" id="menu-button">
+            <label class="menu-bar-icon" for ="menu-button"><span class="navigator-icon"></span></label>
+            <!--end adaptation-->
+            <div class="title">
+                <span id="first">Princeton</span> Visual AI Lab
+            </div>
+            <div></div>
+            <ul class="navigator">
+                <li><a href="index.html"><span id="highlight">Home</span></a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+            </ul>
+        </header>
+        
+        <!--table that includes about and news-->
+        <div class="about-news-container" id="padding">
+            <div class="about">
+                <!--photos-->
+                <!--slideshow feature adapted from https://www.youtube.com/watch?v=pGHOaY4dhAA-->
+                <div id="slideshow">
+                    <figure>
+                        <img src="pics/phD-thesis1.png">
+                        <img src="pics/angelina2020.png">
+                        <img src="pics/towardsFairerDatasets.png">
+                        <img src="pics/what's-the-point.png">
+                        <img src="pics/SigRusFarLapGup16.png">
+                    </figure>
+                </div>
+		<!--end adaptation-->
+                <table class="table">
+                    <span id="subtitle">About</span>
+                    <tr>
+                        <td style="padding-top: 10px;" class="text-fill-row">
+		        We work on developing artificially intelligent systems that are able to reason
+                        about the visual world. Our research brings together the fields of <i>computer
+                        vision</i>, <i>machine learning</i>, <i>human-computer interaction</i> as well
+                        as <i>fairness, accountability and transparency</i>. We focus on three primary
+                        areas of exploration. The first is developing the fundamental <b>perception</b>
+                        building blocks of visual recognition, such as object detection, image parsing
+                        or human activity recognition. The second is designing human-machine 
+                        <b>interaction</b> paradigms to enable computer vision systems to effectively
+                        learn from and collaborate with humans, including but not limited to studying
+                        the interplay between computer vision and natural language. The third is
+                        ensuring the <b>fairness</b> of the vision systems with respect to people of
+                        all backgrounds by improving dataset design, algorithmic methodology, measurement metrics and model
+                        interpretability.</td>
+                    </tr>
+                </table>
+                <table class="table">
+		    <span id="subtitle">Acknowledgements</span>
+		    <tr>
+			<td style="padding-top: 10px;" class="text-fill-row">
+		    We are very grateful to the National Science Foundation, Open Philanthropy, 
+                    Cisco, Amazon, Adobe, 
+                    Princeton School of Engineering and Applied Sciences,
+                    Princeton Alliance for Collaborative Research and Innovation, and Princeton Precision Health Initiative (current/ongoing)
+                    as well as to KAUST, Samsung, Google, Meta, Microsoft, and Princeton Center for Statistics and Machine Learning (past)
+		    for generous support of our research.
+			</td>
+		    </tr>	
+                </table>
+            </div>
+            <div class="news">
+                <table>
+                    <span id="subtitle" style="padding-bottom: 20px;">News</span>
+                    <a class="twitter-timeline" href="https://twitter.com/VisualAILab?ref_src=twsrc%5Etfw" data-height="1000px">Tweets by VisualAILab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </table>
+            </div>
+        </div>
+        
+        <div class="footer">Website created by Iroha Shirai and maintained by Sunnie S. Y. Kim</div>
+    </body>
+</html>
+
+
