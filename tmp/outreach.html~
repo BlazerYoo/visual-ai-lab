@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visual AI Laboratory</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1465152945" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<style type='text/css'>
+.wsite-elements.wsite-not-footer div.paragraph, .wsite-elements.wsite-not-footer p, .wsite-elements.wsite-not-footer .product-block .product-title, .wsite-elements.wsite-not-footer .product-description, .wsite-elements.wsite-not-footer .wsite-form-field label, .wsite-elements.wsite-not-footer .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Roboto" !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer h2, .wsite-elements.wsite-not-footer .product-long .product-title, .wsite-elements.wsite-not-footer .product-large .product-title, .wsite-elements.wsite-not-footer .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Roboto" !important;font-weight:400;line-height:32px !important;font-style:normal !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {font-family:"Roboto" !important;}
+.wsite-menu-default a {font-family:"Roboto" !important;}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline {font-family:"Roboto" !important;}
+.wsite-headline-paragraph {font-family:"Roboto" !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+
+.sailors-header {width:32%; padding: 0 5px;  vertical-align:top;}
+.sailors-pic {width:100%;}
+</style>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>		
+	</head>
+	<body class="no-header-page  wsite-theme-light  wsite-page-index full-width-on "><div class="body-wrap">
+	    <div class="wrapper">
+	      <div id="header-wrap">
+		<label for="nav-trigger" class="nav-trigger hamburger">
+		  <span class="open-btn">
+		    <span class="mobile"></span>
+		    <span class="mobile"></span>
+		    <span class="mobile"></span>
+		  </span>
+		</label>
+		<div id="logo"><span class="wsite-logo">
+		    
+		    <a href="">
+		      <span id="wsite-title">Visual AI Laboratory</span>
+		    </a>
+		</span></div>
+		<div id="nav">
+		  <div class="container"><ul class="wsite-menu-default">
+		      <li id="pg679426347724076178" class="wsite-menu-item-wrap">
+			<a
+			   href="index.html"
+			   class="wsite-menu-item"
+			   >
+			  Home
+			</a>
+			
+		      </li>
+		      <li id="pg176965906722227189" class="wsite-menu-item-wrap">
+			<a href="research.html" class="wsite-menu-item">
+			  Research
+			</a>
+			
+		</li>
+		<li id="pg759067013503513654" class="wsite-menu-item-wrap">
+			<a
+					href="teaching.html"
+				class="wsite-menu-item"
+				>
+				Teaching
+			</a>
+			
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+					href="outreach.html"
+				class="wsite-menu-item"
+				>
+				Outreach
+			</a>
+			
+		</li>
+</ul>
+</div>
+				</div>
+	    </div><!-- end header-wrap -->  
+
+	      <div id="main-wrap">
+		<div class="container">
+	  	  <div id='wsite-content' class='wsite-elements wsite-not-footer'>
+		  
+
+
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+<img width="100%" src="http://ai.stanford.edu/~olga/pics/sailors/banner.png">
+</div>
+
+<div class="wsite-spacer"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">Mission statement
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+The <a href="http://sailors.stanford.edu">Stanford Artificial Intelligence Laboratory&rsquo;s Outreach Summer program</a> is intended to increase diversity in the field of Artificial Intelligence. Our mission is to inspire tomorrow&rsquo;s leaders to know, think and use Artificial Intelligence. We aim to educate students through a combination of lectures, hands-on research projects, field trips, and mentoring activities. We are committed to serving students of all financial backgrounds.
+	      </div>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">SAILORS curriculum
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+<a href="http://sailors.stanford.edu" title="">SAILORS</a> is short for Stanford Artificial Intelligence Laboratory's OutReach Summer program. Through its carefully designed two-week curriculum, SAILORS aims to addresses three key problems of STEM recruitment: 1) lack of exposure to technical concepts early on; 2) limited perception of computer science as a field; and 3) lack of same-sex mentors and peer support. Studies have shown that women and minorities are particularly drawn to and motivated by humanitarian applications of computing, and are often alienated by the existing homogeneous STEM culture. Our program <b>teaches technically rigorous AI concepts in the context of societal impact</b>. Students choose from research projects that each applies AI technical skills towards a humanitarian purpose: 1) making hospitals safer by utilizing computer vision, 2) assisting disaster relief through natural language processing of tweets from affected areas, 3) identifying cancer cells using biomedical informatics, and 4) making driving safer by studying autonomous vehicle technology.</p>
+	      </div>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+		    
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">SAILORS history
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+In December 2014, I walked into <a href="http://vision.stanford.edu/feifeili/">Fei-Fei Li</a>'s office and said, <q>Do you want to run an AI camp for high school girls together?</q> and she said, <q>YESSS!</q> So we started the annual <a href="http://sailors.stanford.edu">SAILORS program</a> to bring a small group of high school students to the <a href="http://ai.stanford.edu">Stanford AI lab</a> for two weeks over the summer and teach them about AI. The program is targeting 10th grade girls. We've been receiving more than 200 student applications for 24 slots -- clearly, SAILORS is a much-needed endeavor! Many <a href="http://ai.stanford.edu/sailors/people.html">AI professors, graduate students and postdocs</a> contribute their time and expertise to helping make SAILORS happen. We're incredibly lucky to have my long-time friend and THE expert on running academic camps <a href="https://summerinstitutes.stanford.edu/about">Rick Sommer</a> (who directs <a href="https://summerinstitutes.stanford.edu/">Stanford's Pre-Collegiate Summer Institutes</a>) co-directing SAILORS with us.  <a href="http://vision.stanford.edu/feifeili/">Fei-Fei</a>, <a href="https://summerinstitutes.stanford.edu/about">Rick</a> and I, along with the <a href="http://ai.stanford.edu">Stanford AI Lab</a> and the <a href="https://spcs.stanford.edu/">Pre-Collegiate Studies team</a>, are committed to running SAILORS for many years to come.
+	      </div>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">Future plans
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+	<ul>
+<li>The SAILORS alumni girls are working on several year-around outreach initiatives, speading the lessons of SAILORS to local communities
+<li>We're working on turning SAILORS into a <i>residential</i> program by the summer of 2017
+<li>We're planning a sister program for SAILORS housed at Princeton University, aiming for summer of 2018
+</ul>
+	      </div>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">Learn more
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+	<ul>
+<li>Check out our <a href="http://sailors.stanford.edu">Homepage</a>, <a href="https://stanfordsailors.wordpress.com">Blog</a> and <a href="https://www.facebook.com/stanfordsailors">Facebook page</a>. 
+<li>SAILORS was <a href="http://www.wired.com/2015/08/stanford-artificial-intelligence-laboratorys-outreach-summer-program/">featured in Wired.</a>
+<li>A research study about SAILORS was accepted for publication in SIGCSE 2016: <a href="http://stanford.edu/~sorathan/papers/SAILORS-SIGCSE2016.pdf">Towards More Gender Diversity in CS through an Artificial Intelligence Summer Program for High School Girls.</a>
+</ul>
+	      </div>
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 0px;">
+      <table class="wsite-multicol-table">
+	<tbody class="wsite-multicol-tbody">
+	  <tr class="wsite-multicol-tr">
+	    <td class="wsite-multicol-col left-header">
+	      <div class="paragraph" style="text-align:left;">
+		<h2 class="wsite-content-title" style="text-align:left;">Inaugural SAILORS 2015
+		</h2>
+	      </div>
+	    </td>
+	    <td class="wsite-multicol-col right-header">
+	      <div class="paragraph" style="text-align:left;">
+		<a href="https://www.flickr.com/photos/135217981@N05/sets/72157654436028843">Lots of highres photos here</a>
+	      </div>
+
+	      <table><tbody>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors3.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors26.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors5.jpg"></td>
+		  </tr>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors2.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors22.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors34.jpg"></td>
+		  </tr>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors32.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors10.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors9.jpg"></td>
+		  </tr>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors7.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors8.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors24.jpg"></td>
+		  </tr>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors29.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors14.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors30.jpg"></td>
+		  </tr>
+		  <tr>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors33.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors6.jpg"></td>
+		    <td class="sailors-header"><img class="sailors-pic" src="http://ai.stanford.edu/~olga/pics/sailors/sailors25.jpg"></td>
+		  </tr>
+	      </tbody></table>
+
+	    </td>
+	  </tr>
+	</tbody>
+      </table>
+</div></div></div>
+
+<div class="wsite-spacer"></div>
+
+</div>
+	       </div><!-- end container -->
+	    </div><!-- end main-wrap -->
+
+	    <div id="footer-wrap">
+	    </div><!-- end footer-wrap -->
+
+		</div><!--/.wrapper-->
+    
+    
+	   <div class="mobile-wrap">
+	   	<div id="navmobile" class="nav"><ul class="wsite-menu-default">
+		<li id="pg679426347724076178" class="wsite-menu-item-wrap">
+			<a
+					href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			
+		</li>
+		<li id="pg176965906722227189" class="wsite-menu-item-wrap">
+			<a
+					href="research.html"
+				class="wsite-menu-item"
+				>
+				Research
+			</a>
+			
+		</li>
+		<li id="pg759067013503513654" class="wsite-menu-item-wrap">
+			<a
+					href="teaching.html"
+				class="wsite-menu-item"
+				>
+				Teaching
+			</a>
+			
+		</li>
+		<li id="active"  class="wsite-menu-item-wrap">
+			<a
+					href="outreach.html"
+				class="wsite-menu-item"
+				>
+				Outreach
+			</a>
+			
+		</li>
+</ul>
+</div>
+	   </div>
+   </div>
+	
+	<script type="text/javascript" src="files/theme/plugin.js"></script>
+	<script type="text/javascript" src="files/theme/mobile.js"></script>
+	<script type="text/javascript" src="files/theme/custom.js"></script>
+
+
+		
+		
+	</body>
+</html>
