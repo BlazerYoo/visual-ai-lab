@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="Future of Computer Vision Datasets">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Future of Computer Vision Datasets</title>
+</head>
+
+<body>
+<h1>Voices of our community</h1>
+<div class="banner" style="padding:15px; text-align:center;">
+<img src="images/fcvd_wordcloud.png" style="width:100%">
+</div>    
+    
+    
+    <h3>
+     What are the concerns you have about current computer vision datasets? </h3>
+    
+    <p>
+    Computer vision datasets of people are nearly universally non-consented and not privacy preserving by design.  We as a research community need to make explicit the inclusion of personally identifiable information contained in a computer vision dataset, and handle this sensitive data in an ethical manner.  -- Jeffrey Byrne
+    </p>
+
+    <p>
+Standard computer vision datasets are widely accepted as they are and used for benchmarking of different algorithms. A dataset used for providing facial recognition performance (say) may be the same dataset someone else uses for highlighting bias and subsequent bias mitigation. It seems impossible to incorporate and integrate all the new, valuable research coming in with existing practices. Besides that, depending on the application, lack of diversity in datasets is another big concern. -- Surbhi Mittal, IIT Jodhpur, India
+    </p>
+
+    <p>
+The lack of publicly available CV datasets for the medical domain is currently a bottleneck for the development of medical CV applications such as visual question answering and clinical decision support systems.  -- Dr. Asma Ben Abacha, U.S. National Institutes of Health (NIH)
+    </p>
+
+	<p>
+	Ethics and Accessibility. -- Kaleab Woldemariam 
+	</p>
+
+	<p>
+	Ensuring datasets meet *real* users' interests and, in that regard, a diversity of a users. -- Anonymous 
+	</p>
+
+	<p>
+	Too specialized and too easy. The reported accuracy does not reflect accuracy in the wild. -- Siniša Šegvić, UniZg-FER
+	</p>
+
+	<p>
+Some of the dangers of computer vision—and specifically image tagging—are quite obvious and increasingly well recognized by practitioners, scholars, advocates, and regulators. These dangers are arguably most evident when image tagging systems are used to classify people’s membership in social groups (Hanna et al., 2020; Keyes, 2018; Barlaset al., 2021). For example, ascribing gender to people on the basis of their appearance is now understood to be harmful, so much so that some companies are debating whether to even allow their systems to perform gender classification (Johnson, 2020). The dangers are also obvious when the tags that are applied to images are objectionable (e.g., racial epithets) (Prabhu and Birhane, 2021; Crawford and Paglen, 2019) because the use of these tags may seem to condone such language use. Similarly, applying tags—even those that are benign—to images that are themselves objectionable (e.g., depictions of racially motivated violence) may seem to condone what is depicted in those images. There are also growing concerns that some attributes or artifacts (e.g., mustache, hijab, menorah) are so tightly bound up with the identities of specific social groups that any tags intended to classify them need to be handled carefully (Schwemmeret al., 2020; Bhargava and Forsyth, 2019)—as do any images that depict them (Kay et al., 2015; Hendricks et al., 2018; Zhao et al., 2017). Misclassifying these attributes or artifacts can come across as disrespectful, especially when the tags that are applied are trivializing, demeaning, or dehumanizing. Similarly, applying tags intended to classify these attributes or artifacts to images that depict other attributes or artifacts (e.g., mistagging a hoodie as a hijab) can also come across as disrespectful.  -- Jared Katzman, Microsoft Research; Solon Barocas, Microsoft Research; Su Lin Blodgett, Microsoft Research; Kristen Laird, Microsoft; Morgan Klaus Scheuerman, University of Colorado, Boulder, and Microsoft; Hanna Wallach, Microsoft Research
+	</p>
+
+<h3>What, in your opinion, are the necessary and sufficient guidelines, tools, and frameworks for building responsible and socially-aware future computer vision datasets?</h3>
+
+<p>The Visym Labs team is working to fundamentally rethink computer vision dataset collection of people to be privacy preserving by design. The traditional approach to vision dataset construction is to (i) set up cameras (or scrape the web) to get raw videos and imagery, (ii) send to an annotation team to provide ground truth labels in the form of bounding boxes/masks, categories or clip times for activities, then (iii) send the annotations to a verification team to enforce quality. This approach is slow, expensive, biased, non-scalable and almost universally does not get consent from each subject with a visible face. The Visym team believes there is a better way. We construct visual datasets of people by enabling thousands of collectors worldwide to submit videos using a new mobile app. This mobile app allows collectors to record a video while annotating, which creates labeled videos of rare activities in real-time, containing only people who have explicitly consented to be included. -- Jeffrey Byrne </p>
+
+<p>
+To build responsible and socially-aware future computer vision datasets, it is important to stay mindful about the social implications while collecting any data. Awareness is key. Having said that, it is impossible to get everything right at the first time. I believe it is more important to figure out a way to keep updating the dataset norms in a way that it is also taken up by the practitioners. -- Surbhi Mittal, IIT Jodhpur, India
+</p> 
+
+<p>
+We need to promote the development and release of anonymized medical datasets for the research community. We also need to promote the creation of medical data for underrepresented communities to ensure an equal distribution of the benefits and opportunities from the advancements of AI in medical computer vision. -- Dr. Asma Ben Abacha, U.S. National Institutes of Health (NIH)
+</p>
+
+<p>
+Legal issues such as emotional AI and streaming need to be addressed by enterprises. --Kaleab Woldemariam
+</p>
+
+<p>
+Ensuring real users' needs and interests are understood and ensuring dataset creators (e.g., AMT workers are fairly compensated). --Anonymous
+</p>
+
+<p>
+The datasets should be designed to discourage overfitting to database bias. That means avoiding to use the same camera for acquiring all images, avoiding standardized frames and camera poses and taking a great care to include a fair number of difficult and out-of-distribution images. -- Siniša Šegvić, UniZg-FER
+</p>
+
+<p>
+Previous work has argued that different types of machine learning systems can give rise to different types of harms (Barocas et al., 2017; Crawford, 2017; Blodgett et al., 2020). Barocas et al. (Barocas et al., 2017) introduced the distinction between allocational and representational harms. At a high level, allocational harms arise when people belonging to specific social groups (e.g., gender) are deprived of immediate material opportunities or resources. Allocational harms are the focus of much of the foundational work on “unfairness” or “bias” in the context of machine learning, including work on the dangers of using machine learning systems in domains like employment, education, and finance. In contrast, representational harms affect the understandings, beliefs, and attitudes that people hold about specific social groups—and thus the standing of those groups within society.  <br>
+We argue that the harms caused by computer vision systems—and image tagging systems, in particular—are, first and foremost, representational harms. Although image tagging systems may frustrate an individual, impugn an individual's character, or otherwise offend an individual, they also affect the understandings, beliefs, and attitudes that people hold about specific social groups, in turn affecting the standing of those groups within society. These harms must therefore be understood in terms of the reproduction of unjust and harmful hierarchies—a fundamentally systemic problem—rather than simply causing individual inconvenience, reputational damage, or offense. Building new computer vision datasets with these concerns in mind will not be a straightforward undertaking—even if the goal is to simply develop datasets for evaluating image tagging system. Thus, we aim to bring greater analytic clarity and precision to discussions of the harms caused by image tagging systems by identifying six distinct representational harms below, offering concrete examples for each. <br>  
+<b>Denying people the opportunity to self-identify</b>:
+When image tagging systems are used to classify people’s membership in social groups (e.g., gender) without their knowledge or consent, those people are denied the opportunity to self-identify (Hanna et al., 2020). Although this is especially harmful when systems misclassify people’s identities (e.g., misgendering someone), the very act of attempting to classify people’s membership in social groups—regardless of whether the tags imposed are correct or incorrect—is problematic if it rests on the assumption that the people in question need not be involved (Baker et al.,2020). In this way, image tagging can be understood as a threat to autonomy because it denies people the agency to cultivate their own identities.  
+<br>
+<b>Reifying social groups</b>:
+Image tagging can also reify the relationships between people’s physical appearance and the groups to which they are assumed to belong (Keyes, 2018). For example, gender classification systems rely on the following assumptions:(1) that gender is an ontologically stable concept, (2) that the available tags (usually male and female) capture the full range of gender identities, and (3) that gender is visually evident. In practice, however, none of these assumptions are valid. Binary gender classification systems therefore uphold and naturalize the belief that gender is simply a given, that gender is a binary, and that gender is visually evident via specific stereotypical cues (e.g., hair length)—each denying the complexity of people’s lived experiences. 
+<br>
+<b>Stereotyping social groups</b>:
+Image tagging can also perpetuate harmful stereotypes that help to reproduce unjust and harmful social hierarchies. Barlas et al. (2021); Bhargava and Forsyth (2019) report cases where images of female doctors have been systematically misclassified as nurses and cases where images of female snowboarders have been systematically misclassified as men (Hendricks et al., 2018; Zhao et al., 2017). In these cases, the representations of doctors and snowboarders that have been learned by the image tagging systems are inextricably linked with gender—that is, to be a female medical professional is to be a nurse and to be a snowboarder is to be a man. 
+Stereotyping can occur even when computer vision models don’t make obvious mistakes. As we mentioned above, image tagging systems have been shown to apply tags relating to physical appearance to images that depict women more often than to images that depict men, even when the images are taken from the same context (Schwemmeret al., 2020). Such system behavior conforms to and reinforces gender stereotypes (i.e., that women’s most salient characteristics relate to their physical appearance). 
+<br>
+<b>Demeaning social groups</b>:
+Image tagging systems can demean social groups, casting them as being of a lower standing within society. In extreme cases, image tagging systems can even apply tags that are dehumanizing, contributing to the belief that specific social groups do not deserve any of the rights and respect afforded to people as a result of their humanity. This can occur in very direct ways, as illustrated by cases in which image tagging systems have applied tags containing language that has a long history of being used to demean specific groups, such as applying the tag “boys” to images that depict Black men or misclassifying images that depict Black people as gorillas (Simonite, 2018). In other cases, though, the demeaning behaviors can be less overt. For example, image tagging systems can apply tags that devalue attributes, artifacts, or scenes that are of unique importance to specific social groups, such as misclassifying a religious group's wedding clothing as costumes (Shankar et al., 2017). <br>
+
+<b>Erasing social groups</b>:
+Erasure can occur when an image tagging system fails to tag—or correctly tag—people belonging to specific social groups, as well as the attributes and artifacts that are bound up with the identities of those groups (Keyes, 2018;Buolamwini and Gebru, 2018; Benjamin, 2019). An image tagging system that returns many tags for the men that appear in an image but no tags for the other people that appear in the image may contribute to the erasure of those that belong to other gender groups—and the wider recognition of these groups, generally. This same dynamic could apply to socially loaded artifacts, too. For example, an image tagging system might systematically misclassify images of menorahs as candelabras or it might fail to apply any tag at all—perhaps because the tag “menorah” is not available, despite the availability of comparable tags for non-Jewish religious artifacts. Such system behavior may suggest that such groups are not worthy of recognition and contribute to their further marginalization within society. <br>  
+
+<b>Alienating social groups</b>:
+Alienation is a related, but distinct, representational harm that occurs when an image tagging system does not acknowledge the relevance of someone’s membership in a specific social group to what is depicted in one or more images. This harm is most salient when a system fails to recognize the injustices suffered by specific social groups (Bennett et al., 2021)—for example, by tagging an image of women suffragists marching with the tags “people,” “walking,” and “street” or by tagging an image of a Holocaust memorial with the tags “field” and “sculpture.” Many cases of alienation, including these examples, cause individual offense because they downplay the gravity of what is depicted, but they also contribute to the reproduction of unjust and harmful hierarchies by denying the role that identity plays in people’s lived experiences, especially experiences relating to oppression and violence, which are often perpetrated on the basis of people’s membership in specific social groups. 
+<br>
+-- Jared Katzman, Microsoft Research; Solon Barocas, Microsoft Research; Su Lin Blodgett, Microsoft Research; Kristen Laird, Microsoft; Morgan Klaus Scheuerman, University of Colorado, Boulder, and Microsoft; Hanna Wallach, Microsoft Research
+</p>
+
+<table class="footer">
+        <tr>
+            <td class="footer"> <a href="index.html">home</a></td> 
+        </tr>
+    </table>
+
+    <table class="footer">
+        <tr>
+            <td class="footer"> <a href="https://github.com/mikepierce/conference-website-template">Website source</a></td> 
+        </tr>
+    </table>
+
+    </body>
+</html>
+
