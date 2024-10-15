@@ -1,0 +1,19 @@
+name: Commit confirmation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  post-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make POST request
+        env:
+          COMMIT_PREFIX: ${{ secrets.COMMIT_PREFIX }}
+        if: startsWith(github.event.head_commit.message, env.COMMIT_PREFIX)
+        run: |
+          curl -X POST ${{ secrets.URL }} \
+          -H 'Content-Type: application/json' \
+          -d '{"auth": "${{ secrets.AUTH }}", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
