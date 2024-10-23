@@ -1,4 +1,4 @@
-import "./graphic.css";
+//import "./graphic.css";
 import anime from "animejs/lib/anime.es.js";
 
 const nodes = document.querySelectorAll(".node");
