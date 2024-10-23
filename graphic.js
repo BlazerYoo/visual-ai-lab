@@ -1,15 +1,15 @@
-import './graphic.css';
-import anime from 'animejs/lib/anime.es.js';
+import "./graphic.css";
+import anime from "animejs/lib/anime.es.js";
 
-const nodes = document.querySelectorAll('.node');
-const container = document.getElementById('animation-container');
+const nodes = document.querySelectorAll(".node");
+const container = document.getElementById("animation-container");
 
 function createConnections() {
     nodes.forEach((node, i) => {
         nodes.forEach((otherNode, j) => {
             if (i < j) {
-                const connection = document.createElement('div');
-                connection.classList.add('connection');
+                const connection = document.createElement("div");
+                connection.classList.add("connection");
                 container.appendChild(connection);
                 updateConnection(connection, node, otherNode);
             }
@@ -40,19 +40,20 @@ function animateNodes() {
     const containerRect = container.getBoundingClientRect();
     const centerX = containerRect.width / 2;
     const centerY = containerRect.height / 2;
+    const scaleFactor = 0.8;
     anime({
-        targets: '.node',
-        translateX: () => anime.random(centerX - 250, centerY + 250),
-        translateY: () => anime.random(centerX - 200, centerY + 200),
+        targets: ".node",
+        translateX: () => anime.random(centerX - centerX * scaleFactor, centerX + centerX * scaleFactor),
+        translateY: () => anime.random(centerY - centerY * scaleFactor, centerY + centerY * scaleFactor),
         scale: () => anime.random(0.8, 1.2),
-        easing: 'easeInOutQuad',
+        easing: "easeInOutQuad",
         duration: 3000,
         complete: animateNodes,
     });
 }
 
 function updateConnections() {
-    const connections = document.querySelectorAll('.connection');
+    const connections = document.querySelectorAll(".connection");
     connections.forEach((connection, index) => {
         const startNode = nodes[Math.floor(index / (nodes.length - 1))];
         const endNode = nodes[(index % (nodes.length - 1)) + 1];
@@ -83,7 +84,7 @@ function handleMouseMove(event) {
                 translateX: `+=${Math.cos(angle) * force}`,
                 translateY: `+=${Math.sin(angle) * force}`,
                 duration: 100,
-                easing: 'easeOutQuad',
+                easing: "easeOutQuad",
             });
         }
     });
@@ -92,16 +93,17 @@ function handleMouseMove(event) {
 createConnections();
 animateNodes();
 setInterval(updateConnections, 10);
-container.addEventListener('mousemove', handleMouseMove);
+container.addEventListener("mousemove", handleMouseMove);
 
 nodes.forEach((node) => {
-    node.addEventListener('click', () => {
+    node.addEventListener("click", () => {
         anime({
             targets: node,
             scale: [1, 1.5, 1],
-            rotate: '1turn',
+            rotate: "1turn",
             duration: 1000,
-            easing: 'easeInOutQuad',
+            easing: "easeInOutQuad",
         });
     });
 });
+

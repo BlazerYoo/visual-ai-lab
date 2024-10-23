@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Navbar tabs */
+.nav-tab.current-tab {
+  background-color: orange;
+}
+
+/* home - add vertical line between name and award */
+td+td {
+  border-left: 1px solid black;
+}
+
+/* home - remove horizontal line between awards */
+tr {
+  border-bottom: none;
+}
+
+/* people - padding for people boxes */
+.card-body {
+  padding: 7px !important;
+}
