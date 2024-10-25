@@ -13,7 +13,9 @@
     <!--navbar-->
     <div class="navbar bg-base-100">
         <div class="navbar-start">
-            <div class="dropdown">
+
+            <!--navbar burger in case screen size compresses-->
+            <div class="dropdown"> 
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -35,9 +37,14 @@
                 </ul>
             </div>
 
-            <img src="favicon.ico" alt="Visual AI logo" class="h-6 sm:h-10 lg:ml-[15px]">
-            <a href="/" class="btn btn-ghost text-lg sm:text-xl font-mono">Princeton Visual AI Lab</a>
+            <!--Lab logo and title-->
+            
+            <a href="/" class="btn btn-title btn-ghost text-title xs:text-title"><span class="text-orange-400">Princeton</span>&nbsp;Visual&nbsp; <!--stop here-->
+                <img src="favicon.ico" alt="Visual AI logo" class="h-15 sm:h-15 lg:ml-[15px]"> 
+                &nbsp;Lab</a>
+            
         </div>
+
         <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-mono">
                 <li><a href="#home" class="nav-tab">home</a></li>
