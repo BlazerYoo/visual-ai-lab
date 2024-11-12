@@ -7,6 +7,10 @@
   background-color: orange;
 }
 
+.navbar {
+  z-index: 9999;
+}
+
 /* home - add vertical line between name and award */
 td+td {
   border-left: 1px solid black;
@@ -20,4 +24,10 @@ tr {
 /* people - padding for people boxes */
 .card-body {
   padding: 7px !important;
+}
+
+.text-grad {
+  background: -webkit-linear-gradient(60deg, #ff5e00, #ffc916);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
