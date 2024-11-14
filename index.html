@@ -10,10 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body">
+<body>
+    <script>
+        function menu_open_close() {
+            var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+            if (menu_hidden.style.visibility == "visible") {
+                document.getElementsByTagName("body")[0].style.overflow = "visible"
+                menu_hidden.style.visibility = "hidden";
+            }
+            else {
+                var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+                menu_hidden.style.top = navbar_height + "px";
+                menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+                menu_hidden.style.visibility = "visible";
+                
+                document.getElementsByTagName("body")[0].style.overflow = "hidden"
+            }
+        }
+    </script>
     <!--navbar-->
-    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full flex justify-around lg:justify-between flex-wrap">
-        <div class="flex">
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+        <div class="navbar-start w-full lg:w-[30%] bg-white" style="z-index: 10000;">
 
             <!-- 1204, 1259 -->
 
@@ -43,27 +60,63 @@
                 </ul>
             </div> -->
 
+            <div class="lg:hidden" style="z-index: 10000;">
+                <button class="btn btn-square ml-2" onclick="menu_open_close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+            </div>
+
             <!--Lab logo and title-->
 
-            <a href="/" class="btn h-16 btn-ghost text-2xl lg:text-4xl bg-white border-b-[1px] text-wrap text-center"><span
+            <a href="/" class="btn h-16 btn-ghost text-base sm:text-2xl md:text-3xl lg:text-4xl bg-white border-b-[1px]" style="z-index: 10000;"><span
                     class="text-orange-400">Princeton</span>&nbsp;Visual&nbsp;
-                <img src="favicon.svg" alt="Visual AI logo" class="h-6 lg:h-8">
+                <img src="favicon.svg" alt="Visual AI logo" class="h-5 sm:h-8 lg:h-8">
                 &nbsp;Lab</a>
 
 
         </div>
 
-        <div class="flex">
-            <ul class="menu menu-horizontal px-1 font-mono text-xs sm:text-sm xl:text-base">
-                <li><a href="#home" class="nav-tab px-2 lg:px-4">home</a></li>
-                <li><a href="#people" class="nav-tab px-2 lg:px-4">people</a></li>
-                <li><a href="#research" class="nav-tab px-2 lg:px-4">research</a></li>
-                <li><a href="#awards" class="nav-tab px-2 lg:px-4">awards</a></li>
-                <li><a href="#community" class="nav-tab px-2 lg:px-4">community</a></li>
-                <li><a href="#join-us" class="nav-tab px-2 lg:px-4">join us</a></li>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+                <li><a href="#home" class="nav-tab">home</a></li>
+                <li><a href="#people" class="nav-tab">people</a></li>
+                <li><a href="#research" class="nav-tab">research</a></li>
+                <li><a href="#awards" class="nav-tab">awards</a></li>
+                <li><a href="#community" class="nav-tab">community</a></li>
+                <li><a href="#join-us" class="nav-tab">join us</a></li>
+            </ul>
+        </div>
+
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden" style="position:absolute; top:65px; visibility: hidden;">
+            <!-- <div class="text-center nav-tab"><a href="#home">home</a></div>
+            <div class="text-center nav-tab"><a href="#people">people</a></div>
+            <div class="text-center nav-tab"><a href="#research">research</a></div>
+            <div class="text-center nav-tab"><a href="#awards">awards</a></div>
+            <div class="text-center nav-tab"><a href="#community">community</a></div>
+            <div class="text-center nav-tab"><a href="#join-us">join us</a></div> -->
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center"
+               >
+                <li class="flex justify-center mdh:p-4"><a href="#home" onclick="menu_open_close()" class="nav-tab hover:underline">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="#people" onclick="menu_open_close()" class="nav-tab hover:underline">people</a></li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="#research" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="#awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="#community" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
+                </li>
+                <li class="flex justify-center mdh:p-4"><a href="#join-us" onclick="menu_open_close()" class="nav-tab hover:underline">join us</a></li>
             </ul>
         </div>
     </div>
+
+   
 
     <div id="content" class="w-full"></div>
     <script type="module" src="script.js"></script>
