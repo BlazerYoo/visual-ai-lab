@@ -7,15 +7,18 @@
     <title>Princeton Visual AI Lab</title>
     <link rel="icon" type="image/x-icon" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body">
     <!--navbar-->
-    <div class="navbar bg-white sticky top-0 border-b-[1px]">
-        <div class="navbar-start">
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full flex justify-around lg:justify-between flex-wrap">
+        <div class="flex">
+
+            <!-- 1204, 1259 -->
 
             <!--navbar burger in case screen size compresses-->
-            <div class="dropdown"> 
+            <!-- <div class="dropdown"> 
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -38,29 +41,31 @@
                     </li>
                     <li><a href="#join-us" class="nav-tab">join us</a></li>
                 </ul>
-            </div>
+            </div> -->
 
             <!--Lab logo and title-->
-            
-            <a href="/" class="btn h-16 btn-ghost text-4xl xs:text-4xl"><span class="text-orange-400">Princeton</span>&nbsp;Visual&nbsp; <!--stop here-->
-                <img src="favicon.svg" alt="Visual AI logo" class="h-8 sm:h-8 lg:h-8"> 
+
+            <a href="/" class="btn h-16 btn-ghost text-2xl lg:text-4xl bg-white border-b-[1px] text-wrap text-center"><span
+                    class="text-orange-400">Princeton</span>&nbsp;Visual&nbsp;
+                <img src="favicon.svg" alt="Visual AI logo" class="h-6 lg:h-8">
                 &nbsp;Lab</a>
-            
+
+
         </div>
 
-        <div class="navbar-end hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 font-mono text-lg">
-                <li><a href="#home" class="nav-tab">home</a></li>
-                <li><a href="#people" class="nav-tab">people</a></li>
-                <li><a href="#research" class="nav-tab">research</a></li>
-                <li><a href="#awards" class="nav-tab">awards</a></li>
-                <li><a href="#community" class="nav-tab">community</a></li>
-                <li><a href="#join-us" class="nav-tab">join us</a></li>
+        <div class="flex">
+            <ul class="menu menu-horizontal px-1 font-mono text-xs sm:text-sm xl:text-base">
+                <li><a href="#home" class="nav-tab px-2 lg:px-4">home</a></li>
+                <li><a href="#people" class="nav-tab px-2 lg:px-4">people</a></li>
+                <li><a href="#research" class="nav-tab px-2 lg:px-4">research</a></li>
+                <li><a href="#awards" class="nav-tab px-2 lg:px-4">awards</a></li>
+                <li><a href="#community" class="nav-tab px-2 lg:px-4">community</a></li>
+                <li><a href="#join-us" class="nav-tab px-2 lg:px-4">join us</a></li>
             </ul>
         </div>
     </div>
 
-    <div id="content"></div>
+    <div id="content" class="w-full"></div>
     <script type="module" src="script.js"></script>
 </body>
 

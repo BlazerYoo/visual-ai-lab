@@ -26,8 +26,78 @@ tr {
   padding: 7px !important;
 }
 
+.navbar-start {
+  width: 30%;
+}
+
+.navbar-end {
+  width: 70%;
+}
+
 .text-grad {
   background: -webkit-linear-gradient(60deg, #ff5e00, #ffc916);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-orange-grad {
+  background: -webkit-linear-gradient(60deg, #ff5e00, #ffc916);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-orangerev-grad {
+  background: -webkit-linear-gradient(60deg, #ffc916, #ff5e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-orange2-grad {
+  background: -webkit-linear-gradient(60deg, #ffaa00, #ffe600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-green-grad {
+  background: -webkit-linear-gradient(60deg, #51990d, #46d703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-greenrev-grad {
+  background: -webkit-linear-gradient(60deg, #46d703, #51990d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-green2-grad {
+  background: -webkit-linear-gradient(60deg, #00ff1e, #00ffb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-blue-grad {
+  background: -webkit-linear-gradient(60deg, #00d9ff, #a2f3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-bluerev-grad {
+  background: -webkit-linear-gradient(60deg, #a2f3ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-blue2-grad {
+  background: -webkit-linear-gradient(60deg, #0088ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-outline {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 2px;
 }
