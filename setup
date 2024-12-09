@@ -1,6 +1,6 @@
 npm install webpack webpack-cli --save-dev
 npx webpack --config webpack.config.js
+
+
 npx live-server
-
-
 npx tailwindcss -i ./tailwind-input.css -o ./style.css --watch
