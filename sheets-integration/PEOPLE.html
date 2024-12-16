@@ -1,0 +1,404 @@
+<div class="flex flex-col font-sans mt-7 mx-5 sm:mx-16">
+
+    <!-- PI -->
+    <div class="m-5">
+      <h1 class="border-l-8 border-l-orange-100 border-b-[1px] border-b-slate-100 pl-2 font-mono font-bold text-xl mr-40"><span
+          class="text-orange-400">PRINCIPAL</span> INVESTIGATOR
+      </h1>
+  
+      <div class="flex flex-row flex-wrap my-5">
+  
+        <!-- profile pic -->
+        <div class="avatar w-36 h-36 sm:w-44 sm:h-44 ml-5 mb-2">
+          <div class="rounded-2xl">
+            <img src="assets/olga_russakovsky.jpg" alt="Dr. Olga Russakovsky" />
+          </div>
+        </div>
+  
+        <!-- description -->
+        <div class="font-bold ml-5">
+          <a href="http://cs.princeton.edu/~olgarus" class="text-xl text-orange-400 hover:underline">Dr. Olga
+            Russakovsky</a>
+          <p class="border-l-2 border-amber-400 pl-2 my-0.5">Associate Professor, Computer Science Department, Princeton
+            University</p>
+          <p class="border-l-2 border-amber-500 pl-2 my-0.5">Director, Princeton AI Lab</p>
+          <p class="border-l-2 border-amber-600 pl-2 my-0.5">Chair of the Board of Directors, AI4ALL nonprofit</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- current members -->
+    <div class="m-5">
+      <h1 class="border-l-8 border-l-orange-100 border-b-[1px] border-b-slate-100 pl-2 font-mono font-bold text-xl mr-40"><span
+          class="text-orange-400">CURRENT</span> MEMBERS
+      </h1>
+  
+      <!-- member list -->
+      <div class="flex flex-wrap mx-15 my-5 justify-evenly">
+        <? var [senior_researchers, postdocs, phds, masters, undergrads, assoc] = getPeopleContent(); ?>
+  
+        <!-- SENIOR RESEARCHERS -->
+        <? for (var i = 0; i < senior_researchers.length; i++) { ?>
+          <? var person = senior_researchers[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-10">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?>/>
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href="google.com"
+                class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-2xl px-2 text-center text-sm font-bold py-1 border-orange-800 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span>
+                <?= person.position_suffix ?>
+              </p>
+            </div>
+          </div>
+        <? } ?>
+        
+        <!-- POSTDOCS -->
+        <? for (var i = 0; i < postdocs.length; i++) { ?>
+          <? var person = postdocs[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-10">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?> />
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href=<?= person.link ?> class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-2xl px-2 text-center text-sm font-bold py-1 border-orange-800 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span>
+                <?= person.position_suffix ?></p>
+            </div>
+          </div>
+        <? } ?>
+        
+        <!-- PHD STUDENTS -->
+        <? for (var i = 0; i < phds.length; i++) { ?>
+          <? var person = phds[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-10">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?> />
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href=<?= person.link ?> class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-2xl px-2 text-center text-sm font-bold py-1 border-orange-600 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span> 
+                  <?= person.position_suffix ?></p>
+            </div>
+          </div>
+        <? } ?>
+  
+        <? for (var i = 0; i < masters.length; i++) { ?>
+          <? var person = masters[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-10">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?>/>
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href=<?= person.link ?> class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-2xl px-2 text-center text-sm font-bold py-1 border-orange-400 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span> <?= person.position_suffix ?>
+              </p>
+            </div>
+          </div>
+        <? } ?>
+  
+        <? for (var i = 0; i < undergrads.length; i++) { ?>
+          <? var person = undergrads[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-10">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?> />
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href=<?= person.link ?> class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-3xl px-2 text-center text-sm font-bold py-1 border-yellow-500 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span> <?= person.position_suffix ?>
+              </p>
+            </div>
+          </div>
+        <? } ?>
+  
+      </div>
+    </div>
+  
+    <!-- ASSOCIATED MEMBERS -->
+    <div class="mx-5 mb-5">
+      <h1 class="border-l-8 border-l-orange-100 border-b-[1px] border-b-slate-100 pl-2 font-mono font-bold text-xl mr-40"><span
+          class="text-orange-400">ASSOCIATED</span> MEMBERS
+      </h1>
+  
+      <!-- member list -->
+      <div class="flex flex-wrap mx-15 my-5 justify-evenly">
+        
+        <? for (var i = 0; i < assoc.length; i++) { ?>
+          <? var person = assoc[i]; ?>
+          <div class="flex flex-col w-36 sm:w-44 flex-shrink mb-5">
+            <div class="avatar h-36 sm:h-44"> <!-- profile pic -->
+              <div class="rounded-2xl">
+                <img src=<?= person.profilePic ?> alt=<?= person.name ?>/>
+              </div>
+            </div>
+            <div class="text-center"> <!-- description -->
+              <a href=<?= person.link ?> class="font-bold text-lg hover:underline"><?= person.name ?></a>
+              <p class="border rounded-3xl px-2 text-center text-sm font-bold py-1 border-orange-800 font-sans"><span
+                  class="text-orange-500"><?= person.position_prefix ?></span>
+                <?= person.position_suffix ?>
+              </p>
+            </div>
+          </div>
+        <? } ?>
+      </div>
+    </div>
+  
+    <!-- ALUMNI LIST -->
+    <div class="m-5 w-10/12">
+      <h1 class="border-l-8 border-l-orange-100 pl-2 font-mono font-bold text-xl"><span
+          class="text-orange-400">ALUMNI</span>
+      </h1>
+      <hr class="mb-5">
+  
+      <!-- POSTDOCS list -->
+      <div class="ml-5">
+        <ul class="list-disc leading-loose">
+          <li><a href="http://zhiweideng.com/">Dr. Zhiwei Deng</a>, Research Scientist at Google
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-800 font-sans"><span
+                class="text-orange-800">POSTDOC</span> 2019-2022</span>
+          </li>
+          <li><a href="https://yu-wu.net/">Dr. Yu Wu</a>, Professor at Wuhan University
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-800 font-sans"><span
+                class="text-orange-800">POSTDOC</span> 2021-2022</span>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- PHD list -->
+      <div class="ml-5">
+        <ul class="list-disc leading-loose">
+          <li><a href="https://angelina-wang.github.io/">Dr. Angelina Wang</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-600 font-sans"><span
+                class="text-orange-600">PH.D. DEGREE</span> 2024</span>
+            <i>Operationalizing
+              Responsible Machine Learning: From Equality Towards Equity</i>, Postdoctoral Scholar at Stanford University
+            and Incoming Assistant Professor in Information Science at Cornell Tech
+          </li>
+          <li><a href="https://www.cs.princeton.edu/~vr23/">Dr. Vikram Ramaswamy</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-600 font-sans"><span
+                class="text-orange-600">PH.D. DEGREE</span> 2023</span>
+            <i>Tackling Bias
+              with Computer Vision Models</i>, Teaching Faculty at Princeton University
+          </li>
+          <li><a href="https://www.cs.princeton.edu/~zeyuwang/">Dr. Zeyu Wang</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-600 font-sans"><span
+                class="text-orange-600">PH.D. DEGREE</span> 2022</span>
+            <i>Tackling
+              Imperfections in Data for Building Real-World Computer Vision Systems</i>, Postdoctoral Scholar at Stanford
+            University
+          </li>
+        </ul>
+      </div>
+  
+      <!-- MASTER'S list -->
+      <div class="ml-5">
+        <ul class="list-disc leading-loose">
+          <li><a href="https://danqi7.github.io/">Danqi Liao</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-400 font-sans"><span
+                class="text-orange-400">MASTER'S THESIS</span> 2022</span>
+            <i>Selective Feature Aggregation
+              for Single Frame Supervised Temporal Action Localization </i> (started CS PhD at Yale in 2022)
+          </li>
+          <li><a href="https://dorazhao99.github.io/">Dora Zhao</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-400 font-sans"><span
+                class="text-orange-400">MASTER'S DEGREE</span> 2022</span>
+            Research on computer vision fairness
+          </li>
+          <li><a href="https://www.cs.princeton.edu/~felixy/">Felix Yu</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-orange-400 font-sans"><span
+                class="text-orange-400">MASTER'S DEGREE</span> 2021</span>
+            Research on video activity
+            recognition and vision-and-language navigation
+          </li>
+        </ul>
+      </div>
+  
+      <!-- UNDERGRADUATE list -->
+      <div class="ml-5">
+        <ul class="list-disc leading-loose">
+          <li>Matthew Coleman (co-advised with Prof. Chrisine Allen-Blanchette)
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+              <i>Latent Diffusion Policies</i></li>
+  
+          <li>Rohan Jinturkar
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+              <i>Why Did the Model Fail? Empowering Non-Experts to Explore Computer Vision Models through Interactive Dialogue</i></li>
+  
+          <li>Sing Yu (Phoebe) Lin
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+              <i>Cost Efficiency of Generating a Geodiverse Dataset for Object Classification</i></li>
+  
+          <li>William Olsan
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+               <i>Faces at Face Value: An Analysis of Face Recognition Technology
+              Policy and Performance</i></li>
+  
+          <li>Jayson Wu
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+              <i>Dress for Success: An Incremental Approach Towards Fashion
+              Compatibility Featurization</i></li>
+  
+          <li>Nobline Yoo
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2021-2023</span>
+               <i>Efficient, Template-based, Self-supervised 2D Human Pose Estimation</i></li>
+  
+  
+          <li>Zishuo (Byron) Zhang
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2022-2023</span>
+              <i>Learning in the Wild: Challenges with Out-of-Distribution Data</i></li>
+  
+          <li><a href="https://nicolemeister.github.io/">Nicole Meister</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2021-2022</span>
+              <i>Towards
+              Interpretable and Fair Computer Vision</i> (started ELE PhD at Stanford in 2022)</li>
+  
+          <li>Rishwanth Raghu
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2021-2022</span>
+               <i>Analyzing and Improving Object Navigation in Indoor
+              Environments</i></li>
+  
+          <li>Henry Wang
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2021-2022</span>
+               <i>Reconstructing Sound from Visual Piano Performances: An Overview</i>
+          </li>
+  
+          <li>Ryan Zhang
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2021-2022</span>
+              <i>Redundancy Reduction in Vision Transformers</i></li>
+  
+          <li><a href="https://arjun-mani.github.io/">Arjun Mani</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2020-2021</span>
+               <i>Point and Ask:
+              Incorporating Pointing Into Visual Question Answering</i> (started CS PhD at Columbia in 2021) </li>
+  
+          <li><a href="https://sxzhang25.github.io/">Sharon Zhang</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2020-2021</span>
+               <i>Contextual Bias and
+              Interpretability in Image Classification</i> (started CS PhD at Stanford in 2021)</li>
+  
+          <li><a href="https://dorazhao99.github.io/">Dora Zhao</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2020-2021</span>
+               <i>Understanding and
+              Evaluating Racial Biases in Image Captioning</i> (started CS MS at Princeton in 2021, CS PhD at Stanford in
+            2023)</li>
+  
+          <li><a href="https://jess2422.github.io/">Jessica Ho</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2019-2020</span>
+               <i>Effects of Dataset Bias on
+              Conditional Generative Adversarial Networks for Urban Scene Understanding</i></li>
+  
+          <li><a href="https://github.com/gregmccord">Gregory McCord</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2019-2020</span>
+              <i>Evaluating
+              Compositionality of Vision and Language Models</i></li>
+              
+          <li>Emmanuel Teferi
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2019-2020</span>
+               <i>An Exploratory Analysis of ML Models in CADx Design</i></li>
+  
+          <li>Phillip Yoon
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2019-2020</span>
+               <i>Improving Sound Separation and Localization Using Audio-Visual
+              Scene Analysis</i></li>
+  
+          <li>Andrew Zeng
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2019-2020</span>
+              <i>Using Computer Vision to Model Fashion Outfit Compatibility</i></li>
+  
+          <li><a href="https://www.berthyfeng.com/">Berthy Feng</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2018-2019</span>
+               <i>Moving from Recognition
+              to Reasoning in Image Captioning</i> (started CMS PhD at Caltech in 2019)</li>
+  
+          <li><a href="https://www.linkedin.com/in/yannis-karakozis-746488116/">Yannis Karakozis</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2018-2019</span>
+              <i>Fundamental Techniques for Bias Mitigation in Deep Visual Recognition</i></li>
+  
+          <li><a href="https://www.linkedin.com/in/ryanmccaffrey42">Ryan McCaffrey</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2018-2019</span>
+              <i>Toward
+              Zero-Shot Action Recognition for Video Moment Localization</i></li>
+  
+          <li><a href="https://www.linkedin.com/in/rkdoshi/">Rohan Doshi</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2017-2018</span>
+              <i>Zero-Shot
+              Semantic Segmentation</i></li>
+  
+          <li><a href="https://premqunair.com/">Prem Nair</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2017-2018</span>
+               <i>An Exploration of Multi-class
+              Multi-domain Image Classification</i></li>
+  
+          <li><a href="https://www.linkedin.com/in/williamhinthorn/">William Hinthorn</a>
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-yellow-500 font-sans"><span
+              class="text-yellow-500">UNDERGRADUATE SENIOR THESIS</span> 2017-2018</span>
+            <i>Inferring Intent from Pointing with Computer Vision</i></li>
+        </ul>
+      </div>
+  
+      <!-- HIGH SCHOOL list -->
+      <div class="ml-5">
+        <ul class="list-disc leading-loose">
+          <li>Lindsey Ehrlich
+            <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-lime-600 font-sans"><span
+              class="text-lime-600">HIGH SCHOOL SUMMER INTERN</span> 2023</span>
+              Kamiak High School, <i>Gender Bias Amplification in Natural Language
+            Processing</i>
+        <li>Kelly Lao
+          <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-lime-600 font-sans"><span
+            class="text-lime-600">HIGH SCHOOL SUMMER INTERN</span> 2023</span>
+            Council Rock North High School, <i>Detection of Major Depressive Disorder
+            (MDD) through fMRI Imaging</i>
+        <li>Noa Souccar
+          <span class="border rounded-3xl px-2 text-center text-xs font-bold py-1 border-lime-600 font-sans"><span
+            class="text-lime-600">HIGH SCHOOL SUMMER INTERN</span> 2022</span>
+            Horace Greeley High School, <i>DeepFake Video Detection Using Eulerian
+            Video Magnification</i>
+        </ul>
+      </div>
+  
+  
+    </div>
+  
+  
+  </div>
