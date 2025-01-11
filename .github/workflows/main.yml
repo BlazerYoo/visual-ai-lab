@@ -36,14 +36,23 @@ jobs:
           -H 'Content-Type: application/json' \
           -d '{"auth": "${{ secrets.AUTH }}", "page": "research", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
 
-      - name: Outreach update confirmation
+      - name: Awards update confirmation
         env:
-          OUTREACH_COMMIT_PREFIX: ${{ secrets.OUTREACH_COMMIT_PREFIX }}
-        if: startsWith(github.event.head_commit.message, env.OUTREACH_COMMIT_PREFIX)
+          AWARDS_COMMIT_PREFIX: ${{ secrets.AWARDS_COMMIT_PREFIX }}
+        if: startsWith(github.event.head_commit.message, env.AWARDS_COMMIT_PREFIX)
         run: |
           curl -X POST ${{ secrets.URL }} \
           -H 'Content-Type: application/json' \
-          -d '{"auth": "${{ secrets.AUTH }}", "page": "outreach", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
+          -d '{"auth": "${{ secrets.AUTH }}", "page": "awards", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
+
+      - name: Community update confirmation
+        env:
+          COMMUNITY_COMMIT_PREFIX: ${{ secrets.COMMUNITY_COMMIT_PREFIX }}
+        if: startsWith(github.event.head_commit.message, env.COMMUNITY_COMMIT_PREFIX)
+        run: |
+          curl -X POST ${{ secrets.URL }} \
+          -H 'Content-Type: application/json' \
+          -d '{"auth": "${{ secrets.AUTH }}", "page": "community", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
 
       - name: Join Us update confirmation
         env:
