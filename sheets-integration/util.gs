@@ -20,3 +20,16 @@ function sortStr(a, b) {
   }
   return 0;
 }
+
+function getFunctionNameFromStack(error) {
+  // Parse the error stack to extract the function name
+  const stackLines = error.stack.split("\n");
+  if (stackLines.length > 1) {
+    const functionLine = stackLines[1].trim(); // Typically the second line contains the function name
+    const match = functionLine.match(/at (\S+)/);
+    if (match && match[1]) {
+      return match[1]; // Extracted function name
+    }
+  }
+  return "Anonymous or global scope"; // Fallback if no function name is found
+}

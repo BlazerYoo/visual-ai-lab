@@ -1,60 +1,67 @@
 // Push home content
-function homePushToGitHub() {
+function homeAwardPushToGitHub() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = spreadsheet.getSheetByName('home');
   
-  spreadsheet.toast('Pushing to GitHub...', 'VISUAL_AI');
-  sheet.getRange('A6').setValue('WAITING...');
-  sheet.getRange('A7').setValue('...');
+  try {  
+    spreadsheet.toast('Pushing to GitHub...', 'VISUAL_AI');
+    sheet.getRange('A6').setValue('WAITING...');
+    sheet.getRange('A7').setValue('...');
+    sheet.getRange('A8').setValue('...');
 
-  const home_html = getFinalHTML('HOME').getContent();
-  const awards_html = getFinalHTML('AWARDS').getContent();
+    const home_html = getFinalHTML('HOME').getContent();
+    const awards_html = getFinalHTML('AWARDS').getContent();
 
-  // Logger.log(home_html);
+    const commit_url = createCommitOnBranch(['home', 'awards'], [home_html, awards_html]);
 
-  createCommitOnBranch('home', home_html);
-  createCommitOnBranch('awards', awards_html);
-
-  sheet.getRange('A6').setValue('SUCCESS...');
-
+    sheet.getRange('A6').setValue('SUCCESS');
+    sheet.getRange('A7').setFormula(`=HYPERLINK("${commit_url}", "Home Commit Link")`);
+    sheet.getRange('A8').setValue('');
+  } catch (err) {
+    sheet.getRange('A6').setValue('FAILED');
+    sheet.getRange('A7').setValue(err);
+    sheet.getRange('A8').setValue(getFunctionNameFromStack(err));
+  }
 }
 
 // Get home content
-function getHomeContent() {
+function getHomeAwardContent() {
   const  spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = spreadsheet.getSheetByName('home');
   
   // Get all the data in the sheet
   const data = sheet.getDataRange().getValues();
-  
-  // 
+  Logger.log(data);
+
+  // Get acknowledgments
+  const acknowledgments = data[1][1];
 
   // Initialize an array to hold the awards
   const awards = [];
 
-  const acknowledgments = data[1][1];
-  
   // Skip headers and iterate row by row
   for (let i = 1; i < data.length; i++) {
-    const timestamp = data[i][2];
-    const title = data[i][3]
-    const name = data[i][4];
-    const add_names = data[i][5];
-    const award_name = data[i][6];
-    const award_time = data[i][7];
+    const title = data[i][2]
+    const name = data[i][3];
+    const add_names = data[i][4];
+    const award_name = data[i][5];
+    const award_date = data[i][6];
 
-    if (timestamp === '') {
+    // Break when no more awards
+    if (name === '') {
       break
     }
 
-    names_list = title + " " + name;
+    // Compile names
+    let names_list = title === '' ? name : `${title} ${name}`;
     if (add_names !== '') {
       names_list += ", " + add_names;
     }
     
-    const year = award_time.getFullYear(); // year
+    // Extract year
+    const year = award_date.getFullYear();
     
-    // Create a paper object
+    // Create a award object
     const award = {
       name: name,
       names: names_list,
@@ -62,7 +69,7 @@ function getHomeContent() {
       year: year
     };
     
-    // Add the paper object to the papers array
+    // Add the award object to the award array
     awards.push(award);
   }
   
@@ -72,5 +79,3 @@ function getHomeContent() {
   Logger.log(awards);
   return [acknowledgments, awards];
 }
-
-
