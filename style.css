@@ -4562,6 +4562,11 @@ details.collapse summary::-webkit-details-marker {
   margin-right: 5rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-36 {
   margin-left: 9rem;
   margin-right: 9rem;
@@ -4635,11 +4640,6 @@ details.collapse summary::-webkit-details-marker {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 }
 
 .mb-0 {
@@ -5784,8 +5784,12 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/assets\/community\/XAI4CV_3\.png\'\)\] {
-  background-image: url('./assets/community/XAI4CV_3.png');
+.bg-\[url\(\'assets\/community\/XAI4CV_2\.jpeg\'\)\] {
+  background-image: url('assets/community/XAI4CV_2.jpeg');
+}
+
+.bg-\[url\(\'assets\/community\/XAI4CV_3\.png\'\)\] {
+  background-image: url('assets/community/XAI4CV_3.png');
 }
 
 .bg-gradient-to-r {
@@ -6454,6 +6458,11 @@ tr {
   -webkit-text-stroke-width: 2px;
 }
 
+.btn-ghost.btn-active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
 @media (hover:hover) {
   .table .\*\:hover > *tr:hover,
   .table .\*\:hover > *tr:nth-child(even):hover {
@@ -6899,6 +6908,10 @@ tr {
 
   .sm\:w-80 {
     width: 20rem;
+  }
+
+  .sm\:justify-normal {
+    justify-content: normal;
   }
 
   .sm\:gap-1 {

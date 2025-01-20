@@ -145,3 +145,8 @@ tr {
   -webkit-text-stroke: black;
   -webkit-text-stroke-width: 2px;
 }
+
+.btn-ghost.btn-active {
+  border-color: transparent;
+  background-color: transparent;
+}
