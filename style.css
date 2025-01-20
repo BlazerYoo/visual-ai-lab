@@ -7120,6 +7120,10 @@ tr {
     height: 8rem;
   }
 
+  .md\:h-44 {
+    height: 11rem;
+  }
+
   .md\:w-0 {
     width: 0px;
   }
