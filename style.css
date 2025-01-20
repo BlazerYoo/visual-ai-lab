@@ -5369,6 +5369,10 @@ details.collapse summary::-webkit-details-marker {
   align-items: center;
 }
 
+.justify-normal {
+  justify-content: normal;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -5391,6 +5395,10 @@ details.collapse summary::-webkit-details-marker {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .justify-items-start {
@@ -5891,8 +5899,12 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/assets\/community\/XAI4CV_3\.png\'\)\] {
-  background-image: url('./assets/community/XAI4CV_3.png');
+.bg-\[url\(\'assets\/community\/XAI4CV_2\.jpeg\'\)\] {
+  background-image: url('assets/community/XAI4CV_2.jpeg');
+}
+
+.bg-\[url\(\'assets\/community\/XAI4CV_3\.png\'\)\] {
+  background-image: url('assets/community/XAI4CV_3.png');
 }
 
 .bg-gradient-to-r {
@@ -6561,6 +6573,11 @@ tr {
   -webkit-text-stroke-width: 2px;
 }
 
+.btn-ghost.btn-active {
+  border-color: transparent;
+  background-color: transparent;
+}
+
 @media (hover:hover) {
   .table .\*\:hover > *tr:hover,
   .table .\*\:hover > *tr:nth-child(even):hover {
@@ -7006,6 +7023,10 @@ tr {
 
   .sm\:w-80 {
     width: 20rem;
+  }
+
+  .sm\:justify-normal {
+    justify-content: normal;
   }
 
   .sm\:gap-1 {
