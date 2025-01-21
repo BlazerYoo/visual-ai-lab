@@ -150,3 +150,15 @@ tr {
   border-color: transparent;
   background-color: transparent;
 }
+
+.badge-outline.badge-warning {
+  --tw-text-opacity: 1;
+  color: #f7772e;
+  background-color: white;
+}
+
+.badge-warning {
+  --tw-bg-opacity: 1;
+  background-color: #ff9d33;
+  --tw-text-opacity: 1;
+}
