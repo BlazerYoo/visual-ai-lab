@@ -6650,16 +6650,91 @@ tr {
   background-color: transparent;
 }
 
-.badge-outline.badge-warning {
+.badge-outline.badge-warning.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #fad5ae;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-warning.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #fad5ae;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-outline.badge-warning.btn {
+  border-color: #f7772e;
   --tw-text-opacity: 1;
   color: #f7772e;
   background-color: white;
 }
 
-.badge-warning {
+.badge-warning.btn {
+  border-color: transparent;
   --tw-bg-opacity: 1;
-  background-color: #ff9d33;
+  background-color: #ffb86c;
   --tw-text-opacity: 1;
+  color: black;
+}
+
+.badge-outline.badge-info.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #8bdaff;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-info.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #8bdaff;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-outline.badge-info.btn {
+  border-color: #0084ff;
+  --tw-text-opacity: 1;
+  color: #0084ff;
+  background-color: white;
+}
+
+.badge-info.btn {
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: #52c8ff;
+  --tw-text-opacity: 1;
+  color: black;
+}
+
+.badge-outline.badge-success.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #b5f2b4;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-success.btn:hover {
+  --tw-text-opacity: 1;
+  background-color: #b5f2b4;
+  border-color: transparent;
+  color: black;
+}
+
+.badge-outline.badge-success.btn {
+  border-color: #00b436;
+  --tw-text-opacity: 1;
+  color: #00b436;
+  background-color: white;
+}
+
+.badge-success.btn {
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: #8fee8e;
+  --tw-text-opacity: 1;
+  color: black;
 }
 
 @media (hover:hover) {
