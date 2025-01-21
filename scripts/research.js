@@ -2,19 +2,6 @@ function researchFunc() {
 
     const allPapers = document.querySelectorAll(".cv, .hci, .fair");
 
-    cvPapers.forEach(cvPaper => {
-        cvPaper.appendChild(cvBadge.cloneNode(true));
-    });
-
-    hciPapers.forEach(hciPaper => {
-        hciPaper.appendChild(hciBadge.cloneNode(true));
-    });
-
-    fairPapers.forEach(fairPaper => {
-        fairPaper.appendChild(fairBadge.cloneNode(true));
-    });
-
-
     // Change style on research tag click
     const researchTabs = document.querySelectorAll(".research-filter");
     let researchTagSelected = false;
