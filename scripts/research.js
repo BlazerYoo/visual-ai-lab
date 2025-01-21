@@ -1,6 +1,6 @@
 function researchFunc() {
 
-    const allPapers = document.querySelectorAll(".cv, .hci, .fair");
+    const allPapers = document.querySelectorAll(".paper");
 
     // Change style on research tag click
     const researchTabs = document.querySelectorAll(".research-filter");
