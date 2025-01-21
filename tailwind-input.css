@@ -151,6 +151,16 @@ tr {
   background-color: transparent;
 }
 
+/* for the non-clickable tag */
+.badge-outline.badge-warning {
+  border-color: #f7772e;
+  --tw-text-opacity: 1;
+  color: #f7772e;
+  background-color: white;
+}
+
+
+
 .badge-outline.badge-warning.btn:hover {
   --tw-text-opacity: 1;
   background-color: #fad5ae;
