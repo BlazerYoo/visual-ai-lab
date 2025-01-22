@@ -6154,6 +6154,10 @@ tr {
     margin-left: 2.5rem;
   }
 
+  .sm\:mb-0\.5 {
+    margin-bottom: 0.125rem;
+  }
+
   .sm\:h-0 {
     height: 0px;
   }
