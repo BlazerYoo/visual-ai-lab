@@ -62,3 +62,12 @@ jobs:
           curl -X POST ${{ secrets.URL }} \
           -H 'Content-Type: application/json' \
           -d '{"auth": "${{ secrets.AUTH }}", "page": "join_us", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
+
+      - name: BibTeX update confirmation
+        env:
+          BIB_COMMIT_PREFIX: ${{ secrets.BIB_COMMIT_PREFIX }}
+        if: startsWith(github.event.head_commit.message, env.BIB_COMMIT_PREFIX)
+        run: |
+          curl -X POST ${{ secrets.URL }} \
+          -H 'Content-Type: application/json' \
+          -d '{"auth": "${{ secrets.AUTH }}", "page": "bib", "message": "${{ github.event.head_commit.message }}", "commit_url": "${{ github.event.compare }}"}'
