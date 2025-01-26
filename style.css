@@ -4426,6 +4426,10 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -4556,14 +4560,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-0\.5 {
-  margin-bottom: 0.125rem;
 }
 
 .block {
@@ -4700,10 +4696,6 @@ details.collapse summary::-webkit-details-marker {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-3\.5 {
-  height: 0.875rem;
 }
 
 .max-h-14 {
@@ -5235,6 +5227,10 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 1.25rem;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
 }
@@ -5273,10 +5269,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
 }
 
 .text-left {
@@ -5357,10 +5349,6 @@ details.collapse summary::-webkit-details-marker {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
 }
 
 .font-black {
@@ -6146,16 +6134,16 @@ tr {
     margin-right: 1.25rem;
   }
 
+  .sm\:mb-0\.5 {
+    margin-bottom: 0.125rem;
+  }
+
   .sm\:mb-20 {
     margin-bottom: 5rem;
   }
 
   .sm\:ml-10 {
     margin-left: 2.5rem;
-  }
-
-  .sm\:mb-0\.5 {
-    margin-bottom: 0.125rem;
   }
 
   .sm\:h-0 {
@@ -6174,20 +6162,12 @@ tr {
     height: 11rem;
   }
 
-  .sm\:h-8 {
-    height: 2rem;
+  .sm\:h-5 {
+    height: 1.25rem;
   }
 
   .sm\:h-80 {
     height: 20rem;
-  }
-
-  .sm\:h-7 {
-    height: 1.75rem;
-  }
-
-  .sm\:h-5 {
-    height: 1.25rem;
   }
 
   .sm\:w-0 {
@@ -6288,14 +6268,6 @@ tr {
     height: 1.5rem;
   }
 
-  .md\:h-5 {
-    height: 1.25rem;
-  }
-
-  .md\:h-4 {
-    height: 1rem;
-  }
-
   .md\:w-32 {
     width: 8rem;
   }
@@ -6334,12 +6306,6 @@ tr {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  @media (min-width: 1024px) {
-    .md\:lg\:h-7 {
-      height: 1.75rem;
-    }
   }
 }
 
@@ -6390,10 +6356,6 @@ tr {
 
   .lg\:h-40 {
     height: 10rem;
-  }
-
-  .lg\:h-8 {
-    height: 2rem;
   }
 
   .lg\:h-7 {
