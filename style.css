@@ -6151,6 +6151,46 @@ tr {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:timeline-end {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 0.25rem;
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .timeline-compact li:has(.timeline-start) .md\:timeline-end, .timeline-horizontal.timeline-compact li:has(.timeline-start) .md\:timeline-end {
+    grid-column-start: none;
+    grid-row-start: auto;
+  }
+
+  .timeline-vertical.timeline-compact li:has(.timeline-start) .md\:timeline-end {
+    grid-column-start: auto;
+    grid-row-start: none;
+  }
+
+  .timeline-vertical .md\:timeline-end {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: start;
+  }
+
+  .timeline-horizontal .md\:timeline-end {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: flex-start;
+    justify-self: center;
+  }
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -6193,6 +6233,10 @@ tr {
 
   .sm\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .sm\:h-0 {
@@ -6303,6 +6347,10 @@ tr {
 
   .md\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:size-16 {
