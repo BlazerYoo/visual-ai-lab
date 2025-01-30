@@ -6151,54 +6151,9 @@ tr {
   }
 }
 
-@media (min-width: 768px) {
-  .md\:timeline-end {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 0.25rem;
-    align-self: flex-start;
-    justify-self: center;
-  }
-
-  .timeline-compact li:has(.timeline-start) .md\:timeline-end, .timeline-horizontal.timeline-compact li:has(.timeline-start) .md\:timeline-end {
-    grid-column-start: none;
-    grid-row-start: auto;
-  }
-
-  .timeline-vertical.timeline-compact li:has(.timeline-start) .md\:timeline-end {
-    grid-column-start: auto;
-    grid-row-start: none;
-  }
-
-  .timeline-vertical .md\:timeline-end {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    align-self: center;
-    justify-self: start;
-  }
-
-  .timeline-horizontal .md\:timeline-end {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    align-self: flex-start;
-    justify-self: center;
-  }
-}
-
 .hover\:text-orange-400:hover {
   --tw-text-opacity: 1;
   color: rgb(251 146 60 / var(--tw-text-opacity));
-}
-
-.hover\:text-orange-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -6224,11 +6179,6 @@ tr {
     margin-right: 1.25rem;
   }
 
-  .sm\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .sm\:mb-0\.5 {
     margin-bottom: 0.125rem;
   }
@@ -6243,10 +6193,6 @@ tr {
 
   .sm\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .sm\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .sm\:h-0 {
@@ -6345,27 +6291,17 @@ tr {
     margin-right: 4rem;
   }
 
-  .md\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
   }
 
-  .md\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .md\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
   }
 
   .md\:size-16 {
@@ -6447,19 +6383,14 @@ tr {
     margin-right: 5rem;
   }
 
-  .lg\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .lg\:mx-40 {
     margin-left: 10rem;
     margin-right: 10rem;
   }
 
-  .lg\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+  .lg\:mx-6 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .lg\:mt-36 {
@@ -6569,11 +6500,6 @@ tr {
   .xl\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
-  }
-
-  .xl\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
   }
 
   .xl\:w-4\/12 {
