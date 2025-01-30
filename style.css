@@ -4331,6 +4331,10 @@ details.collapse summary::-webkit-details-marker {
   grid-row: span 2 / span 2;
 }
 
+.float-left {
+  float: left;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -4345,6 +4349,14 @@ details.collapse summary::-webkit-details-marker {
 
 .m-auto {
   margin: auto;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
 }
 
 .mx-10 {
@@ -4420,6 +4432,11 @@ details.collapse summary::-webkit-details-marker {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .mb-0 {
@@ -4560,6 +4577,14 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .block {
@@ -4718,6 +4743,18 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .max-h-14 {
   max-height: 3.5rem;
 }
@@ -4840,6 +4877,14 @@ details.collapse summary::-webkit-details-marker {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .flex-shrink {
@@ -5675,7 +5720,7 @@ tr {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: black;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.3px;
 }
 
 .btn-ghost.btn-active {
@@ -6169,6 +6214,10 @@ tr {
     visibility: hidden;
   }
 
+  .sm\:m-5 {
+    margin: 1.25rem;
+  }
+
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -6177,6 +6226,11 @@ tr {
   .sm\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .sm\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .sm\:mb-0\.5 {
@@ -6193,6 +6247,18 @@ tr {
 
   .sm\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .sm\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .sm\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .sm\:h-0 {
@@ -6237,6 +6303,10 @@ tr {
 
   .sm\:w-80 {
     width: 20rem;
+  }
+
+  .sm\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .sm\:justify-normal {

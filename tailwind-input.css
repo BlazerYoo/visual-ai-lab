@@ -143,7 +143,7 @@ tr {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: black;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1.3px;
 }
 
 .btn-ghost.btn-active {
