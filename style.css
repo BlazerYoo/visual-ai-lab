@@ -6445,6 +6445,10 @@ tr {
     width: 41.666667%;
   }
 
+  .md\:w-44 {
+    width: 11rem;
+  }
+
   .md\:pl-8 {
     padding-left: 2rem;
   }

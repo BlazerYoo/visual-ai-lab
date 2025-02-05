@@ -27,7 +27,7 @@ function researchFunc() {
                     paper.classList.add("hidden");
                 });
 
-                const queryString = `.` + selectedTags.join(".");
+                const queryString = `.` + selectedTags.join(", .");
 
                 const selectedPapers = document.querySelectorAll(queryString);
                 selectedPapers.forEach(paper => {
