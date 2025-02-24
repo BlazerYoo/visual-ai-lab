@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         contentDiv.innerHTML = data;
         updateActiveTab(tabName);
       })
+      .then((response) => {window.scrollTo(0, 0);})
       .catch((error) => {
         contentDiv.innerHTML = "<p>Error loading content.</p>";
         console.error(error);
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Load content based on the hash or default to "home"
   function loadContentFromHash() {
     const hash = window.location.hash.slice(1) || "home"; // Default to "home" if no hash
-
     loadContentFromFile(hash);
   }
 

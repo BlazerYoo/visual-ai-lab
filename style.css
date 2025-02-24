@@ -4327,6 +4327,10 @@ details.collapse summary::-webkit-details-marker {
   z-index: 1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -4343,6 +4347,10 @@ details.collapse summary::-webkit-details-marker {
   margin: 0.25rem;
 }
 
+.m-14 {
+  margin: 3.5rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -4351,20 +4359,16 @@ details.collapse summary::-webkit-details-marker {
   margin: 0.75rem;
 }
 
+.m-32 {
+  margin: 8rem;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
 
 .m-auto {
   margin: auto;
-}
-
-.m-14 {
-  margin: 3.5rem;
-}
-
-.m-32 {
-  margin: 8rem;
 }
 
 .mx-1 {
@@ -4563,6 +4567,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 3rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -4579,6 +4587,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.75rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
@@ -4593,14 +4605,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
-.mt-32 {
-  margin-top: 8rem;
 }
 
 .block {
@@ -4938,6 +4942,10 @@ details.collapse summary::-webkit-details-marker {
   grid-auto-columns: max-content;
 }
 
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
@@ -4946,12 +4954,20 @@ details.collapse summary::-webkit-details-marker {
   grid-auto-flow: row dense;
 }
 
+.grid-flow-col-dense {
+  grid-auto-flow: column dense;
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -6230,17 +6246,14 @@ tr {
     margin: 1.25rem;
   }
 
-  .sm\:m-14 {
-    margin: 3.5rem;
-  }
-
-  .sm\:m-32 {
-    margin: 8rem;
-  }
-
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .sm\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
   }
 
   .sm\:mx-4 {
@@ -6251,11 +6264,6 @@ tr {
   .sm\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
-  }
-
-  .sm\:mx-32 {
-    margin-left: 8rem;
-    margin-right: 8rem;
   }
 
   .sm\:mb-0\.5 {
@@ -6278,20 +6286,12 @@ tr {
     margin-left: 0.5rem;
   }
 
-  .sm\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .sm\:ml-16 {
-    margin-left: 4rem;
-  }
-
   .sm\:mt-14 {
     margin-top: 3.5rem;
   }
 
-  .sm\:mt-32 {
-    margin-top: 8rem;
+  .sm\:mt-20 {
+    margin-top: 5rem;
   }
 
   .sm\:h-0 {
@@ -6338,18 +6338,6 @@ tr {
     width: 20rem;
   }
 
-  .sm\:w-10\/12 {
-    width: 83.333333%;
-  }
-
-  .sm\:w-10 {
-    width: 2.5rem;
-  }
-
-  .sm\:justify-normal {
-    justify-content: normal;
-  }
-
   .sm\:gap-1 {
     gap: 0.25rem;
   }
@@ -6360,10 +6348,6 @@ tr {
 
   .sm\:pr-4 {
     padding-right: 1rem;
-  }
-
-  .sm\:pl-2 {
-    padding-left: 0.5rem;
   }
 
   .sm\:text-end {
@@ -6397,6 +6381,14 @@ tr {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -6437,16 +6429,32 @@ tr {
     height: 1.5rem;
   }
 
+  .md\:h-0 {
+    height: 0px;
+  }
+
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:w-32 {
     width: 8rem;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:w-5\/12 {
     width: 41.666667%;
   }
 
-  .md\:w-44 {
-    width: 11rem;
+  .md\:w-0 {
+    width: 0px;
+  }
+
+  .md\:w-16 {
+    width: 4rem;
   }
 
   .md\:pl-8 {
