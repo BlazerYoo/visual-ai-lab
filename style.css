@@ -4718,6 +4718,16 @@ details.collapse summary::-webkit-details-marker {
   height: 20rem;
 }
 
+.size-0 {
+  width: 0px;
+  height: 0px;
+}
+
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
 .h-0 {
   height: 0px;
 }
@@ -6394,6 +6404,11 @@ tr {
     margin-top: 5rem;
   }
 
+  .sm\:size-8 {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .sm\:h-0 {
     height: 0px;
   }
@@ -6418,6 +6433,10 @@ tr {
     height: 20rem;
   }
 
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
   .sm\:w-0 {
     width: 0px;
   }
@@ -6436,6 +6455,14 @@ tr {
 
   .sm\:w-80 {
     width: 20rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
+  .sm\:w-8 {
+    width: 2rem;
   }
 
   .sm\:pl-4 {
