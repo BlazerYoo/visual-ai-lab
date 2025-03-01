@@ -1,58 +1,77 @@
-<div class="flex flex-col mt-12 mx-5 sm:mx-16">
-    <div class="border-l-8 pl-2 text-orange-400 mt-5 font-mono font-bold text-base sm:text-lg">
-        2024
-    </div>
-    <div class="m-3 sm:mx-5 text-xs sm:text-sm md:text-base">
-        <div class="flex flex-row">
-            <h1 class="self-end font-bold">What is Dataset Distillation Learning?</h1>
-            <div class="flex flex-row invisible sm:visible">
-                <div class="avatar h-8 w-8 ml-2"> <!-- profile pic -->
-                    <div class="rounded-full">
-                        <img src="assets/alum/AngelinaWang.png">
+<div class="flex flex-col mt-12">
+
+    <div class="flex flex-wrap justify-center">
+        <div class="btn rounded-full badge border-2 badge-outline badge-warning font-bold research-filter mx-3 mb-2 text-xs sm:text-sm md:text-base" id="cv">computer vision, machine learning</div>
+        <div class="btn rounded-full badge border-2 badge-outline badge-success font-bold research-filter mx-3 mb-2 text-xs sm:text-sm md:text-base" id="hci">human-computer interaction, cognitive science</div>
+        <div class="btn rounded-full badge border-2 badge-outline badge-info font-bold research-filter mx-3 mb-2 text-xs sm:text-sm md:text-base" id="fair">fairness, accountability, and transparency</div>
+
+    </div> 
+
+    <div class="mt-10 text-right text-sm mx-10 md:mx-32 lg:mx-40">*our lab members pictured</div>
+    
+    <div class="mx-10 mt-5 md:mx-32 lg:mx-40">
+      <? var papers = getResearchContent(); ?>
+      <? for (var i = 0; i < papers.length; i++) { ?>
+        <? var [year, curr_papers] = papers[i]; ?>
+        <div class="border-l-8 pl-2 text-orange-400 mt-5 font-mono font-bold text-base sm:text-lg">
+            <?= year ?>
+        </div>
+        <? for (var j = curr_papers.length - 1; j >= 0; j--) { ?>
+          <? var paper = curr_papers[j]; ?>
+          <!-- title: title,
+          authors_list: authors_list,
+          confjourn_name: confjourn_name,
+          profile_pics: profile_pics,
+          links: links,
+          cvml_keys: cvml_keys,
+          hci_keys: hci_keys,
+          accountability_keys: accountability_keys -->
+          <div class=<?= paper.tags ?>>
+            <div class="flex flex-row">
+                <h1 class="self-end font-bold"><?= paper.title ?></h1> <!-- paper title -->
+
+                <!-- profile pictures -->
+                <div class="flex flex-row invisible sm:visible">
+                <? for (var k = 0; k < paper.profile_pics.length; k++) { ?>
+                  <div class="avatar size-0 sm:size-8 ml-2"> <!-- profile pic -->
+                        <div class="rounded-full">
+                            <img src=<?= paper.profile_pics[k] ?>>
+                        </div>
                     </div>
-                </div>
-                <div class="avatar h-8 w-8 ml-2"> <!-- profile pic -->
-                    <div class="rounded-full">
-                        <img src="assets/alum/AngelinaWang.png">
-                    </div>
+                <? } ?>
                 </div>
             </div>
-        </div>
-        <p>William Yang, Ye Zhu, Zhiwei Deng and Olga Russakovsky</p>
-        <p class="italic">International Conference on Machine Learning (ICML), 2024.</p>
-        <p class="text-orange-800"><a href="" class="hover:underline">[paper]</a>
-            <a href="" class="hover:underline">[code]</a>
-            <a href="" class="hover:underline">[bibtex]</a>
-        </p>
-    </div>
+            <p><?= paper.authors_list ?></p>
+            <? if (paper.has_author_note) { ?>
+              <p class="italic"><?= paper.note?></p>
+            <? } ?>
+            <p class="italic"><?= paper.confjourn_name ?></p>
 
-    <div class="m-3 sm:mx-5 text-xs sm:text-sm md:text-base">
-        <h1 class="font-bold">Analyzing the Roles of Language and Vision in Learning from Limited Data</h1>
-        <p>Allison Chen and Ilia Sucholutsky and Olga Russakovsky and Tom Griffiths</p>
-        <p class="italic">Proceedings of the Annual Meeting of the Cognitive Science Society (CogSci), 2024.</p>
-    </div>
+            <p class="text-orange-800">
+            <? for (var k = 0; k < paper.links.length; k++) { ?>
+              <a href=<?= paper.links[k][1] ?> class="hover:underline">[<?= paper.links[k][0] ?>]</a>
+            <? } ?>
+            </p>
 
-    <div class="m-3 sm:mx-5 text-xs sm:text-sm md:text-base">
-        <h1 class="font-bold">ImageNet-OOD: Deciphering Modern Out-of-Distribution Detection Algorithms</h1>
-        <p>William Yang and Byron Zhang and Olga Russakovsky</p>
-        <p class="italic">International Conference on Learning Representations (ICLR), 2024.</p>
-    </div>
+            <!-- add key terms -->
+            <div class="flex flex-wrap">
+              <? for (var k = 0; k < paper.cvml_keys.length; k++) { ?>
+                <div class="badge badge-outline badge-warning mr-1 h-auto text-xs sm:text-sm md:text-base" id="cv"><?= paper.cvml_keys[k] ?></div>
+              <? } ?>
 
-    <div class="border-l-8 pl-2 mt-5 text-orange-400 font-mono font-bold text-base sm:text-lg">
-        2023
-    </div>
-    <div class="m-3 sm:mx-5 text-xs sm:text-sm md:text-base">
-        <h1 class="font-bold">Boundary Guided Learning-Free Semantic Control with Diffusion Models</h1>
-        <p>Ye Zhu and Yu Wu and Zhiwei Deng and Olga Russakovsky and Yan Yan</p>
-        <p class="italic">Neural Information Processing Systems (NeurIPS), 2023.</p>
-    </div>
+              <? for (var k = 0; k < paper.hci_keys.length; k++) { ?>
+                <div class="badge badge-outline badge-success mr-1 h-auto text-xs sm:text-sm md:text-base" id="hci"><?= paper.hci_keys[k] ?></div>
+              <? } ?>
 
-    <div class="m-3 sm:mx-5 text-xs sm:text-sm md:text-base">
-        <h1 class="font-bold">Efficient, Self-Supervised Human Pose Estimation with Inductive Prior Tuning</h1>
-        <p>Nobline Yoo and Olga Russakovsky</p>
-        <p class="italic">Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops,
-            2023.</p>
+              <? for (var k = 0; k < paper.accountability_keys.length; k++) { ?>
+                <div class="badge badge-outline badge-info mr-1 h-auto text-xs sm:text-sm md:text-base" id="fair"><?= paper.accountability_keys[k] ?></div>
+              <? } ?>
+            </div>
+          </div>
+        <? } ?>
+      <? } ?>
+
     </div>
-
-
 </div>
+
+<div class="h-40"></div>

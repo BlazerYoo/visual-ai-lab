@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Ai BibTeX</title>
+</head>
+<style>
+  @keyframes flash {
+    0%, 100% { outline: 5px solid red; }
+    50% { outline: 5px solid transparent; }
+  }
+
+  .flash-border {
+    animation: flash 2s ease-in-out;
+  }
+</style>
+<body>
+<? var visualai_bib = convertToBibTeX(getResearchContentData()); ?>
+<div id="bib-content"></div>
+<script>
+  document.getElementById('bib-content').innerHTML = <?= visualai_bib ?>;
+</script>
+<script src="scripts/bib.js"></script>
+</body>
+</html>
