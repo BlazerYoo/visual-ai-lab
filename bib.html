@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visual Ai BibTeX</title>
 </head>
+<style>
+  @keyframes flash {
+    0%, 100% { outline: 5px solid red; }
+    50% { outline: 5px solid transparent; }
+  }
+
+  .flash-border {
+    animation: flash 2s ease-in-out;
+  }
+</style>
 <body>
 <pre id="bib-content">@string{neurips = &#34;Advances in Neural Information Processing Systems (NeurIPS)&#34;}
 @string{icml = &#34;International Conference on Machine Learning (ICML)&#34;}
@@ -30,59 +40,72 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% selected preprints
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+<span data-title="chung2025unifying">
 @article{chung2025unifying,
   author={Jihoon Chung and Tyler Zhu and Max Gonzalez Saez-Diez and Juan Carlos Niebles and Honglu Zhou and Olga Russakovsky},
   title={{Unifying Specialized Visual Encoders for Video Language Models}},
   journal={arXiv preprint arXiv:2501.01426},
   year={2025}
 }
+</span>
 
+<span data-title="wu2024icons"></span>
 @article{wu2024icons,
   author={Xindi Wu and Mengzhou Xia and Rulin Shao and Zhiwei Deng and Pang Wei Koh and Olga Russakovsky},
   title={{ICONS: Influence Consensus for Vision-Language Data Selection}},
   journal={arXiv preprint arXiv:2501.00654},
   year={2024}
 }
+</span>
 
+<span data-title="sudhakar2023icon2">
 @article{sudhakar2023icon2,
   author={Sruthi Sudhakar and Viraj Prabhu and Olga Russakovsky and Judy Hoffman},
   title={{ICON^2: Reliably Benchmarking Predictive Inequity in Object Detection}},
   journal={arXiv preprint arXiv:2306.04482},
   year={2023}
 }
+</span>
 
+<span data-title="ramaswamy2022elude">
 @article{ramaswamy2022elude,
   author={Vikram V. Ramaswamy and Sunnie S. Y. Kim and Nicole Meister and Ruth Fong and Olga Russakovsky},
   title={{ELUDE: Generating Interpretable Explanations via a Decomposition into Labelled and Unlabelled Features}},
   journal={arXiv preprint arXiv:2206.07690},
   year={2022}
 }
+</span>
 
+<span data-title="stroud2019compositional">
 @article{stroud2019compositional,
   author={Jonathan Stroud and Ryan McCaffrey and Rada Mihalcea and Jia Deng and Olga Russakovsky},
   title={{Compositional Temporal Visual Grounding of Natural Language Event Descriptions}},
   journal={arxiv preprint arXiv:1912.02256},
   year={2019}
 }
+</span>
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% published
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+<span data-title="yang2025d3">
 @inproceedings{yang2025d3,
   title={{D^3: Scaling Up Deepfake Detection by Learning from Discrepancy}},
   author={Yongqi Yang and Zhihao Qian and Ye Zhu and Olga Russakovsky and Yu Wu},
   booktitle={Computer Vision and Pattern Recognition (CVPR)},
   year={2025}
 }
+</span>
 
+<span data-title="chen2025portraying">
 @inproceedings{chen2025portraying,
   title={{Portraying Large Language Models as Machines, Tools, or Companions Affects What Mental Capacities Humans Attribute to Them}},
   author={Allison Chen and Sunnie S. Y. Kim and Amaya Dharmasiri and Olga Russakovsky and Judith E. Fan},
   booktitle={ACM Conference on Human Factors in Computing Systems (CHI), Extended Abstract Track},
   year={2025}
 }
+</span>
 
 @inproceedings{kim2025fostering,
   title={{Fostering Appropriate Reliance on Large Language Models: The Role of Explanations, Sources, and Inconsistencies}},
@@ -533,5 +556,6 @@
 }
 
 </pre>
+<script src="scripts/bib.js"></script>
 </body>
 </html>
