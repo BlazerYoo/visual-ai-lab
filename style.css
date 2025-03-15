@@ -6494,6 +6494,10 @@ tr {
     margin-top: 2rem;
   }
 
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .md\:size-16 {
     width: 4rem;
     height: 4rem;
@@ -6600,6 +6604,10 @@ tr {
 
   .lg\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .lg\:flex {
