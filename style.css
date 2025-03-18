@@ -5212,10 +5212,6 @@ details.collapse summary::-webkit-details-marker {
   border-left-width: 8px;
 }
 
-.border-l-\[5px\] {
-  border-left-width: 5px;
-}
-
 .border-t {
   border-top-width: 1px;
 }
@@ -5436,6 +5432,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .pl-8 {
@@ -6356,10 +6356,6 @@ tr {
     margin-bottom: 0.125rem;
   }
 
-  .sm\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
   .sm\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -6374,10 +6370,6 @@ tr {
 
   .sm\:mt-14 {
     margin-top: 3.5rem;
-  }
-
-  .sm\:mt-20 {
-    margin-top: 5rem;
   }
 
   .sm\:size-8 {
@@ -6425,14 +6417,6 @@ tr {
     width: 20rem;
   }
 
-  .sm\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .sm\:pr-4 {
-    padding-right: 1rem;
-  }
-
   .sm\:text-end {
     text-align: end;
   }
@@ -6472,18 +6456,13 @@ tr {
     visibility: hidden;
   }
 
-  .md\:mx-16 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
-
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
   }
 
-  .md\:mb-5 {
-    margin-bottom: 1.25rem;
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .md\:mt-14 {
@@ -6492,10 +6471,6 @@ tr {
 
   .md\:mt-8 {
     margin-top: 2rem;
-  }
-
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
   }
 
   .md\:size-16 {
@@ -6544,14 +6519,6 @@ tr {
     width: 41.666667%;
   }
 
-  .md\:pl-8 {
-    padding-left: 2rem;
-  }
-
-  .md\:pr-8 {
-    padding-right: 2rem;
-  }
-
   .md\:text-end {
     text-align: end;
   }
@@ -6564,11 +6531,6 @@ tr {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -6583,11 +6545,6 @@ tr {
     margin-right: 4rem;
   }
 
-  .lg\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .lg\:mx-40 {
     margin-left: 10rem;
     margin-right: 10rem;
@@ -6598,16 +6555,12 @@ tr {
     margin-right: 1.5rem;
   }
 
-  .lg\:mb-10 {
-    margin-bottom: 2.5rem;
+  .lg\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .lg\:mt-16 {
     margin-top: 4rem;
-  }
-
-  .lg\:mb-5 {
-    margin-bottom: 1.25rem;
   }
 
   .lg\:flex {
@@ -6642,14 +6595,6 @@ tr {
     width: 10rem;
   }
 
-  .lg\:w-5\/12 {
-    width: 41.666667%;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333%;
-  }
-
   .lg\:w-\[40\%\] {
     width: 40%;
   }
@@ -6660,19 +6605,6 @@ tr {
 
   .lg\:p-10 {
     padding: 2.5rem;
-  }
-
-  .lg\:pl-12 {
-    padding-left: 3rem;
-  }
-
-  .lg\:pr-12 {
-    padding-right: 3rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-4xl {
@@ -6702,11 +6634,6 @@ tr {
     margin-right: 5rem;
   }
 
-  .xl\:mx-32 {
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-
   .xl\:mt-24 {
     margin-top: 6rem;
   }
@@ -6715,13 +6642,25 @@ tr {
     width: 33.333333%;
   }
 
+  .xl\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .xl\:w-6\/12 {
     width: 50%;
   }
 
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .xl\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .xl\:text-lg {
@@ -6736,13 +6675,12 @@ tr {
     margin-right: 8rem;
   }
 
-  .\32xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .\32xl\:pl-3 {
+    padding-left: 0.75rem;
   }
 
-  .\32xl\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
