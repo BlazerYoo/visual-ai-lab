@@ -4655,6 +4655,18 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 2rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-56 {
+  margin-left: 14rem;
+}
+
+.ml-52 {
+  margin-left: 13rem;
+}
+
 .block {
   display: block;
 }
@@ -6364,10 +6376,6 @@ tr {
     margin-bottom: 1.25rem;
   }
 
-  .sm\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
   .sm\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -6519,10 +6527,6 @@ tr {
     width: 11rem;
   }
 
-  .md\:w-5\/12 {
-    width: 41.666667%;
-  }
-
   .md\:text-end {
     text-align: end;
   }
@@ -6554,11 +6558,6 @@ tr {
     margin-right: 10rem;
   }
 
-  .lg\:mx-6 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
   .lg\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -6579,20 +6578,12 @@ tr {
     height: 0px;
   }
 
-  .lg\:h-32 {
-    height: 8rem;
-  }
-
   .lg\:h-40 {
     height: 10rem;
   }
 
   .lg\:w-0 {
     width: 0px;
-  }
-
-  .lg\:w-32 {
-    width: 8rem;
   }
 
   .lg\:w-40 {
@@ -6605,15 +6596,6 @@ tr {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:p-10 {
-    padding: 2.5rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .lg\:text-base {
