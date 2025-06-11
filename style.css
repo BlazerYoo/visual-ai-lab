@@ -4343,6 +4343,10 @@ details.collapse summary::-webkit-details-marker {
   grid-row: span 3 / span 3;
 }
 
+.float-right {
+  float: right;
+}
+
 .float-left {
   float: left;
 }
