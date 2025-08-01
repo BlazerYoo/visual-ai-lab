@@ -1,3 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princeton Visual AI Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function menu_open_close() {
+            var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+            if (menu_hidden.style.visibility == "visible") {
+                document.getElementsByTagName("body")[0].style.overflow = "visible"
+                menu_hidden.style.visibility = "hidden";
+            }
+            else {
+                var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+                menu_hidden.style.top = navbar_height + "px";
+                menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+                menu_hidden.style.visibility = "visible";
+
+                document.getElementsByTagName("body")[0].style.overflow = "hidden"
+            }
+        }
+    </script>
+    
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+        <div class="navbar-start w-full lg:w-[40%] bg-white" style="z-index: 10000;">
+
+            
+
+            
+            
+
+            <div class="lg:hidden" style="z-index: 10000;">
+                <button class="btn btn-square ml-2" onclick="menu_open_close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+            </div>
+
+            
+
+            <a href="/"
+                class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+                style="z-index: 10000;">
+                <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
+
+
+        </div>
+
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+                <li><a href="/home" class="nav-tab">home</a></li>
+                <li><a href="/people" class="nav-tab">people</a></li>
+                <li><a href="/research" class="nav-tab current-tab">research</a></li>
+                <li><a href="/awards" class="nav-tab">awards</a></li>
+                <li><a href="/community" class="nav-tab">community</a></li>
+                <li><a href="/join-us" class="nav-tab">join us</a></li>
+            </ul>
+        </div>
+
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+            style="position:absolute; top:65px; visibility: hidden;">
+            
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+                <li class="flex justify-center mdh:p-4"><a href="/home" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="/people" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">people</a></li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/research" onclick="menu_open_close()" class="nav-tab hover:underline current-tab">research</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/community" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
+                </li>
+                <li class="flex justify-center mdh:p-4"><a href="/join-us" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">join us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="content" class="w-full">
+
+
+
 <div class="flex flex-col mt-12">
 
     <div class="flex flex-wrap justify-center">
@@ -2707,3 +2806,12 @@
 </div>
 
 <div class="h-40"></div>
+
+
+
+</div>
+    
+    <script src="scripts/research.js"></script>
+</body>
+
+</html>
