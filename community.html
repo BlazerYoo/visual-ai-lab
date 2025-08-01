@@ -1,3 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princeton Visual AI Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function menu_open_close() {
+            var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+            if (menu_hidden.style.visibility == "visible") {
+                document.getElementsByTagName("body")[0].style.overflow = "visible"
+                menu_hidden.style.visibility = "hidden";
+            }
+            else {
+                var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+                menu_hidden.style.top = navbar_height + "px";
+                menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+                menu_hidden.style.visibility = "visible";
+
+                document.getElementsByTagName("body")[0].style.overflow = "hidden"
+            }
+        }
+    </script>
+    
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+        <div class="navbar-start w-full lg:w-[40%] bg-white" style="z-index: 10000;">
+
+            
+
+            
+            
+
+            <div class="lg:hidden" style="z-index: 10000;">
+                <button class="btn btn-square ml-2" onclick="menu_open_close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+            </div>
+
+            
+
+            <a href="/"
+                class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+                style="z-index: 10000;">
+                <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
+
+
+        </div>
+
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+                <li><a href="/home" class="nav-tab">home</a></li>
+                <li><a href="/people" class="nav-tab">people</a></li>
+                <li><a href="/research" class="nav-tab">research</a></li>
+                <li><a href="/awards" class="nav-tab">awards</a></li>
+                <li><a href="/community" class="nav-tab current-tab">community</a></li>
+                <li><a href="/join-us" class="nav-tab">join us</a></li>
+            </ul>
+        </div>
+
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+            style="position:absolute; top:65px; visibility: hidden;">
+            
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+                <li class="flex justify-center mdh:p-4"><a href="/home" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="/people" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">people</a></li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/research" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/community" onclick="menu_open_close()" class="nav-tab hover:underline current-tab">community</a>
+                </li>
+                <li class="flex justify-center mdh:p-4"><a href="/join-us" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">join us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="content" class="w-full">
+
+
+
 <div class="mt-16 text-center sm:text-2xl mx-5 sm:mx-16 font-thin">Our lab is involved in many <span
         class="text-orange-400">community</span> initiatives.
     Check out what we've been up to!</div>
@@ -29,7 +128,10 @@
                 <b>Professor Olga Russakovsky</b> (who also co-founded <a
                     href="https://hai.stanford.edu/stanford-ai4all" class="hover:underline">Stanford AI4ALL</a> in
                 2015) and <b>Professor Ed Felten</b>.
-                Each year, we work with a new cohort of
+                The curriculum developed together with a team of undergraduate and graduate students in the Computer
+                Science
+                Department and the Center for Information Technology Policy
+                emphasizes the intersection of AI technology and policy. Each year, we work we a new cohort of
                 approximately
                 30 students, guiding them through hands-on research projects, professor lectures, and a field trip
                 to
@@ -108,145 +210,66 @@
         </div>
     </div>
 
-    <div class="flex flex-col mt-5 w-10/12 p-6">
-
+    
+    <div class="flex flex-wrap justify-center mt-10">
         
-        <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
-            <a href="https://ai-4-all.org/"><span class="text-orange-400">AI4ALL</span> nonprofit</a>
-        </div>
+        <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
 
-        <div class="flex flex-col mt-5 sm:ml-2">
-            <article>
-                <div class="float-right ml-5">
-                    <div class="w-28 sm:w-20 md:w-32 lg:w-40">
-                        <img src="assets/community/ai4all_nonprofit.png">
+            
+            <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
+                <a href="https://ai4all.princeton.edu/"><span class="text-white">AI4ALL</span> nonprofit</a>
+            </div>
+
+            <div class="flex flex-row mt-10 ml-2">
+                <div class="avatar"> 
+                    <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
+                        <img src="assets/community/nonprofit.jpg">
                     </div>
                 </div>
 
-                <a href="https://ai-4-all.org/"><span
-                        class="text-orange-400 font-bold hover:underline">AI4ALL</span></a> is a national nonprofit <b>co-founded</b> by <b>Professor Olga 
-                Russakovsky</b>. It is dedicated to creating a more inclusive, 
-                human-centered discipline by transforming the pipeline of AI practitioners. 
-
-            </article>
-        </div>
-    </div>
-
-    <div class="flex flex-col mt-5 w-10/12 p-6">
-
-        
-        <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
-            <a href="https://scienceoutreach.princeton.edu/laboratory-learning-program"><span class="text-orange-400">PRINCETON</span> Lab Learning Program</a>
-        </div>
-
-        <div class="flex flex-col mt-5 sm:ml-2">
-            <article>
-                <div class="float-left mr-5">
-                    <div class="h-28 w-28 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-40 lg:h-40">
-                        <img src="assets/community/llp.png">
-                    </div>
-                </div>
-
-                        We collaborate with the <a href="https://scienceoutreach.princeton.edu/laboratory-learning-program"><span
-                        class="text-orange-400 font-bold hover:underline">Princeton Lab Learning Program (LLP)</span></a> 
-                        to provide high school students with opportunities to do research in our lab some summers. 
-
-                        <div class="text-sm md:text-base mt-3 ml-52">
-                            <span class="text-orange-400">Shout-out</span> to current lab members who have served as
-                            mentors:
-                        </div>
-
-                        <div class="flex flex-wrap mt-4 justify-start ml-52">
-                            <div class="flex flex-col mb-5 mr-4">
-                                <div class="text-xs text-center font-mono">Allison C.</div>
-                                <div class="avatar size-10 md:size-20">
-                                    <div class="rounded-full">
-                                        <img src="assets/allison_chen.jpg">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col mb-5 mr-4">
-                                <div class="text-xs text-center font-mono">William Y.</div>
-                                <div class="avatar size-10 md:size-20">
-                                    <div class="rounded-full">
-                                        <img src="assets/william_yang.jpg">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col mb-5 mr-4">
-                                <div class="text-xs text-center font-mono">Jihoon C.</div>
-                                <div class="avatar size-10 md:size-20">
-                                    <div class="rounded-full">
-                                        <img src="assets/jihoon_chung.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-            </article>
-
-        </div>
-    </div>
-
-    <div class="flex flex-col mt-5 w-10/12 p-6">
-
-        
-        <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
-            <a href="https://www.cs.princeton.edu/diversity-and-outreach/princeton-research-experience-undergrads-ai-and-machine-learning"><span class="text-orange-400">PRINCETON</span> AI REU</a>
-        </div>
-
-        <div class="flex flex-col mt-5 sm:ml-2">
-            <article>
-                <!-- <div class="float-right ml-5">
-                    <div class="w-28 sm:w-20 md:w-32 lg:w-40">
-                        <img src="assets/community/ai4all_nonprofit.png">
-                    </div>
-                </div> -->
-
-                <!-- <a href="https://ai-4-all.org/"><span
-                        class="text-orange-400 font-bold hover:underline">AI4ALL</span></a>  -->
-                The computer science department at Princeton invites students 
-                to apply to participate in a research experience for 
-                undergraduates (REU) focused on AI. We are excited to be a 
-                part of this effort.
-
-            </article>
-        </div>
-    </div>
-
-    <div class="flex flex-col mt-5 w-10/12 p-6">
-
-        
-        <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
-            <a href="https://ai.princeton.edu/"><span class="text-orange-400">PRINCETON</span> AI Lab</a>
-        </div>
-
-        <div class="flex flex-col mt-5 sm:ml-2">
-            <article>
-                <!-- <div class="float-right ml-5">
-                    <div class="w-28 sm:w-20 md:w-32 lg:w-40">
-                        <img src="assets/community/ai4all_nonprofit.png">
-                    </div>
-                </div> -->
-
-                <!-- <a href="https://ai-4-all.org/"><span
-                        class="text-orange-400 font-bold hover:underline">AI4ALL</span></a>  -->
                 
-                The Princeton Laboratory for Artificial Intelligence (the "AI Lab"
-                for short) supports and expands the scope of AI research at 
-                Princeton. The AI Lab is focused on incubating ambitious 
-                AI-related research initiatives involving faculty members across 
-                the natural sciences, engineering, social sciences and humanities 
-                and providing a shared infrastructure for supporting AI research 
-                more broadly.  Professor Olga Russakovsky is excited to be the 
-                Associate Director of this effort. 
+                <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
+                    <div>
+                        The AI4ALL nonprofit, which Prof. Olga Russakovsky co-founded in 2017 together with
+                        Prof. Fei-Fei Li and Dr. Rick Sommer, is a nonprofit working to increase diversity and
+                        inclusion in AI by educating a diverse next generation of AI leaders.
+                    </div>
 
 
-            </article>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
+
+            
+            <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
+                <a href="https://scienceoutreach.princeton.edu/laboratory-learning-program"><span class="text-white">LLP</span> collab</a>
+            </div>
+
+            <div class="flex flex-row mt-10 ml-2">
+                <div class="avatar"> 
+                    <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
+                        <img class="h-1/12" src="assets/community/llp2.png">
+                    </div>
+                </div>
+
+                
+                <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
+                    <div>
+                        The Laboratory Learning Program is a full-time, free research
+                        experience in the sciences or engineering for high school students in NJ and PA who
+                        are within a 50 mile radius to Princeton University (transportation is not provided and
+                        this is not a residential program).
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
+
     
     <div class="flex flex-col p-6 w-10/12 mt-10">
 
@@ -775,5 +798,14 @@
                     </div>
 
     </div>
-
+</div>
 <div class="h-40"></div>
+
+
+
+</div>
+    
+    
+</body>
+
+</html>
