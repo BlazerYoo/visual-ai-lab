@@ -12,6 +12,14 @@
 //   sheet.getRange('E2').setValue('[insert award here]');
 // }
 
+// research test script
+function researchTestingScript() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName('research');
+  const a = sheet.getRange('E5').getValue();
+  spreadsheet.toast(a);
+}
+
 // Push research content
 function researchPushToGitHub() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();

@@ -1,240 +1,388 @@
-<div class="mt-16 text-center sm:text-2xl mx-5 sm:mx-16 font-thin">Our lab is involved in many <span
-    class="text-orange-400">community</span> initiatives.
-Check out what we've been up to!</div>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-<br>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princeton Visual AI Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-<!-- <div class="text-center"><span class="loading loading-dots loading-lg"></span></div> -->
+<body>
+    <script>
+        function menu_open_close() {
+            var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+            if (menu_hidden.style.visibility == "visible") {
+                document.getElementsByTagName("body")[0].style.overflow = "visible"
+                menu_hidden.style.visibility = "hidden";
+            }
+            else {
+                var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+                menu_hidden.style.top = navbar_height + "px";
+                menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+                menu_hidden.style.visibility = "visible";
 
-<div class="flex flex-col grid justify-items-center justify-center w-full">
-<!-- PRINCETON AI4ALL -->
-<div class="flex flex-col mt-5 w-10/12 p-6">
+                document.getElementsByTagName("body")[0].style.overflow = "hidden"
+            }
+        }
+    </script>
+    <!--navbar-->
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+        <div class="navbar-start w-full lg:w-[40%] bg-white" style="z-index: 10000;">
 
-    <!-- title -->
-    <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
-        <a href="https://ai4all.princeton.edu/"><span class="text-orange-400">PRINCETON</span> AI4ALL</a>
-    </div>
+            <!-- 1204, 1259 -->
 
-    <div class="flex flex-col mt-5 sm:ml-2">
-        <article>
-            <div class="avatar float-left mr-5">
-                <div class="h-28 w-28 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full">
-                    <img src="assets/community/ai4all.png">
+            <!--navbar burger in case screen size compresses-->
+            <!-- <div class="dropdown"> 
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
                 </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-mono text-lg">
+                    <li><a href="#home" class="nav-tab">home</a></li>
+                    <li><a href="#people" class="nav-tab">people</a></li>
+                    <li>
+                        <a href="#research" class="nav-tab">research</a>
+                    </li>
+                    <li>
+                        <a href="#awards" class="nav-tab">awards</a>
+                    </li>
+                    <li>
+                        <a href="#community" class="nav-tab">community</a>
+                    </li>
+                    <li><a href="#join-us" class="nav-tab">join us</a></li>
+                </ul>
+            </div> -->
+
+            <div class="lg:hidden" style="z-index: 10000;">
+                <button class="btn btn-square ml-2" onclick="menu_open_close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
             </div>
 
-            <a href="https://ai4all.princeton.edu/"><span
-                    class="text-orange-400 font-bold hover:underline">Princeton AI4ALL</span></a> is a
-            three-week summer camp for rising high school juniors <b>co-founded</b> in 2018 by
-            <b>Professor Olga Russakovsky</b> (who also co-founded <a
-                href="https://hai.stanford.edu/stanford-ai4all" class="hover:underline">Stanford AI4ALL</a> in
-            2015) and <b>Professor Ed Felten</b>.
-            The curriculum developed together with a team of undergraduate and graduate students in the Computer
-            Science
-            Department and the Center for Information Technology Policy
-            emphasizes the intersection of AI technology and policy. Each year, we work we a new cohort of
-            approximately
-            30 students, guiding them through hands-on research projects, professor lectures, and a field trip
-            to
-            Washington, D.C. to discuss AI policy and ethics.
-        </article>
+            <!--Lab logo and title-->
 
-        <div class="text-sm md:text-base mt-3">
-            <span class="text-orange-400">Shout-out</span> to current lab members who have served as
-            instructors:
+            <a href="/"
+                class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+                style="z-index: 10000;">
+                <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
+
+
         </div>
 
-        <div class="flex flex-wrap mt-4 justify-start">
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Esin T.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/esin_tureci.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Ye Z.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/ye_zhu.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Jihoon C.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/jihoon_chung.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Sunnie K.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/sunnie_kim.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">William Y.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/william_yang.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Tyler Z.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/tyler_zhu.jpg">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex flex-col mb-5 mr-4">
-                <div class="text-xs text-center font-mono">Nobline Y.</div>
-                <div class="avatar size-10 md:size-20">
-                    <div class="rounded-full">
-                        <img src="assets/nobline_yoo.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- PANELS -->
-<div class="flex flex-wrap justify-center mt-10">
-    <!-- AI4ALL NONPROFIT -->
-    <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
-
-        <!-- title -->
-        <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
-            <a href="https://ai4all.princeton.edu/"><span class="text-white">AI4ALL</span> nonprofit</a>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+                <li><a href="./home.html" class="nav-tab">home</a></li>
+                <li><a href="./people.html" class="nav-tab">people</a></li>
+                <li><a href="./research.html" class="nav-tab">research</a></li>
+                <li><a href="./awards.html" class="nav-tab">awards</a></li>
+                <li><a href="./community.html" class="nav-tab current-tab">community</a></li>
+                <li><a href="./join-us.html" class="nav-tab">join us</a></li>
+            </ul>
         </div>
 
-        <div class="flex flex-row mt-10 ml-2">
-            <div class="avatar"> <!-- profile pic -->
-                <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
-                    <img src="assets/community/nonprofit.jpg">
-                </div>
-            </div>
-
-            <!-- description and lab members shout-out -->
-            <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
-                <div>
-                    The AI4ALL nonprofit, which Prof. Olga Russakovsky co-founded in 2017 together with
-                    Prof. Fei-Fei Li and Dr. Rick Sommer, is a nonprofit working to increase diversity and
-                    inclusion in AI by educating a diverse next generation of AI leaders.
-                </div>
-
-
-            </div>
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+            style="position:absolute; top:65px; visibility: hidden;">
+            <!-- <div class="text-center nav-tab"><a href="#home">home</a></div>
+            <div class="text-center nav-tab"><a href="#people">people</a></div>
+            <div class="text-center nav-tab"><a href="#research">research</a></div>
+            <div class="text-center nav-tab"><a href="#awards">awards</a></div>
+            <div class="text-center nav-tab"><a href="#community">community</a></div>
+            <div class="text-center nav-tab"><a href="#join-us">join us</a></div> -->
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+                <li class="flex justify-center mdh:p-4"><a href="./home.html" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="./people.html" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">people</a></li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="./research.html" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="./awards.html" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="./community.html" onclick="menu_open_close()"
+                        class="nav-tab hover:underline current-tab">community</a>
+                </li>
+                <li class="flex justify-center mdh:p-4"><a href="./join-us.html" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">join us</a></li>
+            </ul>
         </div>
     </div>
 
-    <!-- LLP COLLAB -->
-    <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
 
-        <!-- title -->
-        <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
-            <a href="https://scienceoutreach.princeton.edu/laboratory-learning-program"><span class="text-white">COLLAB
 
-                </span> with princeton laboratory learning program</a>
-        </div>
+    <div id="content" class="w-full">
 
-        <div class="flex flex-row mt-10 ml-2">
-            <div class="avatar"> <!-- profile pic -->
-                <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
-                    <img class="h-1/12" src="assets/community/llp2.png">
-                </div>
-            </div>
 
-            <!-- description and lab members shout-out -->
-            <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
-                <div>
-                    The Laboratory Learning Program is a full-time, free research
-                    experience in the sciences or engineering for high school students in NJ and PA who
-                    are within a 50 mile radius to Princeton University (transportation is not provided and
-                    this is not a residential program).
+
+        <div class="mt-16 text-center sm:text-2xl mx-5 sm:mx-16 font-thin">Our lab is involved in many <span
+                class="text-orange-400">community</span> initiatives.
+            Check out what we've been up to!</div>
+
+        <br>
+
+        <!-- <div class="text-center"><span class="loading loading-dots loading-lg"></span></div> -->
+
+        <div class="flex flex-col grid justify-items-center justify-center w-full">
+            <!-- PRINCETON AI4ALL -->
+            <div class="flex flex-col mt-5 w-10/12 p-6">
+
+                <!-- title -->
+                <div class="font-bold font-mono text-4xl border-b-8 border-orange-400 border-double">
+                    <a href="https://ai4all.princeton.edu/"><span class="text-orange-400">PRINCETON</span> AI4ALL</a>
                 </div>
 
+                <div class="flex flex-col mt-5 sm:ml-2">
+                    <article>
+                        <div class="avatar float-left mr-5">
+                            <div class="h-28 w-28 sm:w-20 sm:h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full">
+                                <img src="assets/community/ai4all.png">
+                            </div>
+                        </div>
 
-            </div>
-        </div>
-    </div>
-</div>
+                        <a href="https://ai4all.princeton.edu/"><span
+                                class="text-orange-400 font-bold hover:underline">Princeton AI4ALL</span></a> is a
+                        three-week summer camp for rising high school juniors <b>co-founded</b> in 2018 by
+                        <b>Professor Olga Russakovsky</b> (who also co-founded <a
+                            href="https://hai.stanford.edu/stanford-ai4all" class="hover:underline">Stanford AI4ALL</a>
+                        in
+                        2015) and <b>Professor Ed Felten</b>.
+                        The curriculum developed together with a team of undergraduate and graduate students in the
+                        Computer
+                        Science
+                        Department and the Center for Information Technology Policy
+                        emphasizes the intersection of AI technology and policy. Each year, we work we a new cohort of
+                        approximately
+                        30 students, guiding them through hands-on research projects, professor lectures, and a field
+                        trip
+                        to
+                        Washington, D.C. to discuss AI policy and ethics.
+                    </article>
 
-<!-- WORKSHOPS -->
-<div class="flex flex-col p-6 w-10/12 mt-10">
+                    <div class="text-sm md:text-base mt-3">
+                        <span class="text-orange-400">Shout-out</span> to current lab members who have served as
+                        instructors:
+                    </div>
 
-    <!-- title -->
-    <div class="grid justify-items-stretch font-mono pt-7 px-4 border-8 border-orange-400 border-double">
-        <div class="font-bold text-center text-3xl">
-            <a href="https://ai4all.princeton.edu/">WORKSHOPS<sup class="text-orange-400">*</sup></a>
-        </div>
-        <div class="justify-self-end font-base">
-            <span class="text-xs md:text-sm"><sup class="text-orange-400 font-bold">*</sup> only Visual AI
-                Lab members shown</span>
-        </div>
-    </div>
+                    <div class="flex flex-wrap mt-4 justify-start">
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Esin T.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/esin_tureci.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- workshop panels -->
-    <div class="flex flex-wrap justify-center mt-5">
-      <? var workshops = getCommunityContent(); ?>
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Ye Z.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/ye_zhu.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-        <? for (var i = 0; i < workshops.length; i++) { ?>
-          <? var workshop = workshops[i]; ?>
-          <!-- start of workshop -->
-          <div class="flex flex-col m-1 sm:m-5 w-40 sm:w-80">
-            
-            <? for (var j = 0; j < workshop.banner.length; j++) { ?>
-              <? var classes = workshop.banner[j]; ?>
-              <div class=<?= classes ?>>
-            <? } ?>
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Jihoon C.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/jihoon_chung.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-            <? if (workshop.is_link) { ?>
-              <a href=<?= workshop.link ?> class="hover:underline"><?= workshop.name ?></a>
-            <? } else { ?>
-              <?= workshop.name ?>
-            <? } ?>
-            <? for (var j = 0; j < workshop.banner.length; j++) { ?>
-              </div>
-            <? } ?>
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Sunnie K.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/sunnie_kim.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="flex bg-white items-start mb-4">
-              <!-- workshop blurb -->
-                <div class="text-sm"><b><?= workshop.note[0] ?></b> <?= workshop.note[1] ?><br><b>Organized</b> by: <?!= workshop.organizers ?></div>
-            </div>
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">William Y.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/william_yang.jpg">
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- people involved -->
-            <div class="flex flex-wrap justify-start">
-               <? for (var j = 0; j < workshop.profile_pics.length; j++) { ?>
-                <? var profile_pic = workshop.profile_pics[j]; ?>
-                <? var person_name = workshop.people_names[j]; ?>
-                <div class="flex flex-col mb-4 mr-2">
-                    <div class="avatar size-10 md:size-16"> <!-- profile pic -->
-                        <div class="rounded-full border-2 border-orange-800">
-                            <img src=<?= profile_pic ?>>
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Tyler Z.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/tyler_zhu.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col mb-5 mr-4">
+                            <div class="text-xs text-center font-mono">Nobline Y.</div>
+                            <div class="avatar size-10 md:size-20">
+                                <div class="rounded-full">
+                                    <img src="assets/nobline_yoo.jpg">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="text-xs text-center font-mono"><?= person_name ?></div>
                 </div>
-               <? } ?>
             </div>
 
-          </div>
-        <? } ?>
+            <!-- PANELS -->
+            <div class="flex flex-wrap justify-center mt-10">
+                <!-- AI4ALL NONPROFIT -->
+                <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
+
+                    <!-- title -->
+                    <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
+                        <a href="https://ai4all.princeton.edu/"><span class="text-white">AI4ALL</span> nonprofit</a>
+                    </div>
+
+                    <div class="flex flex-row mt-10 ml-2">
+                        <div class="avatar"> <!-- profile pic -->
+                            <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
+                                <img src="assets/community/nonprofit.jpg">
+                            </div>
+                        </div>
+
+                        <!-- description and lab members shout-out -->
+                        <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
+                            <div>
+                                The AI4ALL nonprofit, which Prof. Olga Russakovsky co-founded in 2017 together with
+                                Prof. Fei-Fei Li and Dr. Rick Sommer, is a nonprofit working to increase diversity and
+                                inclusion in AI by educating a diverse next generation of AI leaders.
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLP COLLAB -->
+                <div class="flex flex-col mx-2 lg:mx-6 mb-5 w-10/12 md:w-5/12 rounded-3xl bg-orange-400 p-6 lg:p-10">
+
+                    <!-- title -->
+                    <div class="font-bold font-mono text-2xl lg:text-4xl border-l-8 border-black border-double pl-4">
+                        <a href="https://scienceoutreach.princeton.edu/laboratory-learning-program"><span
+                                class="text-white">LLP</span> collab</a>
+                    </div>
+
+                    <div class="flex flex-row mt-10 ml-2">
+                        <div class="avatar"> <!-- profile pic -->
+                            <div class="h-10 w-10 sm:w-20 sm:h-20 lg:w-32 lg:h-32 rounded-full border-4 border-white">
+                                <img class="h-1/12" src="assets/community/llp2.png">
+                            </div>
+                        </div>
+
+                        <!-- description and lab members shout-out -->
+                        <div class="flex flex-col ml-2 sm:ml-10 w-9/12">
+                            <div>
+                                The Laboratory Learning Program is a full-time, free research
+                                experience in the sciences or engineering for high school students in NJ and PA who
+                                are within a 50 mile radius to Princeton University (transportation is not provided and
+                                this is not a residential program).
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WORKSHOPS -->
+            <div class="flex flex-col p-6 w-10/12 mt-10">
+
+                <!-- title -->
+                <div class="grid justify-items-stretch font-mono pt-7 px-4 border-8 border-orange-400 border-double">
+                    <div class="font-bold text-center text-3xl">
+                        <a href="https://ai4all.princeton.edu/">WORKSHOPS<sup class="text-orange-400">*</sup></a>
+                    </div>
+                    <div class="justify-self-end font-base">
+                        <span class="text-xs md:text-sm"><sup class="text-orange-400 font-bold">*</sup> only Visual AI
+                            Lab members shown</span>
+                    </div>
+                </div>
+
+                <!-- workshop panels -->
+                <div class="flex flex-wrap justify-center mt-5">
+                    <? var workshops = getCommunityContent(); ?>
+
+                    <? for (var i = 0; i < workshops.length; i++) { ?>
+                    <? var workshop = workshops[i]; ?>
+                    <!-- start of workshop -->
+                    <div class="flex flex-col m-1 sm:m-5 w-40 sm:w-80">
+
+                        <? for (var j = 0; j < workshop.banner.length; j++) { ?>
+                        <? var classes = workshop.banner[j]; ?>
+                        <div class=<?=classes ?>>
+                            <? } ?>
+
+                            <? if (workshop.is_link) { ?>
+                            <a href=<?=workshop.link ?> class="hover:underline">
+                                <?= workshop.name ?>
+                            </a>
+                            <? } else { ?>
+                            <?= workshop.name ?>
+                            <? } ?>
+                            <? for (var j = 0; j < workshop.banner.length; j++) { ?>
+                        </div>
+                        <? } ?>
+
+                        <div class="flex bg-white items-start mb-4">
+                            <!-- workshop blurb -->
+                            <div class="text-sm"><b>
+                                    <?= workshop.note[0] ?>
+                                </b>
+                                <?= workshop.note[1] ?><br><b>Organized</b> by:
+                                <?!= workshop.organizers ?>
+                            </div>
+                        </div>
+
+                        <!-- people involved -->
+                        <div class="flex flex-wrap justify-start">
+                            <? for (var j = 0; j < workshop.profile_pics.length; j++) { ?>
+                            <? var profile_pic = workshop.profile_pics[j]; ?>
+                            <? var person_name = workshop.people_names[j]; ?>
+                            <div class="flex flex-col mb-4 mr-2">
+                                <div class="avatar size-10 md:size-16"> <!-- profile pic -->
+                                    <div class="rounded-full border-2 border-orange-800">
+                                        <img src=<?=profile_pic ?>>
+                                    </div>
+                                </div>
+                                <div class="text-xs text-center font-mono">
+                                    <?= person_name ?>
+                                </div>
+                            </div>
+                            <? } ?>
+                        </div>
+
+                    </div>
+                    <? } ?>
+                </div>
+
+            </div>
+        </div>
+        <div class="h-40"></div>
+
+
+
     </div>
+    <!-- <script type="module" src="scripts/script.js"></script> -->
+    <!-- <script src="scripts/research.js"></script> -->
+</body>
 
-</div>
-
-<div class="h-40"></div>
+</html>

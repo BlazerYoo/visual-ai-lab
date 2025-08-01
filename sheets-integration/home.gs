@@ -80,7 +80,8 @@ function getAcknowledgementsAwards() {
       year: year,
       is_award: true,
       is_link: is_link,
-      link: award_link
+      link: award_link,
+      italics: ""
     };
     
     // Add the award object to the award array
@@ -170,20 +171,24 @@ function getRecentPapers() {
         track = ', ' + track + " Track";
       }
 
+      let italics = "";
       if (conference_name.toLowerCase().includes("arxiv")) {
-        title = '"' + title + '" preprint out on arXiv ' + year + " " + track;
+        title = '"' + title + '" preprint out.';
+        italics = 'arXiv ' + year + " " + track;
       }
       else if (conference_name.toLowerCase().includes("phd thesis")) {
         title = '"' + title + '" PhD Thesis complete ' + year + " " + track;
       }
       else {
-        title = '"' + title + '" accepted to ' + conference_name + " " + year + " " + track;
+        title = '"' + title + '" accepted.';
+        italics = conference_name + " " + year + " " + track;
       }
 
       
           
       const paper = {
         title: title,
+        italics: italics,
         subtitle: authors_list,
         month: month,
         month_name: MONTHS[month],

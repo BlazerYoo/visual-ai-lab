@@ -1,15 +1,142 @@
-<div class="mt-16 m-5 sm:mx-16 flex justify-center">
-  <ul class="timeline timeline-snap-icon max-sm:timeline-compact timeline-vertical">
-    <? var [acknowledgements, awards] = getAcknowledgementsAwards(); ?>
-    <? for (var i = awards.length - 1; i >= 0; i--) { ?>
-      <? var award = awards[i]; ?>
-      <? var profilePic = getProfilePic(award.name); ?>
-      <? if ((awards.length - 1 - i) % 2 == 0) { ?>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Princeton Visual AI Lab</title>
+  <link rel="icon" type="image/x-icon" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <script>
+    function menu_open_close() {
+      var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+      if (menu_hidden.style.visibility == "visible") {
+        document.getElementsByTagName("body")[0].style.overflow = "visible"
+        menu_hidden.style.visibility = "hidden";
+      }
+      else {
+        var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+        menu_hidden.style.top = navbar_height + "px";
+        menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+        menu_hidden.style.visibility = "visible";
+
+        document.getElementsByTagName("body")[0].style.overflow = "hidden"
+      }
+    }
+  </script>
+  <!--navbar-->
+  <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+    <div class="navbar-start w-full lg:w-[40%] bg-white" style="z-index: 10000;">
+
+      <!-- 1204, 1259 -->
+
+      <!--navbar burger in case screen size compresses-->
+      <!-- <div class="dropdown"> 
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-mono text-lg">
+                    <li><a href="#home" class="nav-tab">home</a></li>
+                    <li><a href="#people" class="nav-tab">people</a></li>
+                    <li>
+                        <a href="#research" class="nav-tab">research</a>
+                    </li>
+                    <li>
+                        <a href="#awards" class="nav-tab">awards</a>
+                    </li>
+                    <li>
+                        <a href="#community" class="nav-tab">community</a>
+                    </li>
+                    <li><a href="#join-us" class="nav-tab">join us</a></li>
+                </ul>
+            </div> -->
+
+      <div class="lg:hidden" style="z-index: 10000;">
+        <button class="btn btn-square ml-2" onclick="menu_open_close()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!--Lab logo and title-->
+
+      <a href="/"
+        class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+        style="z-index: 10000;">
+        <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
+
+
+    </div>
+
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+        <li><a href="./home.html" class="nav-tab">home</a></li>
+        <li><a href="./people.html" class="nav-tab">people</a></li>
+        <li><a href="./research.html" class="nav-tab">research</a></li>
+        <li><a href="./awards.html" class="nav-tab current-tab">awards</a></li>
+        <li><a href="./community.html" class="nav-tab">community</a></li>
+        <li><a href="./join-us.html" class="nav-tab">join us</a></li>
+      </ul>
+    </div>
+
+    <div
+      class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+      style="position:absolute; top:65px; visibility: hidden;">
+      <!-- <div class="text-center nav-tab"><a href="#home">home</a></div>
+            <div class="text-center nav-tab"><a href="#people">people</a></div>
+            <div class="text-center nav-tab"><a href="#research">research</a></div>
+            <div class="text-center nav-tab"><a href="#awards">awards</a></div>
+            <div class="text-center nav-tab"><a href="#community">community</a></div>
+            <div class="text-center nav-tab"><a href="#join-us">join us</a></div> -->
+      <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+        <li class="flex justify-center mdh:p-4"><a href="./home.html" onclick="menu_open_close()"
+            class="nav-tab hover:underline">home</a></li>
+        <li class="flex justify-center mdh:p-4"><a href="./people.html" onclick="menu_open_close()"
+            class="nav-tab hover:underline">people</a></li>
+        <li class="flex justify-center mdh:p-4">
+          <a href="./research.html" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+        </li>
+        <li class="flex justify-center mdh:p-4">
+          <a href="./awards.html" onclick="menu_open_close()" class="nav-tab hover:underline current-tab">awards</a>
+        </li>
+        <li class="flex justify-center mdh:p-4">
+          <a href="./community.html" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
+        </li>
+        <li class="flex justify-center mdh:p-4"><a href="./join-us.html" onclick="menu_open_close()"
+            class="nav-tab hover:underline">join us</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div id="content" class="w-full">
+
+
+
+    <div class="mt-16 m-5 sm:mx-16 flex justify-center">
+      <ul class="timeline timeline-snap-icon max-sm:timeline-compact timeline-vertical">
+        <? var [acknowledgements, awards] = getAcknowledgementsAwards(); ?>
+        <? for (var i = awards.length - 1; i >= 0; i--) { ?>
+        <? var award = awards[i]; ?>
+        <? var profilePic = getProfilePic(award.name); ?>
+        <? if ((awards.length - 1 - i) % 2 == 0) { ?>
         <li>
           <hr>
           <div class="timeline-middle">
             <span class="relative flex h-4 w-4">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-4 w-4 bg-orange-500"></span>
             </span>
           </div>
@@ -31,33 +158,38 @@
                 <div class="row-span-2 text-xs text-start text-wrap sm:text-end sm:text-sm lg:text-base">
                   <div class="font-black">
                     <? if (award.is_link) { ?>
-                      <a href=<?= award.link ?> class="hover:underline"><?= award.award_name ?></a>
-                    <? } else { ?>
+                    <a href=<?=award.link ?> class="hover:underline">
                       <?= award.award_name ?>
+                    </a>
+                    <? } else { ?>
+                    <?= award.award_name ?>
                     <? } ?>
-                    </div>
-                  <div><?= award.names ?></div>
-                </div>
-              </div>
-            </div>
-
-              <div class="row-span-3 content-center"> <!-- profile pic -->
-                <div class="avatar h-10 w-10 sm:h-0 sm:w-0 visible sm:invisible">
-                  <div class="rounded-full">
-                    <img src=<?=profilePic ?>>
+                  </div>
+                  <div>
+                    <?= award.names ?>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="row-span-3 content-center"> <!-- profile pic -->
+              <div class="avatar h-10 w-10 sm:h-0 sm:w-0 visible sm:invisible">
+                <div class="rounded-full">
+                  <img src=<?=profilePic ?>>
+                </div>
+              </div>
+            </div>
+          </div>
           <hr />
         </li>
-      <? } else { ?>
+        <? } else { ?>
         <li>
           <hr />
           <div class="timeline-middle">
             <!-- <div class="bg-orange-400 rounded-full h-4 w-4"></div> -->
             <span class="relative flex h-4 w-4">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-4 w-4 bg-orange-500"></span>
             </span>
           </div>
@@ -72,12 +204,16 @@
                 <div class="row-span-2 text-xs sm:text-sm lg:text-base text-start">
                   <div class="font-black">
                     <? if (award.is_link) { ?>
-                      <a href=<?= award.link ?> class="hover:underline"><?= award.award_name ?></a>
-                    <? } else { ?>
+                    <a href=<?=award.link ?> class="hover:underline">
                       <?= award.award_name ?>
+                    </a>
+                    <? } else { ?>
+                    <?= award.award_name ?>
                     <? } ?>
-                    </div>
-                  <div><?= award.names ?></div>
+                  </div>
+                  <div>
+                    <?= award.names ?>
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,9 +228,18 @@
           </div>
           <hr />
         </li>
-      <? } ?>
-    <? } ?>
-  </ul>
-</div>
+        <? } ?>
+        <? } ?>
+      </ul>
+    </div>
 
-<div class="h-40"></div>
+    <div class="h-40"></div>
+
+
+
+  </div>
+  <!-- <script type="module" src="scripts/script.js"></script> -->
+  <!-- <script src="scripts/research.js"></script> -->
+</body>
+
+</html>
