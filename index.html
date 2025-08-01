@@ -23,7 +23,7 @@
                 menu_hidden.style.top = navbar_height + "px";
                 menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
                 menu_hidden.style.visibility = "visible";
-                
+
                 document.getElementsByTagName("body")[0].style.overflow = "hidden"
             }
         }
@@ -72,7 +72,9 @@
 
             <!--Lab logo and title-->
 
-            <a href="/" class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start" style="z-index: 10000;">
+            <a href="/"
+                class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+                style="z-index: 10000;">
                 <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
 
 
@@ -80,45 +82,48 @@
 
         <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
-                <li><a href="#home" class="nav-tab">home</a></li>
-                <li><a href="#people" class="nav-tab">people</a></li>
-                <li><a href="#research" class="nav-tab">research</a></li>
-                <li><a href="#awards" class="nav-tab">awards</a></li>
-                <li><a href="#community" class="nav-tab">community</a></li>
-                <li><a href="#join-us" class="nav-tab">join us</a></li>
+                <li><a href="/home" class="nav-tab current-tab">home</a></li>
+                <li><a href="/people" class="nav-tab">people</a></li>
+                <li><a href="/research" class="nav-tab">research</a></li>
+                <li><a href="/awards" class="nav-tab">awards</a></li>
+                <li><a href="/community" class="nav-tab">community</a></li>
+                <li><a href="/join-us" class="nav-tab">join us</a></li>
             </ul>
         </div>
 
-        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden" style="position:absolute; top:65px; visibility: hidden;">
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+            style="position:absolute; top:65px; visibility: hidden;">
             <!-- <div class="text-center nav-tab"><a href="#home">home</a></div>
             <div class="text-center nav-tab"><a href="#people">people</a></div>
             <div class="text-center nav-tab"><a href="#research">research</a></div>
             <div class="text-center nav-tab"><a href="#awards">awards</a></div>
             <div class="text-center nav-tab"><a href="#community">community</a></div>
             <div class="text-center nav-tab"><a href="#join-us">join us</a></div> -->
-            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center"
-               >
-                <li class="flex justify-center mdh:p-4"><a href="#home" onclick="menu_open_close()" class="nav-tab hover:underline">home</a></li>
-                <li class="flex justify-center mdh:p-4"><a href="#people" onclick="menu_open_close()" class="nav-tab hover:underline">people</a></li>
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+                <li class="flex justify-center mdh:p-4"><a href="/home" onclick="menu_open_close()"
+                        class="nav-tab hover:underline current-tab">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="/people" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">people</a></li>
                 <li class="flex justify-center mdh:p-4">
-                    <a href="#research" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+                    <a href="/research" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
                 </li>
                 <li class="flex justify-center mdh:p-4">
-                    <a href="#awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                    <a href="/awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
                 </li>
                 <li class="flex justify-center mdh:p-4">
-                    <a href="#community" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
+                    <a href="/community" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
                 </li>
-                <li class="flex justify-center mdh:p-4"><a href="#join-us" onclick="menu_open_close()" class="nav-tab hover:underline">join us</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="/join-us" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">join us</a></li>
             </ul>
         </div>
     </div>
 
-   
+
 
     <div id="content" class="w-full"></div>
-    <script type="module" src="scripts/script.js"></script>
-    <script src="scripts/research.js"></script>
+    <!-- <script type="module" src="scripts/script.js"></script> -->
+    <!-- <script src="scripts/research.js"></script> -->
 </body>
 
 </html>

@@ -1,6 +1,133 @@
-<div class="flex flex-col justify-center font-sans mt-7 sm:mt-14 mx-6 sm:mx-32">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-    <!-- OFFICE HOURS
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Princeton Visual AI Lab</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function menu_open_close() {
+            var menu_hidden = document.getElementsByClassName("menu-hidden")[0];
+            if (menu_hidden.style.visibility == "visible") {
+                document.getElementsByTagName("body")[0].style.overflow = "visible"
+                menu_hidden.style.visibility = "hidden";
+            }
+            else {
+                var navbar_height = document.getElementsByClassName("navbar")[0].offsetHeight;
+                menu_hidden.style.top = navbar_height + "px";
+                menu_hidden.style.height = "calc(100vh - " + navbar_height + "px)";
+                menu_hidden.style.visibility = "visible";
+
+                document.getElementsByTagName("body")[0].style.overflow = "hidden"
+            }
+        }
+    </script>
+    <!--navbar-->
+    <div class="navbar bg-white sticky top-0 border-b-[1px] w-full">
+        <div class="navbar-start w-full lg:w-[40%] bg-white" style="z-index: 10000;">
+
+            <!-- 1204, 1259 -->
+
+            <!--navbar burger in case screen size compresses-->
+            <!-- <div class="dropdown"> 
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow font-mono text-lg">
+                    <li><a href="#home" class="nav-tab">home</a></li>
+                    <li><a href="#people" class="nav-tab">people</a></li>
+                    <li>
+                        <a href="#research" class="nav-tab">research</a>
+                    </li>
+                    <li>
+                        <a href="#awards" class="nav-tab">awards</a>
+                    </li>
+                    <li>
+                        <a href="#community" class="nav-tab">community</a>
+                    </li>
+                    <li><a href="#join-us" class="nav-tab">join us</a></li>
+                </ul>
+            </div> -->
+
+            <div class="lg:hidden" style="z-index: 10000;">
+                <button class="btn btn-square ml-2" onclick="menu_open_close()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!--Lab logo and title-->
+
+            <a href="/"
+                class="w-9/12 lg:w-full btn h-16 btn-active btn-ghost bg-white border-b-[1px] pl-4 pr-0 flex justify-start"
+                style="z-index: 10000;">
+                <img src="logo_long.png" alt="Visual AI logo" class="w-5/6 sm:mb-0.5"></a>
+
+
+        </div>
+
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-mono lg:text-sm xl:text-lg">
+                <li><a href="/home" class="nav-tab">home</a></li>
+                <li><a href="/people" class="nav-tab">people</a></li>
+                <li><a href="/research" class="nav-tab">research</a></li>
+                <li><a href="/awards" class="nav-tab">awards</a></li>
+                <li><a href="/community" class="nav-tab">community</a></li>
+                <li><a href="/join-us" class="nav-tab">join us</a></li>
+            </ul>
+        </div>
+
+        <div class="bg-white menu-hidden w-screen h-screen lg:w-0 lg:h-0 flex flex-col justify-center text-xs smh:text-xl justify-items-center lg:hidden"
+            style="position:absolute; top:65px; visibility: hidden;">
+            <!-- <div class="text-center nav-tab"><a href="#home">home</a></div>
+            <div class="text-center nav-tab"><a href="#people">people</a></div>
+            <div class="text-center nav-tab"><a href="#research">research</a></div>
+            <div class="text-center nav-tab"><a href="#awards">awards</a></div>
+            <div class="text-center nav-tab"><a href="#community">community</a></div>
+            <div class="text-center nav-tab"><a href="#join-us">join us</a></div> -->
+            <ul class="w-full h-full font-mono text-center flex flex-col grid content-center">
+                <li class="flex justify-center mdh:p-4"><a href="/home" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">home</a></li>
+                <li class="flex justify-center mdh:p-4"><a href="/people" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">people</a></li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/research" onclick="menu_open_close()" class="nav-tab hover:underline">research</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/awards" onclick="menu_open_close()" class="nav-tab hover:underline">awards</a>
+                </li>
+                <li class="flex justify-center mdh:p-4">
+                    <a href="/community" onclick="menu_open_close()" class="nav-tab hover:underline">community</a>
+                </li>
+                <li class="flex justify-center mdh:p-4"><a href="/join-us" onclick="menu_open_close()"
+                        class="nav-tab hover:underline">join us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="content" class="w-full">
+
+
+
+        <div class="flex flex-col justify-center font-sans mt-7 sm:mt-14 mx-6 sm:mx-32">
+
+            <!-- OFFICE HOURS
     <div class="mb-10">
         <h1 class="font-mono font-bold text-lg sm:text-2xl border-b-[1px] border-b-slate-100 mb-5">👋 <span class="text-orange-400">OFFICE</span> HOURS
         </h1>
@@ -17,54 +144,85 @@
         </div>
     </div> -->
 
-    <!-- PRINCETON STUDENTS -->
-    <div>
-        <!-- <h1 class="border-l-8 border-l-orange-100 pl-2 font-mono font-bold text-lg sm:text-2xl border-b-[1px] border-b-slate-100 mb-5"><span class="text-orange-400">PRINCETON</span> STUDENTS
+            <!-- PRINCETON STUDENTS -->
+            <div>
+                <!-- <h1 class="border-l-8 border-l-orange-100 pl-2 font-mono font-bold text-lg sm:text-2xl border-b-[1px] border-b-slate-100 mb-5"><span class="text-orange-400">PRINCETON</span> STUDENTS
         </h1> -->
 
-        <div class="ml-5 text-base sm:text-lg my-5">
-            <ul class="list-disc leading-loose">
-                <li>If you’re a <b><span class="text-orange-400">Princeton</span> graduate student</b> interested in joining or collaborating with us, please email 
-                    <a href="http://cs.princeton.edu/~olgarus" class="underline hover:text-orange-400">Prof. Olga Russakovsky</a>
-                    including a brief description of your research interests and a link to your homepage. We'll find a
-                    time to meet.</li>
+                <div class="ml-5 text-base sm:text-lg my-5">
+                    <ul class="list-disc leading-loose">
+                        <li>If you’re a <b><span class="text-orange-400">Princeton</span> graduate student</b>
+                            interested in joining or collaborating with us, please email
+                            <a href="http://cs.princeton.edu/~olgarus" class="underline hover:text-orange-400">Prof.
+                                Olga Russakovsky</a>
+                            including a brief description of your research interests and a link to your homepage. We'll
+                            find a
+                            time to meet.
+                        </li>
 
-                <li>If you're a <b><span class="text-orange-400">Princeton</span> undergraduate student</b> interested in an IW (incl. senior thesis) and/or in research,
-                    please <a href="https://docs.google.com/document/d/1bIhPxlf_brs1V7zs7AuajC9vuP_lS39Rjf7jB8IDj5w/edit?usp=sharing" class="underline hover:text-orange-400">read here</a> on
-                    how to apply and what the process would be like.</li>
-            
-                <li>If you're interested in doing a <b>postdoc</b> with us, please email <a href="http://cs.princeton.edu/~olgarus" class="underline hover:text-orange-400">Prof. Olga Russakovsky</a> a brief description of
-                    your research
-                    interests, a link to your homepage, and your CV. Please specifically mention any leadership roles
-                    you've taken on
-                    (academic or otherwise) as well as any work you've done to build a more inclusive scientific
-                    community. You should also
-                    consider applying for the <a href="https://ai.princeton.edu/ai-lab/employment" class="underline hover:text-orange-400">Princeton AI lab postdoc</a> positions and/or for the <a href="https://citp.princeton.edu/programs/fellows/" class="underline hover:text-orange-400">Princeton Center for IT
-                    Policy fellows</a>
-                    positions.</li>
+                        <li>If you're a <b><span class="text-orange-400">Princeton</span> undergraduate student</b>
+                            interested in an IW (incl. senior thesis) and/or in research,
+                            please <a
+                                href="https://docs.google.com/document/d/1bIhPxlf_brs1V7zs7AuajC9vuP_lS39Rjf7jB8IDj5w/edit?usp=sharing"
+                                class="underline hover:text-orange-400">read here</a> on
+                            how to apply and what the process would be like.</li>
 
-                <li>
-                    If you're a <b>high school student</b> or <b>non-Princeton college student</b> interested in research, please 
-                    check out our <a href="https://visualai.princeton.edu/#community" class="underline hover:text-orange-400">Community initiatives</a> page for potential opportunities.
-                </li>
+                        <li>If you're interested in doing a <b>postdoc</b> with us, please email <a
+                                href="http://cs.princeton.edu/~olgarus" class="underline hover:text-orange-400">Prof.
+                                Olga Russakovsky</a> a brief description of
+                            your research
+                            interests, a link to your homepage, and your CV. Please specifically mention any leadership
+                            roles
+                            you've taken on
+                            (academic or otherwise) as well as any work you've done to build a more inclusive scientific
+                            community. You should also
+                            consider applying for the <a href="https://ai.princeton.edu/ai-lab/employment"
+                                class="underline hover:text-orange-400">Princeton AI lab postdoc</a> positions and/or
+                            for the <a href="https://citp.princeton.edu/programs/fellows/"
+                                class="underline hover:text-orange-400">Princeton Center for IT
+                                Policy fellows</a>
+                            positions.</li>
 
-                <li>If you're <b>applying to study at Princeton</b>, there is no need to email us. We apologize that we may 
-                    not be able to respond. When applying to the Princeton Computer Science PhD program, please 
-                    (1) declare a specialization in AIML or Vision, and (2) mention Prof. Russakovsky in the 
-                    application. In your application, please be sure to highlight past research experience, 
-                    any leadership roles you've taken on (academic or otherwise) as well as any work you've 
-                    done to build a more inclusive scientific community. We look forward to meeting you once you’re admitted.
-                </li>
+                        <li>
+                            If you're a <b>high school student</b> or <b>non-Princeton college student</b> interested in
+                            research, please
+                            check out our <a href="https://visualai.princeton.edu/#community"
+                                class="underline hover:text-orange-400">Community initiatives</a> page for potential
+                            opportunities.
+                        </li>
 
-                <li>If you're interested in a <b>temporary research position</b> in the <a href="http://visualai.princeton.edu/" class="underline hover:text-orange-400">Visual AI Lab</a>, 
-                    unfortunately it is unlikely we will be able to accommodate you at this time 
-                    (except in the context of our <a href="https://visualai.princeton.edu/#community" class="underline hover:text-orange-400">Community initiatives</a>). We get many requests for visiting 
-                    researchers and are unfortunately unable to respond to all such inquiries.</li>
-            </ul>
+                        <li>If you're <b>applying to study at Princeton</b>, there is no need to email us. We apologize
+                            that we may
+                            not be able to respond. When applying to the Princeton Computer Science PhD program, please
+                            (1) declare a specialization in AIML or Vision, and (2) mention Prof. Russakovsky in the
+                            application. In your application, please be sure to highlight past research experience,
+                            any leadership roles you've taken on (academic or otherwise) as well as any work you've
+                            done to build a more inclusive scientific community. We look forward to meeting you once
+                            you’re admitted.
+                        </li>
+
+                        <li>If you're interested in a <b>temporary research position</b> in the <a
+                                href="http://visualai.princeton.edu/" class="underline hover:text-orange-400">Visual AI
+                                Lab</a>,
+                            unfortunately it is unlikely we will be able to accommodate you at this time
+                            (except in the context of our <a href="https://visualai.princeton.edu/#community"
+                                class="underline hover:text-orange-400">Community initiatives</a>). We get many requests
+                            for visiting
+                            researchers and are unfortunately unable to respond to all such inquiries.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
         </div>
+        <div class="h-40"></div>
+
+
+
     </div>
+    <!-- <script type="module" src="scripts/script.js"></script> -->
+    <!-- <script src="scripts/research.js"></script> -->
+</body>
 
-
-
-</div>
-<div class="h-40"></div>
+</html>
