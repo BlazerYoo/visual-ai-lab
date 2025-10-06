@@ -197,6 +197,7 @@ function getResearchContent() {
       tags: "m-3 sm:mx-5 text-xs sm:text-sm md:text-base mb-6 " + cv + " " + hci + " " + fair + " paper"
     };
 
+    Logger.log(title);
     // if (title.search("Help") !== -1) {
     //   Logger.log(paper);
     // }

@@ -61,6 +61,14 @@ function createCommitOnBranch(pages, htmls) {
       contents: Utilities.base64Encode(htmls[index]) // Base64 encode the contents      
     };
     fileChangeArr.push(addition);
+    if (page === 'home') {
+      const index_html = getFinalHTML('INDEX').getContent();
+      const index_addition = {
+        path: 'index.html',
+        contents: Utilities.base64Encode(index_html) // Base64 encode the contents      
+      };
+      fileChangeArr.push(index_addition);
+    }
     
     commit_prefix += ENV[`${page.toUpperCase()}_COMMIT_PREFIX`];
     commit_suffix += `${page}.html - `;
