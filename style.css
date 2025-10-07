@@ -6590,12 +6590,20 @@ tr {
     width: 10rem;
   }
 
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:w-\[40\%\] {
     width: 40%;
   }
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3rem;
   }
 
   .lg\:text-base {
